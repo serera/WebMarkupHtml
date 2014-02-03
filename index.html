@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Честная цена</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	<link rel="stylesheet" href="/mobile/css/tmp.css" type="text/css">	
+	<link rel="stylesheet" href="/mobile/css/style.css" type="text/css">
+
+	<script src="/mobile/js/jquery-1.8.3.min.js"></script>
+	<script src="/mobile/js/jquery.tap.min.js"></script>
+	<script src="/mobile/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="/mobile/js/jquery.touchSwipe.min.js"></script>
+	<script src="/mobile/js/index.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper" class="main">
+	<div id="header">
+		<header>
+		<h1>Честная цена</h1>
+		<div id="toggle_menu">Меню</div>
+		</header>
+	</div>
+	<div id="content_area">	
+		<div id="top_search"><input placeholder="Введите название товара" type="search" name="search-mini" id="search-mini" value="" /></div>
+		<div class="subtitle">Справочник товаров из гипермаркетов и интернет-магазинов.</div>
+		<div id="content_slider_wrap">
+			<div id="content_slider">
+				<div class="item one"><div class="title">Найдите  необходимые  товары!</div><div class="subtitle">Сканируя штрих-код  или ищите по наименованию.</div></div>
+				<div class="item two"><div class="title">Составьте свой  список покупок!</div><div class="subtitle">На сайте или в <br>мобильном приложении,  <br>отсылайте друзьям!</div></div>
+				<div class="item three"><div class="title">Сохраняйте  цены!</div><div class="subtitle">Сохраняйте цены на <br>товары в разных <br>магазинах.</div></div>
+				<div class="item four"><div class="title">Делайте выгодные покупки!</div><div class="subtitle">Синхронизируйте  списки с мобильным  приложением.</div></div>
+			</div>
+			<div id="content_slider_pagination"></div>
+		</div>
+		<div id="google_play_wrap"><a target="_blank" href="https://play.google.com/store"><img src="/mobile/images/google_button.png" /></a></div>
+		<div class="red_text">Все товары в твоём телефоне!</div>
+	</div>
+	
+	
+	
+		<div id="slide_panel">				
+			<div id="slide_panel_header_wrap">
+				<div id="slide_panel_header">
+					<div class="header">Честная цена</div>
+					<a href="#" class="settings">Настройки</a>
+					<a href="#" class="share">Пригласить друга</a>
+					<div id="toggle_menu_active"></div>
+				</div>
+			</div>
+			<div id="slide_panel_content">
+				<div id="slide_panel_user">
+					<div class="slide_panel_user_img"><img src="/mobile/images/empty.png" /></div>
+					<div id="slide_panel_user_select">
+						<div class="slide_panel_user_mail">enakenty@gmail.com</div>
+						<div class="slide_panel_user_city">Санкт - Петербург</div>		
+						<ul id="slide_panel_user_menu">
+							<li><a target="_self" href="http://ya.ru">Выбрать город</a></li>
+							<li><a href="#">Выход</a></li>
+						</ul>			
+					</div>
+				</div>
+				<ul class="list">
+					<li class="star"><a href="favorit.html">Избранные товары</a><span>8</span></li>
+					<li class="list"><a href="favorit.html">Списки покупок</a><span>5</span></li>
+					<li class="sellers"><a href="favorit.html">Продавцы</a><span>6</span></li>
+				</ul>
+				<div id="slide_panel_link">
+					<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_2.png" /></a></div><a href="favorit.html">Искать по наименованию</a></div>
+					<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_3.png" /></a></div><a href="favorit.html">Искать по категориям</a></div>
+				</div>
+				<ul class="last list">
+					<li class="mail"><a href="favorit.html">Связаться с разработчиком</a><span></span></li>			
+				</ul>
+			</div>
+		</div>
+	
+</div>
+<!--
+	<script>
+	$(document).ready(function() {
+		$('#content_slider').carouFredSel({
+			align:"left",
+			responsive: true,
+			auto:false,
+			items: {
+				visible: 1,
+				width: 100,
+				height: 145
+			},
+			scroll: {
+				duration: 1000,
+				timeoutDuration: 500,
+				fx: 'uncover-fade'
+			},
+			swipe: {
+				onTouch:true,
+				onMouse:true
+			},
+			pagination: '#content_slider_pagination'
+		});	
+	});
+	</script>
+-->
+</body>
+</html>

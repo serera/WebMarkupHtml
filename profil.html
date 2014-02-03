@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Профиль</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	<link rel="stylesheet" href="/mobile/css/tmp.css" type="text/css">	
+	<link rel="stylesheet" href="/mobile/css/style.css" type="text/css">	
+	
+	<!--<script src="/mobile/js/jquery-1.8.3.min.js"></script>-->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="/mobile/js/jquery.tap.min.js"></script>
+	<script src="/mobile/js/jquery.touchSwipe.min.js"></script>	
+	<script src="/mobile/js/jquery.simplemodal.1.4.4.min.js"></script>
+	
+	<script src="/mobile/js/autocompit/jquery.mockjax.js"></script>
+	<script src="/mobile/js/autocompit/jquery.autocomplete.js"></script>
+	<script src="/mobile/js/autocompit/countries.js"></script>
+	<script src="/mobile/js/autocompit/script.js"></script>	
+	
+	<script src="/mobile/js/global.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+		<header>
+			<div id="header_title">Профиль</div>
+			<!--<div id="total_number">29</div>-->
+		</header>
+		<div id="toggle_menu">Меню</div>
+	</div>
+
+	<div id="content_area">
+		<div id="edit_user_profil">
+			<div class="edit_user_profil_item">
+				<div class="name">E-mail:</div>
+				<div class="input_text_wrap"><input type="text" value="zhukoffm@gmail.com"></div>
+			</div>
+			<div class="edit_user_profil_item avatar">
+				<div class="name">Аватар:</div>
+				<div class="profil_image">
+					<!--<input type="file" accept="image/*">-->
+					<img src="/mobile/images/user_empty.jpg" />
+				</div>
+				<div class="add_foto green_button">Загрузить<input type="file" accept="image/*"></div>
+			</div>
+			<div class="edit_user_profil_item">
+				<div class="name">Имя:</div>
+				<div class="input_text_wrap"><input type="text" value="Владимир Владимирович"></div>
+			</div>			
+		</div>
+
+	</div>
+	
+	<div id="footer">
+		<button id="save" class="center accept">Сохранить</button>
+	</div>
+	
+	
+	
+	<div id="slide_panel" class="no_reg">				
+		<div id="slide_panel_header_wrap">
+			<div id="slide_panel_header">
+				<div class="header">Честная цена</div>
+				<a href="#" class="settings">Настройки</a>
+				<a href="#" class="share">Пригласить друга</a>
+				<div id="toggle_menu_active"></div>
+			</div>
+		</div>
+		<div id="slide_panel_content">
+			<ul class="list">
+				<li class="reg"><a href="favorit.html">Регистрация</a></li>				
+				<li class="aut"><a href="favorit.html">Авторизация</a></li>
+				<li class="city"><a href="#chois_city_modal" class="modal">Выбор города</a></li>
+				<li class="purc"><a href="favorit.html">Списки покупок</a><span>1</span></li>
+			</ul>
+			<div id="slide_panel_link">
+				<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_2.png" /></a></div><a href="favorit.html">Искать по наименованию</a></div>
+				<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_3.png" /></a></div><a href="favorit.html">Искать по категориям</a></div>
+			</div> 
+		</div>
+	</div>
+
+</div>
+
+<div id="chois_city_modal" class="modal_window">
+	<div class="modal_window_header">Выбрать город</div>
+	<div class="modal_window_content"><div class="input_text_wrap"><input id="city_list" type="text" value="" autocomplete="off"></div></div>
+	<div class="modal_window_footer">
+		<div class="simplemodal-close">Отмена</div>
+		<div class="modal_window_ok">Ok</div>
+	</div>	
+</div> 
+
+<!--
+<script src="/mobile/js/autocompit/jquery.mockjax.js"></script>
+<script src="/mobile/js/autocompit/jquery.autocomplete.js"></script>
+<script src="/mobile/js/autocompit/countries.js"></script>
+<script src="/mobile/js/autocompit/script.js"></script>
+-->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+#global_wrapper {
+	width:100%;
+	float:left;
+}
+#slide_panel {
+	position:relative;
+	float:right;
+}
+

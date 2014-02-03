@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Отправка списка покупок</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="/mobile/css/tmp.css" type="text/css">	
+	<link rel="stylesheet" href="/mobile/css/style.css" type="text/css">
+	<script src="/mobile/js/jquery-1.8.3.min.js"></script>
+	<script src="/mobile/js/jquery.tap.min.js"></script>
+	<script src="/mobile/js/jquery.touchSwipe.min.js"></script>	
+	<script src="/mobile/js/jquery.simplemodal.1.4.4.min.js"></script>	
+	<script src="/mobile/js/global.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<header>
+			<div id="header_title">Отправка списка</div>
+			<div id="submit_list_button"></div>
+		</header>
+		<div id="toggle_menu" data-iconpos="notext">Меню</div>
+	</div>
+	<div id="content_area">
+		<div id="submit_list_data">
+			<div class="submit_list_header">Мои любимые товары (24)</div>
+			<div class="submit_list_form">
+				<form action="#">
+					<div class="input_text_wrap"><input class="input" type="text" placeholder="Ваше имя" value=""></div>
+					<div class="input_text_wrap"><input class="input" type="text" placeholder="Телефон (+7 999 999 99 99)" value=""></div>
+					<div class="input_text_wrap"><input class="input" type="email" placeholder="e-mail пользователя" value=""></div>
+					<div class="input_text_wrap"><input class="input" type="text" placeholder="Введите текст сообщения" value=""></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<button id="cancel_link" class="left cross" type="button">Отмена</button>
+		<button id="add_link" class="right accept" type="button">Отправить</button>
+	</div>
+	
+	<div id="slide_panel">				
+		<div id="slide_panel_header_wrap">
+			<div id="slide_panel_header">
+				<div class="header">Честная цена</div>
+				<a href="#" class="settings">Настройки</a>
+				<a href="#" class="share">Пригласить друга</a>	
+				<div id="toggle_menu_active"></div>
+			</div>
+		</div>
+		<div id="slide_panel_content">
+			<div id="slide_panel_user">
+				<div class="slide_panel_user_img"><img src="/mobile/images/empty.png" /></div>
+				<div id="slide_panel_user_select">
+					<div class="slide_panel_user_mail">enakenty@gmail.com</div>
+					<div class="slide_panel_user_city">Санкт - Петербург</div>		
+					<ul id="slide_panel_user_menu">
+						<li><a target="_self" href="http://ya.ru">Выбрать город</a></li>
+						<li><a href="#">Выход</a></li>
+					</ul>			
+				</div>
+			</div>
+			<ul class="list">
+				<li class="star"><a href="favorit.html">Избранные товары</a><span>8</span></li>
+				<li class="list"><a href="favorit.html">Списки покупок</a><span>5</span></li>
+				<li class="sellers"><a href="favorit.html">Продавцы</a><span>6</span></li>
+			</ul>
+			<div id="slide_panel_link">
+				<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_1.png" /></a></div><a href="favorit.html">Сканировать штрихкод</a></div>
+				<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_2.png" /></a></div><a href="favorit.html">Искать по наименованию</a></div>
+				<div><div class="img"><a href="favorit.html"><img src="/mobile/images/img_3.png" /></a></div><a href="favorit.html">Искать по категориям</a></div>
+			</div>
+			<ul class="last list">
+				<li class="dollar"><a href="index.html">PRO-версия</a><span></span></li>
+				<li class="vopros"><a href="favorit.html">Как это работает</a><span></span></li>
+				<li class="mail"><a href="favorit.html">Связаться с разработчиком</a><span></span></li>			
+			</ul>
+			<a href="#" class="close">Закрыть</a>
+		</div>
+	</div>	
+	
+</div>
+	
+
+<!--
+<script>
+$(document).ready(function() {
+	$('#footer .add_button').on('touchstart',function() {
+		$('#modal_window').modal({onOpen: function(){
+			alert("lk");
+		}});
+	});
+	$("#modal_window .modal_window_ok").bind('touchstart', function() {
+		var input_val = $("#modal_window .input_text_wrap input").val();
+		if($(this).parent().parent().find("input:text").val() != "") {
+			$("<div class='shopping_lists_item'><p>" + input_val + "</p><span>5</span><div class='chekbox'></div>").prependTo("#shopping_lists");
+			$(this).prev().trigger("click");		
+		}
+	});
+	$('#shopping_lists .received').on('touchstart',function() {
+		$('#modal_window_receiv').modal();
+	});
+	$('#modal_window_receiv .simplemodal-close').bind('touchstart', function() {
+		$("#shopping_lists .received").remove();
+	});	
+	$('#modal_window_receiv .modal_window_ok').bind('touchstart', function() {
+		$("#shopping_lists .received").removeClass("received").find("span").text("10");
+		$(this).prev().trigger("click");
+	});
+	
+	$('#footer #footer_action_list .copy').live('touchstart',function() {		
+		var shopping_list_copy = $("#shopping_lists .selected").html();	
+		$("<div class='shopping_lists_item'>" + shopping_list_copy + "</div").prependTo("#shopping_lists");
+	});	
+	
+	$('#footer #footer_action_list .edit').live('touchstart',function() {		
+		var edit_data = $("#shopping_lists .selected p").text();
+		$('#modal_window_edit .input_text_wrap input').val(edit_data);
+		$('#modal_window_edit').modal();
+	});
+	$('#modal_window_edit .modal_window_ok').bind('touchstart', function() {
+		var input_val = $("#modal_window_edit .input_text_wrap input").val();
+		$("#shopping_lists .selected p").text(input_val);
+		$(this).prev().trigger("click");
+	});
+	
+});
+</script>
+-->
+
+</body>
+</html>

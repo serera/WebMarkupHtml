@@ -5473,7 +5473,7 @@ BODY.average .user_settings .inputs_block .select ul {
   float: left;
   height: 400px;
   width: 54%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 0px;
 }
 .seller_details_page .seller_details_adress .jspVerticalBar {

@@ -1642,25 +1642,23 @@ aside.lists article.catalog .view_table .row_reload {
   cursor: pointer;
 }
 .soc_buttons {
-  margin-top:17px;
+  margin-top:15px;
+}
+.soc_buttons a {
+  width:31px;
+  height:30px;
 }
 .soc_buttons .vk {
   display: inline-block;
-  width:41px;
-  height:40px;
   background: url(vk_link.png) no-repeat;
 }
 .soc_buttons .tw {
   display: inline-block;
-  width:41px;
-  height:40px;
   background: url(twitter_link.png) no-repeat;
   margin-left:19px;
 }
 .soc_buttons .fb {
   display: inline-block;
-  width:41px;
-  height:40px;
   background: url(facebook_link.png) no-repeat;
   margin-left:19px;
 }
@@ -2904,17 +2902,41 @@ footer.elastic_footer.wide {
   max-width:96%;
 }
 footer > div{
-  padding:42px 0 34px 0;
+  padding:32px 0 34px 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 footer .footer_nav {
-  width:306px;
+  width:206px;
   float: left;
   border-left:1px solid #eeeeee;
   border-right:1px solid #eeeeee;
   padding-left: 35px;
+  padding-top: 50px;
+}
+footer .footer_nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer .footer_contacts{
+  width:306px;
+  float: left;
+  border-right:1px solid #eeeeee;
+  padding-left: 35px;
+  padding-top: 50px;
+}
+footer .footer_contacts a{
+  text-decoration: none;
+  color:#444444;
+  display: block;
+}
+footer .footer_contacts a:hover {
+  text-decoration: none;
+}
+footer .contact_links{
+  margin-top: 10px;
 }
 footer .footer_head {
   font-weight: bold;
@@ -2936,7 +2958,7 @@ footer .footer_nav a:hover {
   text-decoration: none;
 }
 footer .copyright{
-  width: 295px;
+  width: 280px;
   float: left;
 }
 footer .copyright {
@@ -3739,6 +3761,18 @@ article.catalog .view_table .settlement .remove_row {
 }
 article.catalog .view_table .settlement .remove_row:hover {
   background: url("list_actions_new.png") no-repeat 0 -105px ;
+}
+article.catalog .add_seller{
+  padding: 0 5px;
+}
+article.catalog .add_seller .add_button{
+  position: relative;
+  top: -45px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  background: #01d2bc;
 }
 /********************************************************************** ITEM ****************************************/
 BODY.average HEADER.elastic_header {

@@ -2839,6 +2839,15 @@ aside.right article.catalog .catalog_items .in_list input[type="submit"], BODY.a
 .small_button_green:active {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+.small_button_grey {
+  background-color: #EBEBEB;
+  color: #868686;
+  border: none;
+  border-radius: 3px;
+}
+.small_button_grey:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
 
 BODY.average .similar_products .favorits {
   display:inline-block;

@@ -1,14 +1,25 @@
 .new_product_form
-  width: 600px
+  //width: 600px
+  max-width: 1000px
+  positon: relative
   input.string,
   textarea,
   select
-    width: 260px
+    //width: 260px
+    width: 100%
+    box-sizing: border-box
     padding: 17px 10px 14px
     line-height: 15px
     background: #fff
+  .product_form_barcode input.string
+    max-width: 400px
+  .product_form_massa input.string,
+  .product_form_price input.string
+    width: 80px
+    text-align: right
   textarea
     resize: vertical
+    height: 75px
   select
     width: 280px
     height: 50px
@@ -19,23 +30,91 @@
     font-size: 15px
     clear: both
   label
-    float: left
+    //float: left
     width: 170px
-    margin: 0 20px
+    //margin: 0 20px
     text-align: right
     font-size: 12px
-    font-weight: bold
+    font-weight: normal
     line-height: 50px
     text-transform: uppercase
     letter-spacing: 1px
+    position: absolute
+    left: 0
+  .product_form_unit_measure_id
+    position: relative
+    padding-left: 185px
+    .radio_controls 
+      .radio_item
+        width: 90px
+        float: left
+        position: relative
+        padding-left: 20px
+        label
+          position: static
+          width: 100px
+          line-height: 1.5em
+          font-size: 10px
+          text-align: left
+          color: #898989
+          display: block
+          cursor: pointer
+          margin-bottom: 12px
+        input.radio
+          position: absolute
+          left: 0
+        .description
+          margin-left: -20px
+
+    >label
+      width: auto
+      text-align: left
+      left: 110px
+  
+  #more_currencies
+    text-transform: uppercase
+    text-decoration: none
+    border-bottom: 1px dashed #333333
+    color: #333333
+
+  .description
+    font-size: 0.8em
+    color: #898989
+  .price_wrapper,
+  .massa_wrapper
+    position: absolute
+    left: 0
   .control-group
     overflow: hidden
     padding: 2px
+    padding-left: 210px
+
   .controls
     float: left
+    position: relative
     margin-bottom: 20px
+    width: 100%
 
   .help-inline
     display: block
     font-size: 14px
     color: #b94a48
+  .product_form_photo .controls 
+    position: relative
+    padding-left: 180px
+
+    .img_upload
+      position: absolute
+      left: 0
+  
+  .img_wrap
+    float: left
+    width: 160px
+    margin: 0 20px 20px 0
+    clear: none
+    text-align: center
+    a
+      text-transform: uppercase
+      text-decoration: none
+    .img
+      border: 1px solid #efefef

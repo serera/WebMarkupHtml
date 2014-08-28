@@ -1,0 +1,78 @@
+/*
+Error: Undefined variable: "$font-family-base".
+        on line 6 of stylesheets/sellers.sass
+
+1: .sellers-categories
+2:   display: block
+3:   margin: 0
+4:   padding: 0
+5:   list-style: none
+6:   font: 15px/18px $font-family-base
+7:   li
+8:     padding: 12px 0
+9:     border-bottom: 1px solid $gray-border
+10:   a
+11:     position: relative
+
+Backtrace:
+stylesheets/sellers.sass:6
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/list_literal.rb:62:in `_perform'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/list_literal.rb:62:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/list_literal.rb:62:in `_perform'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:378:in `visit_prop'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:161:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:151:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/sass:13
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-family-base\".\A         on line 6 of stylesheets/sellers.sass\A \A 1: .sellers-categories\A 2:   display: block\A 3:   margin: 0\A 4:   padding: 0\A 5:   list-style: none\A 6:   font: 15px/18px $font-family-base\A 7:   li\A 8:     padding: 12px 0\A 9:     border-bottom: 1px solid $gray-border\A 10:   a\A 11:     position: relative"; }

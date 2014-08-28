@@ -1,0 +1,97 @@
+/*
+Error: Undefined mixin 'sham-spinner-spokes'.
+        on line 24 of stylesheets/spinner.sass, in `sham-spinner-spokes'
+        from line 24 of stylesheets/spinner.sass
+
+19:     .spinner
+20:       display: block
+21:       float: left
+22:       width: 50px
+23:       height: 50px
+24:       @include sham-spinner-spokes($brand-green, 44px, 2s)
+
+Backtrace:
+stylesheets/spinner.sass:24:in `sham-spinner-spokes'
+stylesheets/spinner.sass:24
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:332:in `visit_mixin'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:330:in `visit_mixin'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:161:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:151:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/sass:13
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'sham-spinner-spokes'.\A         on line 24 of stylesheets/spinner.sass, in `sham-spinner-spokes'\A         from line 24 of stylesheets/spinner.sass\A \A 19:     .spinner\A 20:       display: block\A 21:       float: left\A 22:       width: 50px\A 23:       height: 50px\A 24:       @include sham-spinner-spokes($brand-green, 44px, 2s)"; }

@@ -1,0 +1,64 @@
+/*
+Error: File to import not found or unreadable: active_admin/mixins.
+       Load path: /home/batman/sites/ccena/git_work/WebMarkupHtml/stylesheets
+        on line 13 of stylesheets/active_admin.sass
+
+8: // $sidebar-width: 242px;
+9: //= require "jstree/dist/themes/default/style.min"
+10: //
+11: 
+12: // Active Admin's got SASS!
+13: @import "active_admin/mixins"
+14: @import "active_admin/base"
+15: 
+16: // Overriding any non-variable SASS must be done after the fact.
+17: // For example, to change the default status-tag color:
+18: //
+
+Backtrace:
+stylesheets/active_admin.sass:13
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/import_node.rb:66:in `import'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:295:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:161:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:151:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.4.1/bin/sass:13
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: active_admin/mixins.\A        Load path: /home/batman/sites/ccena/git_work/WebMarkupHtml/stylesheets\A         on line 13 of stylesheets/active_admin.sass\A \A 8: // $sidebar-width: 242px;\A 9: //= require \"jstree/dist/themes/default/style.min\"\A 10: //\A 11: \A 12: // Active Admin's got SASS!\A 13: @import \"active_admin/mixins\"\A 14: @import \"active_admin/base\"\A 15: \A 16: // Overriding any non-variable SASS must be done after the fact.\A 17: // For example, to change the default status-tag color:\A 18: //"; }

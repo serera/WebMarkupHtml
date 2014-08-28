@@ -1,0 +1,42 @@
+.new_product_form {
+  width: 600px; }
+  .new_product_form input.string,
+  .new_product_form textarea,
+  .new_product_form select {
+    width: 260px;
+    padding: 17px 10px 14px;
+    line-height: 15px;
+    background: #fff; }
+  .new_product_form textarea {
+    resize: vertical; }
+  .new_product_form select {
+    width: 280px;
+    height: 50px; }
+  .new_product_form .btn {
+    padding: 0 25px;
+    height: 40px;
+    margin-left: 210px;
+    font-size: 15px;
+    clear: both; }
+  .new_product_form label {
+    float: left;
+    width: 170px;
+    margin: 0 20px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .new_product_form .control-group {
+    overflow: hidden;
+    padding: 2px; }
+  .new_product_form .controls {
+    float: left;
+    margin-bottom: 20px; }
+  .new_product_form .help-inline {
+    display: block;
+    font-size: 14px;
+    color: #b94a48; }
+
+/*# sourceMappingURL=product_form.css.map */

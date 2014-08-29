@@ -52,7 +52,7 @@ a.forgot:hover, a.seller-internet:hover {
 }
 body {
     position: relative;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body.welcome {
     overflow-x: hidden;

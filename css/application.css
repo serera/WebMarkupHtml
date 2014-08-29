@@ -535,7 +535,7 @@ html.panel-closed .header_profil {
   .new_product_form select {
     width: 100%;
     box-sizing: border-box;
-    padding: 17px 10px 14px;
+    padding: 5px 10px;
     line-height: 15px;
     background: #fff; }
   .new_product_form .product_form_barcode input.string {
@@ -564,7 +564,10 @@ html.panel-closed .header_profil {
     left: 0; }
   .new_product_form .product_form_unit_measure_id {
     position: relative;
-    padding-left: 185px; }
+    padding-left: 185px;
+    display: none; }
+    .new_product_form .product_form_unit_measure_id.active {
+      display: block; }
     .new_product_form .product_form_unit_measure_id .radio_controls .radio_item {
       width: 90px;
       float: left;
@@ -574,7 +577,7 @@ html.panel-closed .header_profil {
         position: static;
         width: 100px;
         line-height: 1.5em;
-        font-size: 12px;
+        font-size: 13px;
         text-align: left;
         color: #898989;
         display: block;
@@ -582,7 +585,8 @@ html.panel-closed .header_profil {
         margin-bottom: 10px; }
       .new_product_form .product_form_unit_measure_id .radio_controls .radio_item input.radio {
         position: absolute;
-        left: 0; }
+        left: 0;
+        top: 4px; }
       .new_product_form .product_form_unit_measure_id .radio_controls .radio_item .description {
         margin-left: -20px; }
       .new_product_form .product_form_unit_measure_id .radio_controls .radio_item.more_currencies {
@@ -600,7 +604,7 @@ html.panel-closed .header_profil {
     border-bottom: 1px dashed #333333;
     color: #333333; }
   .new_product_form .description {
-    font-size: 0.8em;
+    font-size: 12px;
     color: #898989; }
   .new_product_form .price_wrapper,
   .new_product_form .massa_wrapper {
@@ -613,7 +617,7 @@ html.panel-closed .header_profil {
   .new_product_form .controls {
     float: left;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%; }
   .new_product_form .help-inline {
     display: block;
@@ -649,7 +653,7 @@ html.panel-closed .header_profil {
   .new_product_form .product_form_seller ul {
     border: none; }
     .new_product_form .product_form_seller ul li {
-      padding-left: 0;
+      padding: 5px 0;
       border: none; }
       .new_product_form .product_form_seller ul li a {
         display: block; }
@@ -668,6 +672,27 @@ html.panel-closed .header_profil {
     .new_product_form .last_viewed.active {
       display: block;
       min-width: 300px; }
+  .new_product_form .product_form_add .controls > * {
+    float: left;
+    margin-right: 3px; }
+  .new_product_form .product_form_add .controls {
+    padding-top: 12px; }
+    .new_product_form .product_form_add .controls .btn_wrpr {
+      margin-top: 4px;
+      width: 20px;
+      height: 20px;
+      text-align: center; }
+    .new_product_form .product_form_add .controls .number_wrapper {
+      width: 60px; }
+    .new_product_form .product_form_add .controls .to_list {
+      width: 90px;
+      height: 36px;
+      margin: 0 10px; }
+    .new_product_form .product_form_add .controls .fav_star {
+      width: 36px;
+      height: 36px;
+      background: url(star_fav.png) center center no-repeat;
+      box-shadow: none; }
 
 .vakata-context {
   margin: 0; }

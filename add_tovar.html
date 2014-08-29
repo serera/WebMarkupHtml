@@ -198,8 +198,7 @@
                       <div class="description">* Количество в упаковке</div>
                     </div>
                     
-
-                    <div class="product_form_unit_measure_id">
+                    <div class="product_form_unit_measure_id active">
                       <label class="control-label">Ед. изм.</label>
                       <div class="radio_controls">
                         <div class="radio_item">
@@ -263,7 +262,6 @@
                           <label for="product_form_unit_measure_id_95">Пак - волшебный дракон</label>
                         </div>
                         
-
                       </div>
                     </div>
                   </div>
@@ -279,11 +277,11 @@
                   <label for='product_form_photo'>Фото товара</label>
                   <div class='controls'>
                     <div class="img_upload">
-                        <input class="uploader" id="product_form_photo" name="product_form[photo]" placeholder="Фото товара" role="product-photo-uploader" type="file" />
-                        <div class="fake_file_button small_button_grey">
-                          <div id="upload">Выберите файл</div>
-                        </div>
-                        <span id="status"></span>
+                      <input class="uploader" id="product_form_photo" name="product_form[photo]" placeholder="Фото товара" role="product-photo-uploader" type="file" />
+                      <div class="fake_file_button small_button_grey">
+                        <div id="upload">Выберите файл</div>
+                      </div>
+                      <span id="status"></span>
                     </div>
                     <div class="img_wrap">
                       <div class="img default" id="upload_seller_avatar">
@@ -293,7 +291,6 @@
                         Х удалить
                       </a>
                     </div>
-
                     <div class="img_wrap">
                       <div class="img default" id="upload_seller_avatar">
                         <img alt="Default avatar" src="http://fair-price.biz/assets/default_avatar-256e32ec39f503028e48b997db1f4b07.png">
@@ -304,20 +301,15 @@
                     </div>
                   </div>
                 </div>
-
-
-
-
                 <div class="control-group string optional product_form_price">
                   <label class="string optional control-label" for="product_form_price">Цена</label>
                   <div class="controls">
                     <div class="price_wrapper">
                       <input class="string optional" id="product_form_price" name="product_form[price]" type="text" value="300"/>
                     </div>
-                    <div class="product_form_unit_measure_id">
+                    <div class="product_form_unit_measure_id active">
                       <label class="control-label">Валюта</label>
                       <div class="radio_controls">
-
                         <div class="radio_item">
                           <input type="radio" class="radio" id="product_form_unit_measure_id_102" name="product_form[unit_measure_id]" value="102">
                           <label for="product_form_unit_measure_id_102">(RUB)</label>
@@ -333,26 +325,48 @@
                           <label for="product_form_unit_measure_id_104">(EUR)</label>
                           <div class="description">Евро</div>
                         </div class="radio_item">
-
-                        <div class="radio_item">
+                        <div class="radio_item more_currencies">
                           <label><a id="more_currencies" href="">Больше валют</a></label>
                         </div>
-  
                       </div>
                     </div>
                   </div>
                 </div>
-
-
-
-
-
-
-
-
-
-                <br>
-                <input class="btn small_button_green" name="commit" type="submit" value="Создать" />
+                <div class="control-group string optional product_form_seller">
+                  <label class="string optional control-label" for="product_form_seller">Продавец</label>
+                  <div class="controls">
+                    <div  class="sellers-search">
+                      <input autocomplete="off" class="string optional" data-select="#search-seller-items" data-url="http://api.fair-price.biz/v1/sellers/autocomplete" id="search-seller-title" name="sellers_filter[name_like]" placeholder="Поиск по наименованию" role="select-search" type="text" value="" />
+                      <input class="btn" name="" type="submit" value="" />
+                    </div>
+                    <div class="last_viewed active">
+                      <div class="description">Последние просмотренные:</div>
+                      <ul class='autocomp_list active' data-title='#search-seller-title' id='search-seller-items' role='autocomplete-list'>
+                        <li><a href="">Лента, Чебоксары, Тракторостроителей</a></li>
+                        <li><a href="">Карусель</a></li>
+                        <li><a href="">Магнит</a></li>
+                        <li><a href="">Трактир "Горцующий пони"</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group product_form_add">
+                  <label class="string optional control-label" for="product_form_seller">Добавить</label>
+                  <div class="controls">
+                    <div class="btn_wrpr">
+                      <input class="small_button_green minus_button" name="minus" type="button" value="-" />
+                    </div>
+                    <div class="number_wrapper">
+                      <input class="string optional" id="product_form_num" name="product_form[num]" type="text" value="1"/>
+                      <div class="description">Кол-во (шт)</div>
+                    </div>
+                    <div class="btn_wrpr">
+                      <input class="small_button_green plus_button" name="plus" type="submit" value="+" />
+                    </div>
+                    <input class="small_button_green to_list" name="to_list" type="submit" value="В список" />
+                    <input class="small_button_green fav_star" name="to_fav" type="submit" value="" />
+                  </div>
+                </div>
               </form>
             </div>
           </section>

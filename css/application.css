@@ -539,7 +539,7 @@ html.panel-closed .header_profil {
     line-height: 15px;
     background: #fff; }
   .new_product_form .product_form_barcode input.string {
-    max-width: 400px; }
+    max-width: 200px; }
   .new_product_form .product_form_massa input.string,
   .new_product_form .product_form_price input.string {
     width: 80px;
@@ -559,11 +559,7 @@ html.panel-closed .header_profil {
   .new_product_form label {
     width: 170px;
     text-align: right;
-    font-size: 12px;
-    font-weight: normal;
     line-height: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     position: absolute;
     left: 0; }
   .new_product_form .product_form_unit_measure_id {
@@ -578,17 +574,22 @@ html.panel-closed .header_profil {
         position: static;
         width: 100px;
         line-height: 1.5em;
-        font-size: 10px;
+        font-size: 12px;
         text-align: left;
         color: #898989;
         display: block;
         cursor: pointer;
-        margin-bottom: 12px; }
+        margin-bottom: 10px; }
       .new_product_form .product_form_unit_measure_id .radio_controls .radio_item input.radio {
         position: absolute;
         left: 0; }
       .new_product_form .product_form_unit_measure_id .radio_controls .radio_item .description {
         margin-left: -20px; }
+      .new_product_form .product_form_unit_measure_id .radio_controls .radio_item.more_currencies {
+        background-image: url(expand.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 10px 0 5px 30px; }
     .new_product_form .product_form_unit_measure_id > label {
       width: auto;
       text-align: left;
@@ -635,6 +636,38 @@ html.panel-closed .header_profil {
       text-decoration: none; }
     .new_product_form .img_wrap .img {
       border: 1px solid #efefef; }
+  .new_product_form .product_form_seller #search-seller-items {
+    position: relative;
+    left: 0;
+    width: auto; }
+  .new_product_form .product_form_seller .sellers-search {
+    width: 300px;
+    position: relative;
+    left: 0; }
+    .new_product_form .product_form_seller .sellers-search .btn {
+      background-position-x: right; }
+  .new_product_form .product_form_seller ul {
+    border: none; }
+    .new_product_form .product_form_seller ul li {
+      padding-left: 0;
+      border: none; }
+      .new_product_form .product_form_seller ul li a {
+        display: block; }
+  .new_product_form .last_viewed {
+    display: none;
+    padding: 5px 0; }
+    .new_product_form .last_viewed ul {
+      padding: 0;
+      margin-top: 0;
+      list-style: none; }
+      .new_product_form .last_viewed ul a {
+        color: #898989;
+        text-decoration: none; }
+        .new_product_form .last_viewed ul a:hover {
+          background: #EBEBEB; }
+    .new_product_form .last_viewed.active {
+      display: block;
+      min-width: 300px; }
 
 .vakata-context {
   margin: 0; }

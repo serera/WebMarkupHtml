@@ -8,11 +8,11 @@
     //width: 260px
     width: 100%
     box-sizing: border-box
-    padding: 17px 10px 14px
+    padding: 5px 10px
     line-height: 15px
     background: #fff
   .product_form_barcode input.string
-    max-width: 400px
+    max-width: 200px
   .product_form_massa input.string,
   .product_form_price input.string
     width: 80px
@@ -30,20 +30,17 @@
     font-size: 15px
     clear: both
   label
-    //float: left
     width: 170px
-    //margin: 0 20px
     text-align: right
-    font-size: 12px
-    font-weight: normal
     line-height: 50px
-    text-transform: uppercase
-    letter-spacing: 1px
     position: absolute
     left: 0
   .product_form_unit_measure_id
     position: relative
     padding-left: 185px
+    display: none
+    &.active
+      display: block
     .radio_controls 
       .radio_item
         width: 90px
@@ -54,17 +51,24 @@
           position: static
           width: 100px
           line-height: 1.5em
-          font-size: 10px
+          font-size: 13px
           text-align: left
           color: #898989
           display: block
           cursor: pointer
-          margin-bottom: 12px
+          margin-bottom: 10px
         input.radio
           position: absolute
           left: 0
+          top: 4px
         .description
           margin-left: -20px
+
+        &.more_currencies
+          background-image: url(expand.png)
+          background-position: left center
+          background-repeat: no-repeat
+          padding: 10px 0 5px 30px
 
     >label
       width: auto
@@ -78,12 +82,13 @@
     color: #333333
 
   .description
-    font-size: 0.8em
+    font-size: 12px
     color: #898989
   .price_wrapper,
   .massa_wrapper
     position: absolute
     left: 0
+  
   .control-group
     overflow: hidden
     padding: 2px
@@ -92,7 +97,7 @@
   .controls
     float: left
     position: relative
-    margin-bottom: 20px
+    margin-bottom: 30px
     width: 100%
 
   .help-inline
@@ -118,3 +123,62 @@
       text-decoration: none
     .img
       border: 1px solid #efefef
+  .product_form_seller
+    #search-seller-items
+      position: relative
+      left: 0
+      width: auto
+    .sellers-search
+      width: 300px
+      position: relative
+      left: 0
+      .btn
+        background-position-x: right
+    ul
+      border: none
+      li
+        padding: 5px 0
+        border: none
+        a
+          display: block
+  .last_viewed 
+    display: none
+    padding: 5px 0
+    ul
+      padding: 0
+      margin-top: 0
+      list-style: none
+      a
+        color: #898989
+        text-decoration: none
+        &:hover
+          background: #EBEBEB
+    &.active
+      display: block
+      min-width: 300px
+  .product_form_add 
+    .controls >*
+      float: left
+      margin-right: 3px
+    .controls 
+      padding-top: 12px
+      .btn_wrpr
+        margin-top: 4px
+        width: 20px
+        height: 20px
+        text-align: center
+        
+      .minus_btn
+        //margin-left: -5px
+      .number_wrapper
+        width: 60px
+      .to_list
+        width: 90px
+        height: 36px
+        margin: 0 10px
+
+      .fav_star
+        width: 36px
+        height: 36px
+        background: url(star_fav.png) center center no-repeat
+        box-shadow: none

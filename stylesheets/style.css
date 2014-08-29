@@ -52,7 +52,7 @@ a.forgot:hover, a.seller-internet:hover {
 }
 body {
     position: relative;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 body.welcome {
     overflow-x: hidden;
@@ -1608,15 +1608,18 @@ aside.lists article.catalog .view_table .row_reload {
 .soc_buttons .vk {
     display: inline-block;
     background: url(vk_link.png) no-repeat;
+    background-size: contain;
 }
 .soc_buttons .tw {
     display: inline-block;
     background: url(twitter_link.png) no-repeat;
+    background-size: contain;
     margin-left: 19px;
 }
 .soc_buttons .fb {
     display: inline-block;
     background: url(facebook_link.png) no-repeat;
+    background-size: contain;
     margin-left: 19px;
 }
 /*--Buttons--*/
@@ -2842,18 +2845,48 @@ aside.right article.catalog .favorits.active, aside.right article.catalog .favor
 }
 footer {
     position: relative;
-    width: 1000px;
+    width: 1080px;
     margin: 0 auto;
     height: 177px;
     overflow: hidden;
 }
 footer.elastic_footer {
-    /*width:100%;
-border-top:1px solid #eeeeee;*/
     margin: 0 auto;
     width: 96%;
     max-width: 1280px;
 }
+@media (max-width: 1130px) { 
+    /*rude overwhelming*/
+    #empty_wrap{
+        height:374px !important;
+    }
+    #footer_wrapper{
+        margin-top:-375px !important;
+    }
+    footer{
+        height:354px;
+    }
+    footer.elastic_footer,
+    footer.footer{
+        width: 682px;
+        margin:0 auto !important;
+    }
+    footer > div{
+        height:177px;
+        overflow: hidden;
+        float:left !important;
+        border: none !important;
+        width:286px !important;
+    }
+    footer .footer_contacts{
+        position: absolute;
+        top: 177px;
+    }
+    footer .social_buttons{
+        margin-left: 286px;
+        text-align: left !important;
+    }
+ }
 footer.elastic_footer.wide {
     max-width: 96%;
 }
@@ -2905,6 +2938,7 @@ footer .footer_nav span {
 footer .footer_nav a {
     color: #444444;
     display: block;
+    line-height: 1.5em;
 }
 footer .footer_nav a:hover {
     text-decoration: none;
@@ -2933,13 +2967,22 @@ footer .social_buttons {
     text-align: left;
     font: 1em/1'PT Sans';
     color: #444444;
+    float: left;
+    padding-right: 0;
+    width:250px;
 }
 footer.elastic_footer .social_buttons {
     float: right;
     text-align: left;
 }
-footer.elastic_footer .mobapps a {
+footer .mobapps a {
     display: block;
+    margin: 15px 0;
+    width: 150px;
+}
+footer .mobapps img {
+    width: 100%;
+    height: auto;
 }
 /******************************************* POLL ****************************/
 
@@ -7319,6 +7362,7 @@ h3.other_product_header {
         width: 210px;
         margin: 0 2.5% 2.5% 0;
     }
+    /*
     #global_wrapper.disclosed footer > div {
         display: inline-block;
     }
@@ -7337,6 +7381,7 @@ h3.other_product_header {
         float: right;
         text-align: center;
     }
+    */
     #global_wrapper.disclosed footer .social_buttons img {
         max-width: 100%;
     }

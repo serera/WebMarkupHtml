@@ -681,22 +681,6 @@ html.panel-closed .header_profil {
   .new_product_form .product_form_add .controls > * {
     float: left;
     margin-right: 3px; }
-  .new_product_form .product_form_add .controls .btn_wrpr {
-    margin-top: 4px;
-    width: 20px;
-    height: 20px;
-    text-align: center; }
-  .new_product_form .product_form_add .controls .number_wrapper {
-    width: 60px; }
-  .new_product_form .product_form_add .controls .to_list {
-    width: 90px;
-    height: 36px;
-    margin: 0 10px; }
-  .new_product_form .product_form_add .controls .fav_star {
-    width: 36px;
-    height: 36px;
-    background: url(star_fav.png) center center no-repeat;
-    box-shadow: none; }
 
 .vakata-context {
   margin: 0; }

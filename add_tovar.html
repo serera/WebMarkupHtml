@@ -117,7 +117,7 @@
         <meta content="authenticity_token" name="csrf-param" />
         <meta content="DGTsou+TBXlzvJSaIAsdLfJI4kA3ANcZmbXKx+52CAU=" name="csrf-token" />
       </head>
-      <body class='products new ' ng-app='fairprice' ng-controller='RootController'>
+      <body class='products new average' ng-app='fairprice' ng-controller='RootController'>
         <div class='disclosed' id='global_wrapper'>
           <div id='wrapper'>
             <div class='header_profil'>
@@ -184,7 +184,7 @@
                     <input class="string optional" id="product_form_name" name="product_form[name]" type="text" />
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -195,7 +195,7 @@
                     <input class="string optional" id="product_form_barcode" maxlength="13" name="product_form[barcode]" size="13" type="text" />
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -274,7 +274,7 @@
                     </div>
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -286,7 +286,7 @@
                     </textarea>
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -319,7 +319,7 @@
                     </div>
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -355,7 +355,7 @@
                     </div>
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -378,7 +378,7 @@
                     </div>
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -386,22 +386,20 @@
                 <div class="control-group product_form_add">
                   <label class="string optional control-label" for="product_form_seller">Добавить</label>
                   <div class="controls">
-                    <div class="btn_wrpr">
-                      <input class="small_button_green minus_button" name="minus" type="button" value="-" />
+                    <div class='add_to_list'>
+                      <form>
+                        <stepper ng-model='countToAdd'></stepper>
+                        <div class='alert_message fade' ng-class='{in: tooltipState(96780)}'>Товар добавлен в список</div>
+                        <input class='small_button_green' ng-click='addProductToShoppingList(96780)' type='submit' value='В список'>
+                        <span class='number'>Кол-во (шт.)</span>
+                      </form>
+                      <div class='favorite'>
+                        <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="96780" href="http://fair-price.biz/makaronnyie-izdeliya/8001810903576-makaronnyiy-izdeliya-96780" role="favorites-add"></a>
+                      </div>
                     </div>
-                    <div class="number_wrapper">
-                      <input class="string optional" id="product_form_num" name="product_form[num]" type="text" value="1"/>
-                      <div class="description">Кол-во (шт)</div>
-                    </div>
-                    <div class="btn_wrpr">
-                      <input class="small_button_green plus_button" name="plus" type="submit" value="+" />
-                    </div>
-                    <input class="small_button_green to_list" name="to_list" type="submit" value="В список" />
-                    <input class="small_button_green fav_star" name="to_fav" type="submit" value="" />
-
                     <div class="sys_msg">
                       <div class="error_msg">
-                      *Введите наимнование товара
+                        *Введите наимнование товара
                       </div>
                     </div>
                   </div>

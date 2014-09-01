@@ -1841,7 +1841,7 @@ HEADER.elastic_header .login_block .top_icons .icon_3:hover {
 .top {
     position: relative;
     width: 100%;
-    height: 61px;
+    height: 48px;
     background: url("pattern_green.png") repeat 0 0;
 }
 SECTION.top .top_search {
@@ -1850,7 +1850,7 @@ SECTION.top .top_search {
     width: 96%;
 }
 body.welcome SECTION.top .top_search {
-    padding-top: 9px;
+    padding-top: 6px;
     max-width: 940px;
 }
 body.welcome SECTION.top .top_search .search_form {
@@ -1864,7 +1864,7 @@ SECTION.top .top_search .search_form {
     position: relative;
     width: 76%;
     float: left;
-    margin: 10px auto 0;
+    margin: 6px auto 0;
 }
 SECTION.top .products-search-form {
     background: #FFFFFF;
@@ -1892,7 +1892,7 @@ SECTION.top .products-search-form label {
 SECTION.top .products-search-form input[type="text"] {
     color: #a5a5a5;
     font: 1.125em/1.325'PT Sans';
-    padding: 9px 65px 10px 16px;
+    padding: 6px 65px 7px 16px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1941,7 +1941,6 @@ SECTION.middle:after {
 }
 .smart_breadcrumbs_wrap {
     width: 100% !important;
-    border-bottom: 1px solid #DBDBDB;
 }
 SECTION.middle .smart_breadcrumbs {
     width: 96%;
@@ -1949,7 +1948,8 @@ SECTION.middle .smart_breadcrumbs {
     padding: 0 2%;
     height: 49px;
     color: #444;
-    font: 0.938em/49px'PT Sans', sans-serif;
+    /*font: 0.938em/49px'PT Sans', sans-serif;*/
+    font-size: 13px;
 }
 SECTION.middle .smart_breadcrumbs:after {
     content: ".";
@@ -1963,6 +1963,7 @@ SECTION.middle .smart_breadcrumbs a {
     color: #444;
     display: block;
     float: left;
+    border-bottom: 1px solid #dbdbdb;
 }
 SECTION.middle .smart_breadcrumbs span {
     display: block;
@@ -1983,8 +1984,23 @@ SECTION.middle .smart_breadcrumbs ul li {
     display: block;
     position: relative;
     float: left;
-    padding: 0 17px 0 17px;
-    border-right: 1px solid #dbdbdb;
+    padding: 17px 17px 0 17px;
+    height:32px;
+    /*32 + 17 = 49*/
+}
+SECTION.middle .smart_breadcrumbs ul li:after {
+    content: "/";
+    font-size: 32px;
+    color: #dbdbdb;
+    font-weight: 100;
+    line-height: 21px;
+    position: absolute;
+    right: -3px;
+    font-family: serif;
+    color: #efefef;
+}
+SECTION.middle .smart_breadcrumbs ul li:last-child:after{
+    content: "";
 }
 SECTION.middle .smart_breadcrumbs span + ul li:first-child {
     padding-left: 17px;
@@ -3763,7 +3779,6 @@ BODY.average SECTION.top .top_search {
 }
 SECTION.middle .smart_breadcrumbs_wrap {
     margin-bottom: 35px;
-    box-shadow: 0 1px 3px #dbdbdb
 }
 BODY.average SECTION.middle .smart_breadcrumbs {
     max-width: 1280px;

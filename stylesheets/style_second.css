@@ -1792,9 +1792,16 @@ body.sellers article.catalog{
     padding-left: 180px;
     margin-bottom: 15px;
 }
+.seller_settings form .seller-types span{
+    margin-right:20px;
+}
+.seller_settings form .seller-types span>input{
+    margin-right: 5px;
+}
 .seller_settings form>div>label {
     position: absolute;
     left: 0;
+    top: 5px;
     width: 165px;
     text-align: right;
 }
@@ -1810,8 +1817,7 @@ body.sellers article.catalog{
 .seller_settings form input.string {
     padding: 5px 10px;
     margin-right: 10px;
-    width: 50%;
-    max-width: 400px
+    width: 95%;
 }
 .seller_type label.checkbox {
     text-transform: uppercase;
@@ -1926,8 +1932,6 @@ body.sellers article.catalog{
     margin-left: 15px;
 }
 .seller_settings .reg_prod_action {
-    margin: 0 auto;
-    display: block;
     text-decoration: none;
     text-transform: none;
     font-size: 1em;
@@ -1940,10 +1944,14 @@ body.sellers article.catalog{
     border-bottom: 1px dashed;
     text-decoration: none;
 }
+.seller_settings .map_wrp a.hidemap{
+    margin-left: 40%;
+}
 .seller_settings .map_wrp>div {
     width: 100%;
     max-width: 700px;
     height: 500px;
+    margin-top: 10px;
 }
 .or_text{
     color:#f6573e;

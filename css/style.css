@@ -42,6 +42,9 @@ a.forgot:hover, a.seller-internet:hover {
     color: #747474;
     font: 1em'PT Sans', sans-serif;
 }
+aside .search_result_block{
+    margin-bottom: 20px;
+}
 .search_result_block span {
     color: #01d2bc;
     font-family: 'PT Sans', sans-serif;
@@ -3246,7 +3249,7 @@ ul.yiiPager li.previous.hidden, ul.yiiPager li.next.hidden {
 .view_table {
     width: 100%;
     clear: both;
-    margin-bottom: 68px;
+    margin-bottom: 18px;
     table-layout: fixed;
     border-collapse: collapse;
 }

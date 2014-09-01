@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {});
+    NREUM.info = {
+    "beacon": "beacon-5.newrelic.com",
+    "errorBeacon": "bam.nr-data.net",
+    "licenseKey": "77e51e0770",
+    "applicationID": "4431633",
+    "transactionName": "dQxbQ0ZZX1sARxtFRVkHQFRARRxEAFRGVl8=",
+    "queueTime": 0,
+    "applicationTime": 559,
+    "ttGuid": "",
+    "agentToken": null,
+    "agent": "js-agent.newrelic.com/nr-411.min.js"
+    }
+    </script>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {}), __nr_require = function(t, n, e) {
+    function r(e) {
+    if (!n[e]) {
+    var o = n[e] = {
+    exports: {}
+    };
+    t[e][0].call(o.exports, function(n) {
+    var o = t[e][1][n];
+    return r(o ? o : n)
+    }, o, o.exports)
+    }
+    return n[e].exports
+    }
+    if ("function" == typeof __nr_require) return __nr_require;
+    for (var o = 0; o < e.length; o++) r(e[o]);
+    return r
+    }({
+    D5DuLP: [
+    function(t, n) {
+    function e(t, n) {
+    var e = r[t];
+    return e ? e.apply(this, n) : (o[t] || (o[t] = []), void o[t].push(n))
+    }
+    var r = {},
+    o = {};
+    n.exports = e, e.queues = o, e.handlers = r
+    }, {}
+    ],
+    handle: [
+    function(t, n) {
+    n.exports = t("D5DuLP")
+    }, {}
+    ],
+    G9z0Bl: [
+    function(t, n) {
+    function e() {
+    var t = l.info = NREUM.info;
+    if (t && t.agent && t.licenseKey && t.applicationID && p && p.body) {
+    l.proto = "https" === f.split(":")[0] || t.sslForHttp ? "https://" : "http://", i("mark", ["onload", a()]);
+    var n = p.createElement("script");
+    n.src = l.proto + t.agent, p.body.appendChild(n)
+    }
+    }
+    function r() {
+    "complete" === p.readyState && o()
+    }
+    function o() {
+    i("mark", ["domContent", a()])
+    }
+    function a() {
+    return (new Date).getTime()
+    }
+    var i = t("handle"),
+    u = window,
+    p = u.document,
+    s = "addEventListener",
+    c = "attachEvent",
+    f = ("" + location).split("?")[0],
+    l = n.exports = {
+    offset: a(),
+    origin: f,
+    features: []
+    };
+    p[s] ? (p[s]("DOMContentLoaded", o, !1), u[s]("load", e, !1)) : (p[c]("onreadystatechange", r), u[c]("onload", e)), i("mark", ["firstbyte", a()])
+    }, {
+    handle: "D5DuLP"
+    }
+    ],
+    loader: [
+    function(t, n) {
+    n.exports = t("G9z0Bl")
+    }, {}
+    ]
+    }, {}, ["G9z0Bl"]);
+    </script>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <title>Списки покупок с ценами на товары, мобильное приложение для покупок | Честная цена</title>
+    <meta content="Списки покупок с ценами на товары, мобильное приложение для покупок | Честная цена" name="description" />
+    <link href="css/application.css" media="all" rel="stylesheet" />
+    <script>
+    var current_city_id = "1";
+    var auth_token = "z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=";
+    var client_token = "ebde9c2e6b7c7b907fb18f8606216ab5";
+    var user_token = "df2406cbc5363eb863a1c9dafe22eff5";
+    var api_url = "http://api.fair-price.biz/v1/";
+    var user_is_guest = false;
+    var requestUri = "/products/search";
+    var sellerId = "";
+    var filterCategoriesCount = "3";
+    </script>
+    <script>
+    var is_main = false;
+    </script>
+    <script src="http://fair-price.biz/assets/application-e042b16b0133ad81766d2cf5d547dd91.js"></script>
+    <script src="http://fair-price.biz/assets/angular-i18n/angular-locale_ru-03d9358296aa73578e8b83ef23f1dc09.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Neucha&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <meta content="authenticity_token" name="csrf-param" />
+        <meta content="z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=" name="csrf-token" />
+      </head>
+      <body class='products search  ' ng-app='fairprice' ng-controller='RootController'>
+        <div class='disclosed' id='global_wrapper'>
+          <div id='wrapper'>
+            <div class='header_profil'>
+              <div class='avatar'>
+                <div class="img default" id="upload_user_avatar">
+                  <img alt="Default avatar" src="http://fair-price.biz/assets/default_avatar-256e32ec39f503028e48b997db1f4b07.png" />
+                </div>
+                <a href='/profile/edit'>sergey@bokus.ru</a>
+              </div>
+              <div class='links'>
+                <a class='tally_list' href='/my/shopping_lists'>Списки покупок</a>
+                <a class='elected_goods' href='/favorites'>Избранные товары</a>
+              </div>
+            </div>
+            <header class='elastic_header'>
+              <div class='hdr'>
+                <a class='logo' href='http://fair-price.biz/'></a>
+                <div class='place'>
+                  <a class='fancy' href='#select-city-modal' rel='nofollow'>Чебоксары</a>
+                </div>
+                <nav class='mainmenu'>
+                  <a href="/category">Товары</a>
+                  <a href="/sellers">Продавцы</a>
+                </nav>
+                <div class='clearfix'></div>
+              </div>
+            </header>
+            <section class='section top'>
+              <div class='top_search'>
+                <div class='search_form'>
+                  <form accept-charset="UTF-8" action="/products/search" class="products-search-form" method="get" role="products-search-form">
+                    <div style="margin:0;padding:0;display:inline">
+                      <input name="utf8" type="hidden" value="&#x2713;" />
+                    </div>
+                    <label for='q'>Найти товар</label>
+                    <input autocomplete="off" data-select="#products-search-select" data-url="http://api.fair-price.biz/v1/products/autocomplete" id="search-products-title" name="q" placeholder="Введите наименование товара или штрих-код" role="select-search" type="text" value="молоко" />
+                  <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
+                  <button class='search_button' type='submit'></button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <div class='result_search' id='wrapper'>
+            <section class='section middle'>
+              <div class='smart_breadcrumbs_wrap'>
+                <div class='smart_breadcrumbs'>
+                  <ul>
+                    <li>
+                      <a href="/">Главная</a>
+                    </li>
+                    <li>
+                      <a href="">молоко</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='content'>
+                <h1>Результаты поиска</h1>
+                <aside class='left'>
+                  <form accept-charset="UTF-8" action="/products/search" class="property-form ng-pristine ng-valid" method="get">
+                    <div style="margin:0;padding:0;display:inline">
+                      <input name="utf8" type="hidden" value="&#x2713;" />
+                    </div>
+                    <input id="q" name="q" type="hidden" value="молоко" />
+                    <div class='filter'>
+                      <div class='filter_block'>
+                        <div class='header' data-target='#filter-categories' data-toggle='collapse'>Категории</div>
+                        <div class='filter_block_content in' id='filter-categories'>
+                          <ul>
+                            <li>
+                              <input data-count='4735' id='category_2623' name='categories[]' role='filter-category' type='checkbox' value='2623'>
+                              <label for='category_2623'>Молоко</label>
+                              <em>4735</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='708' id='category_2632' name='categories[]' role='filter-category' type='checkbox' value='2632'>
+                              <label for='category_2632'>Консервы молочные</label>
+                              <em>708</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='508' id='category_730' name='categories[]' role='filter-category' type='checkbox' value='730'>
+                              <label for='category_730'>Молоко для детей</label>
+                              <em>508</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='258' id='category_993' name='categories[]' role='filter-category' type='checkbox' value='993'>
+                              <label for='category_993'>Печенье</label>
+                              <em>258</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='203' id='category_1054' name='categories[]' role='filter-category' type='checkbox' value='1054'>
+                              <label for='category_1054'>Торты и пирожные</label>
+                              <em>203</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='157' id='category_1074' name='categories[]' role='filter-category' type='checkbox' value='1074'>
+                              <label for='category_1074'>Конфеты</label>
+                              <em>157</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='135' id='category_957' name='categories[]' role='filter-category' type='checkbox' value='957'>
+                              <label for='category_957'>Вафли</label>
+                              <em>135</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='116' id='category_2080' name='categories[]' role='filter-category' type='checkbox' value='2080'>
+                              <label for='category_2080'>Гель для душа</label>
+                              <em>116</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='87' id='category_2109' name='categories[]' role='filter-category' type='checkbox' value='2109'>
+                              <label for='category_2109'>Мыло туалетное</label>
+                              <em>87</em>
+                              </input>
+                            </li>
+                            <li>
+                              <input data-count='62' id='category_26014' name='categories[]' role='filter-category' type='checkbox' value='26014'>
+                              <label for='category_26014'>Одежда для беременных</label>
+                              <em>62</em>
+                              </input>
+                            </li>
+                          </ul>
+                          <div class="expand">развернуть</div>
+                        </div>
+                      </div>
+                      <input class='show_results' type='submit' value='Показать'>
+                      <a class='back_link' href='#' role='filter-reset-link'>Сбросить</a>
+                    </div>
+                  </form>
+                </aside>
+                <aside class='right ' id='resizable'>
+                  <div class='search_result_block'>
+                    Найдено:
+                      <span role='total-count'>7966</span>
+                    по запросу:
+                    <span>молоко</span>
+                    
+                  </div>
+                  <article class='catalog'>
+                    <table class='view_table' id='prices'>
+                      <thead>
+                        <tr>
+                          <td class='head_foto'>Фото</td>
+                          <td class='head_name'>
+                            <span data-name='name' id='sort-field'>Наименование</span>
+                          </td>
+                          <td class='head_best_price'>Лучшая цена</td>
+                          <td class='head_seller'>Продавец</td>
+                          <td class='head_settlement'>Расчетная цена</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ДМИТРОВСКИЙ МЗ 0.2 кг" src="http://fair-price.biz/system/images/tovar/small/e6fe58e3fe03b4e6d66c04be483f83ee.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4602014006793-moloko-dmitrovskiy-m-106552" title="Молоко ДМИТРОВСКИЙ МЗ 0.2 кг">Молоко ДМИТРОВСКИЙ МЗ 0.2 кг</a>
+                            </div>
+                            <div class='item_poll' data-id='106552' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>14.29</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">22.07.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>71.45 р./кг</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(106552)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(106552)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="106552" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко КНЯГИНИНО 900.0 мл" src="http://fair-price.biz/system/images/tovar/small/a6585718f146cbd3fd8aa5809784e562.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607006112094-moloko-knyaginino-107795" title="Молоко КНЯГИНИНО 900.0 мл">Молоко КНЯГИНИНО 900.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='107795' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>31.29</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">1.07.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.03 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(107795)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(107795)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="107795" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко Ясный луг 1.0 л" src="http://fair-price.biz/system/images/tovar/small/ce716463b35573a2912322298ebb3a0b.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607048480670-moloko-yasnyiy-lug-34153" title="Молоко Ясный луг 1.0 л">Молоко Ясный луг 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='34153' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>38.60</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">9.09.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>38.60 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(34153)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(34153)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="34153" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко Ядринмолоко Наша Корова пастеризованное 3,2% кувшин 1.0 л" src="http://fair-price.biz/system/images/tovar/small/7d0874c30f72ca7ea36d0e4462878148.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607078111544-moloko-yadrinmoloko-405570" title="Молоко Ядринмолоко Наша Корова пастеризованное 3,2% кувшин 1.0 л">Молоко Ядринмолоко Наша Корова пастеризованное 3,2% кувшин 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='405570' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>37</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">25.01.2014</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Магнит</span>
+                              <span class="address">улица Энгельса, д. 7</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>37 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(405570)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(405570)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="405570" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко Простоквашино " src="http://fair-price.biz/system/images/tovar/small/124f86746eb5fb4dbe618661e6192c32.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4870206411896-moloko-prostokvashin-405777" title="Молоко Простоквашино ">Молоко Простоквашино </a>
+                            </div>
+                            <div class='item_poll' data-id='405777' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>42.80</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">4.01.2014</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Сахарок</span>
+                              <span class="address">проспект Ленина, 21</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span></span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(405777)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(405777)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="405777" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="МОЛОКО ПИТЬЕВОЕ ПАСТЕРИЗОВАННОЕ КЛАССИЧЕСКОЕ 3,2 %,  0,5 Л 0.5 л" src="http://fair-price.biz/system/images/tovar/small/0033a0471b0a4a393fcb59390b3cccdc.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4603767001523-moloko-pitevoe-paste-20544" title="МОЛОКО ПИТЬЕВОЕ ПАСТЕРИЗОВАННОЕ КЛАССИЧЕСКОЕ 3,2 %,  0,5 Л 0.5 л">МОЛОКО ПИТЬЕВОЕ ПАСТЕРИЗОВАННОЕ КЛАССИЧЕСКОЕ 3,2 %,  0,5 Л 0.5 л</a>
+                            </div>
+                            <div class='item_poll' data-id='20544' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>52</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">28.02.2013</div>
+                          </td>
+                          <td></td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>104 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(20544)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(20544)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="20544" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ИЗ ПРОСТОКВАШИНО  1.0 л" src="http://fair-price.biz/system/images/tovar/small/fb2d190eaf23b62add22a5ef3226986f.gif" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4600695002141-moloko-iz-prostokvas-33876" title="Молоко ИЗ ПРОСТОКВАШИНО  1.0 л">Молоко ИЗ ПРОСТОКВАШИНО  1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='33876' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>60</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">28.02.2013</div>
+                          </td>
+                          <td></td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>60 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(33876)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(33876)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="33876" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко Агуша для беременных и кормящих женщин 2,5% 1.0 л" src="http://fair-price.biz/system/images/tovar/small/9b1ca6a9597a614a9c8c388af0d0ba01.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko-dlya-detey/4607096000578-moloko-agusha-dlya-b-134173" title="Молоко Агуша для беременных и кормящих женщин 2,5% 1.0 л">Молоко Агуша для беременных и кормящих женщин 2,5% 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='134173' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>62</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">3.07.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Мираторг</span>
+                              <span class="address">улица Карла Маркса, д. 47</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>62 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(134173)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(134173)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="134173" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко СВАЛЯ 1000.0 мл" src="http://fair-price.biz/system/images/tovar/small/8e4a2105891dfbfa12eb4aa39d5de438.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4770265041495-moloko-svalya-106177" title="Молоко СВАЛЯ 1000.0 мл">Молоко СВАЛЯ 1000.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='106177' data-readonly='false' data-value='5.0'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>75.39</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">16.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.08 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(106177)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(106177)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="106177" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко козье 1.5% ЧИСТАЯ ЛИНИЯ 1.0 л" src="http://fair-price.biz/system/images/tovar/small/90caccba6a8e2c5f7213dd100eeec52f.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/7182046630984-moloko-koze--chistay-99481" title="Молоко козье 1.5% ЧИСТАЯ ЛИНИЯ 1.0 л">Молоко козье 1.5% ЧИСТАЯ ЛИНИЯ 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='99481' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>179.90</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">23.03.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Карусель</span>
+                              <span class="address">улица Карла Маркса, д. 52</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>179.90 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(99481)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(99481)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="99481" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ТД СМЕТАНИНЪ 0.9 л" src="http://fair-price.biz/system/images/tovar/small/36dd19cc5ade3dfd2e0f80ca66ff4869.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/2010000112069-moloko-td-smetanin-127852" title="Молоко ТД СМЕТАНИНЪ 0.9 л">Молоко ТД СМЕТАНИНЪ 0.9 л</a>
+                            </div>
+                            <div class='item_poll' data-id='127852' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>22.30</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">7.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Магнит</span>
+                              <span class="address">улица Энгельса, д. 7</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>24.78 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(127852)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(127852)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="127852" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко КОШКИНСКОЕ  0.9 кг" src="http://fair-price.biz/system/images/tovar/small/7a3c20fd401271e282fbd77f6f4a4258.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607046312935-moloko-koshkinskoe-131461" title="Молоко КОШКИНСКОЕ  0.9 кг">Молоко КОШКИНСКОЕ  0.9 кг</a>
+                            </div>
+                            <div class='item_poll' data-id='131461' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>24.09</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">8.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>26.77 р./кг</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(131461)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(131461)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="131461" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ВЕСЕЛЫЙ МОЛОЧНИК 950.0 мл" src="http://fair-price.biz/system/images/tovar/small/91a16d8e83e16044f075414272ceec9d.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4690228010095-moloko-veselyiy-molo-112932" title="Молоко ВЕСЕЛЫЙ МОЛОЧНИК 950.0 мл">Молоко ВЕСЕЛЫЙ МОЛОЧНИК 950.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='112932' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>34.20</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">5.06.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.04 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(112932)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(112932)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="112932" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ДОМИК В ДЕРЕВНЕ 200.0 мл" src="http://fair-price.biz/system/images/tovar/small/af8b792126058f05d4164357e3ef4b1d.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607025396796-moloko-domik-v-derev-34020" title="Молоко ДОМИК В ДЕРЕВНЕ 200.0 мл">Молоко ДОМИК В ДЕРЕВНЕ 200.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='34020' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>13.69</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">3.09.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.07 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(34020)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(34020)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="34020" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ЯСНЫЙ ЛУГ 1.0 л" src="http://fair-price.biz/system/images/tovar/small/f8ce254503042074618ebb3accb1b3ec.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607048480731-moloko-yasnyiy-lug-34138" title="Молоко ЯСНЫЙ ЛУГ 1.0 л">Молоко ЯСНЫЙ ЛУГ 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='34138' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>38</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">9.09.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>38 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(34138)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(34138)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="34138" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко Ясный луг 1.0 л" src="http://fair-price.biz/system/images/tovar/small/53984e7c55f2484762ad7afdefc8332a.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607048480687-moloko-yasnyiy-lug-135466" title="Молоко Ясный луг 1.0 л">Молоко Ясный луг 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='135466' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>34.20</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">5.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>34.20 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(135466)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(135466)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="135466" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко СЭН СОЙ Кокосовое Coconut Milk премиум 400.0 мл" src="http://fair-price.biz/system/images/tovar/small/3a593f0380bdb9ad53a9da7c0435f6bc.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607041134099-moloko-sen-soy-kokos-102706" title="Молоко СЭН СОЙ Кокосовое Coconut Milk премиум 400.0 мл">Молоко СЭН СОЙ Кокосовое Coconut Milk премиум 400.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='102706' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>103</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">5.06.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.26 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(102706)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(102706)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="102706" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ОТ КРАСУЛИ  0.45 л" src="http://fair-price.biz/system/images/tovar/small/4d1d7b5093501340c982d95d19583ada.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4610006940222-moloko-ot-krasuli-135421" title="Молоко ОТ КРАСУЛИ  0.45 л">Молоко ОТ КРАСУЛИ  0.45 л</a>
+                            </div>
+                            <div class='item_poll' data-id='135421' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>23</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">25.01.2014</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Магнит</span>
+                              <span class="address">улица Константина Иванова, д. 91</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>51.11 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(135421)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(135421)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="135421" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко КНЯГИНИНО 900.0 мл" src="http://fair-price.biz/system/images/tovar/small/b2b77d943e556753ae9f3ceff08ced11.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607006112070-moloko-knyaginino-107797" title="Молоко КНЯГИНИНО 900.0 мл">Молоко КНЯГИНИНО 900.0 мл</a>
+                            </div>
+                            <div class='item_poll' data-id='107797' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>33.19</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">16.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Лента</span>
+                              <span class="address">проспект Тракторостроителей, д. 76</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>0.04 р./мл</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(107797)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(107797)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="107797" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class='item_row'>
+                          <td>
+                            <div class='item_img'>
+                              <img alt="Молоко ЯСНЫЙ ЛУГ 1.0 л" src="http://fair-price.biz/system/images/tovar/small/d16639562bbf54ca3ef7726a43cdc424.jpeg" style="max-width: 80px; max-height: 80px" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class='item_text'>
+                              <a href="http://fair-price.biz/moloko/4607048480748-moloko-yasnyiy-lug-34174" title="Молоко ЯСНЫЙ ЛУГ 1.0 л">Молоко ЯСНЫЙ ЛУГ 1.0 л</a>
+                            </div>
+                            <div class='item_poll' data-id='34174' data-readonly='false'>
+                              <div class='vote-wrap'>
+                                <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                  <div class='vote-block'>
+                                    <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                    <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                  </div>
+                                </div>
+                                <div class='vote-result'></div>
+                                <div class='vote-success'></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="price">
+                              <span>34.90</span>
+                              <em>р.</em>
+                            </div>
+                            <div class="date">5.08.2013</div>
+                          </td>
+                          <td>
+                            <div class="seller">
+                              <span class="name">Севен (SEVEN)</span>
+                              <span class="address">проспект Тракторостроителей, д. 1, корп. 34</span>
+                            </div>
+                          </td>
+                          <td class='toggle'>
+                            <div class='settlement show_hide'>
+                              <span>34.90 р./л</span>
+                              <div class='alert_message fade' ng-class='{in: tooltipState(34174)}'>Товар добавлен в список</div>
+                              <div class='add_right_panel' ng-click='addProductToShoppingList(34174)'></div>
+                              <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="34174" href="http://fair-price.biz/searchProducts" role="favorites-add"></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </article>
+                  <div class="add_more_block clearfix">
+                    <div>Вы можете самостоятельно добавить товар в базу "Честная цена"</div>
+                    <a class="small_button_green btn button" href="add_tovar.html">Добавить товар</a>
+                  </div>
+                </aside>
+                <div class='bottom_pagination'>
+                  <div class='page_number' id='yw0'>
+                    <a class="current" href="/searchProducts?q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93">1</a>
+                    <a class="page" href="/searchProducts?page=2&amp;q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93" rel="next">2</a>
+                    <a class="page" href="/searchProducts?page=3&amp;q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93">3</a>
+                    <a class="page" href="/searchProducts?page=4&amp;q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93">4</a>
+                    <a class="page" href="/searchProducts?page=5&amp;q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93">5</a>
+                    <span class='page gap'>
+                    &hellip;
+                    </span>
+                    <a class="next" href="/searchProducts?page=2&amp;q=%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE&amp;utf8=%E2%9C%93" rel="next">></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div id='empty_wrap'></div>
+          </div>
+        </div>
+        <div id='footer_wrapper'>
+          <footer class='elastic_footer'>
+            <div class='copyright'>
+              © 2014, fair-price.biz
+              <span data-version="v0.3.0">v0.3.0</span>
+              <br>
+            </div>
+            <div class='footer_nav'>
+              <div class='footer_head'>Контакты</div>
+              <span>support@chestnayacena.ru</span>
+            </div>
+            <div class='social_buttons'>
+              <div class='footer_head'>
+                <a class='apple' href='https://itunes.apple.com/ru/app/cestnaa-cena/id815574703' rel='nofollow' target='_blank'>
+                  <img alt="Appstore" src="http://m.fair-price.biz/mobile/images/appstore.png" />
+                </a>
+                <a href='https://play.google.com/store/apps/details?id=ru.chestnayacena.fairprice.android' rel='nofollow' target='_blank'>
+                  <img alt="Google play" src="http://fair-price.biz/assets/google_play-a1188b6d21c4d840f654b9a7507c021f.png" />
+                </a>
+              </div>
+              <div class='soc_buttons'>
+                <a class='vk' href='https://vk.com/chcena' rel='nofollow' target='_blank'></a>
+                <a class='fb' href='https://www.facebook.com/chcena21' rel='nofollow' target='_blank'></a>
+                <a class='tw' href='https://twitter.com/chcena21' rel='nofollow' target='_blank'></a>
+              </div>
+            </div>
+          </footer>
+          <script>
+          (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+          ga('create', 'UA-40729978-1', 'fair-price.biz');
+          ga('send', 'pageview');
+          </script>
+          <!-- Yandex.Metrika counter -->
+          <script>
+          (function(d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+          try {
+          w.yaCounter21203659 = new Ya.Metrika({
+          id: 21203659,
+          webvisor: true,
+          clickmap: true,
+          accurateTrackBounce: true
+          });
+          } catch (e) {}
+          });
+          var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function() {
+          n.parentNode.insertBefore(s, n);
+          };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+          if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+          f();
+          }
+          })(document, window, "yandex_metrika_callbacks");
+          </script>
+          <noscript>
+          <div>
+            <img alt='' src='//mc.yandex.ru/watch/21203659' style='position:absolute; left:-9999px;'>
+          </div>
+          </noscript>
+          <!-- /Yandex.Metrika counter -->
+          <div class='modal login' id='login-modal' style='min-height: 300px; min-width: 200px;'>
+            <div class='modal_title'>Войти в сервис</div>
+            <div class='modal_error_message'></div>
+            <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate">
+              <div style="margin:0;padding:0;display:inline">
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <input name="authenticity_token" type="hidden" value="z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=" />
+              </div>
+              <input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
+              <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
+              <input class="button" name="commit" type="submit" value="Войти" />
+              <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
+            </form>
+            <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+            <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
+          </div>
+          <div class='modal login' id='registration-modal' style='min-height: 300px; min-width: 200px;'>
+            <div class='modal_title'>Регистрация в сервисе</div>
+            <div class='modal_error_message'></div>
+            <form action='/ajax/users' class='form-modal' method='post'>
+              <input class='string email' name='register_form[email]' placeholder='Адрес электронной почты' type='text'>
+              <input autocomplete='off' class='password' name='register_form[password]' placeholder='Пароль' type='password'>
+              <input class='button' type='submit' value='Регистрация'>
+              <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
+            </form>
+            <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+            <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
+          </div>
+          <div class='modal login' id='reset-password-modal' style='min-height: 315px; min-width: 200px;'>
+            <div class='modal_title'>Восстановление пароля</div>
+            <div class='modal_error_message'></div>
+            <form action='http://api.fair-price.biz/v1/registration/reset_password.json' class='form-modal' method='post'>
+              <input class='string email' name='email' placeholder='Адрес электронной почты' type='text'>
+              <br>
+              <input class='button' type='submit' value='Восстановить'>
+            </form>
+          </div>
+          <div class='modal wide_block dop_links' id='favorites-login-modal'>
+            <div class='modal_title'>Добавление товара в избранные</div>
+            <div class='modal_content'>Для того, чтобы добавить товар в Избранные неообходимо авторизироваться.</div>
+            <div class='modal_error_message'></div>
+            <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate">
+              <div style="margin:0;padding:0;display:inline">
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <input name="authenticity_token" type="hidden" value="z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=" />
+              </div>
+              <input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
+              <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
+              <input class="button" name="commit" type="submit" value="Войти" />
+              <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
+              <a class='remember_pass fancy' href='#reset-password-modal'>Забыли пароль?</a>
+            </form>
+            <div class='modal_footer_google'>
+              <a data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+            </div>
+            <div class='modal_footer_twitter'>
+              <a data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
+            </div>
+          </div>
+          <div class='modal' id='select-city-modal'>
+            <div class='modal_title'>Выбор города</div>
+            <div class='modal_error_message'></div>
+            <form action='' id='profile-user-city-form' method='get'>
+              <div class='blockInput'>
+                <input id='search-city-id-modal' name='forced_city_id' type='hidden'>
+                <input autocomplete='off' data-select='#search-city-items-modal' data-url='http://api.fair-price.biz/v1/cities' id='search-city-title-modal' placeholder='Введите название города' role='select-search' type='text'>
+                <input class='button' type='submit' value='Выбрать'>
+              </div>
+            <ul class='autocomp_list' data-id='#search-city-id-modal' data-title='#search-city-title-modal' id='search-city-items-modal' role='autocomplete-list'></ul>
+          </form>
+        </div>
+        <div class='modal wide_block' id='mailing_list_user'>
+          <div class='modal_title'>Отправка списка пользователю</div>
+          <div class='modal_error_message'>Сообщение об ошибке!</div>
+          <form action='#'>
+            <input placeholder='Введите е-mail пользователя' type='text'>
+            <p>
+            Пользователь должен быть зарегистрирован на сайте Честная цена.
+            <a class='fancy' href='#sending_invitations'>Отправить приглашение</a>
+            </p>
+            <input placeholder='От кого' type='text'>
+            <input class='phone' placeholder='Телефон' type='text'>
+            <textarea placeholder='Сообщение'></textarea>
+            <input class='button' type='submit' value='Отправить'>
+          </form>
+        </div>
+        <div class='modal wide_block' id='sending_invitations'>
+          <div class='modal_title'>Отправка приглашения другу</div>
+          <form action='#'>
+            <input placeholder='Введите е-mail друга' type='text'>
+            <input class='button' type='submit' value='Отправить'>
+          </form>
+          <p>
+          Приглашение будет отослано другу на
+          <br>электронную почту.
+          </p>
+        </div>
+        <div class='modal wide_block' id='create_new_list'>
+          <div class='modal_title'>Создание нового списка</div>
+          <form action='#'>
+            <input placeholder='Введите название списка' type='text'>
+            <input class='button' type='submit' value='Создать'>
+          </form>
+        </div>
+        <div class='modal wide_block' id='accept_incoming_list'>
+          <div class='modal_title'>Принять входящий список?</div>
+          <p>Вы получили список от пользователя:</p>
+          <a href='#'>zhukoffmaksim@gmail.com</a>
+          <form>
+            <input class='green button' type='submit' value='Принять'>
+            <input class='gray button' type='reset' value='Отменить'>
+          </form>
+        </div>
+        <div class='modal wide_block dop_links' id='adding_new_list'>
+          <div class='modal_title'>Добавление нового списка</div>
+          <p>Для того, чтобы добавить добавить список неообходимо авторизироваться.</p>
+          <form action='#'>
+            <input placeholder='Адрес электронной почты' type='text'>
+            <input placeholder='Введите пароль' type='password'>
+            <input class='button' type='submit' value='Войти'>
+            <a class='reg' href='#'>Регистрация</a>
+            <a class='remember_pass' href='#'>Забыли пароль</a>
+          </form>
+          <div class='modal_footer_facebook'>
+            <a href='#'>Войти через Facebook</a>
+          </div>
+          <div class='modal_footer_twitter'>
+            <a href='#'>Войти через Twitter</a>
+          </div>
+        </div>
+        <div class='modal wide_block' id='add_price_modal'>
+          <div class='modal_title'>Добавление цены</div>
+          <div class='modal_error_message'>Сообщение об ошибке!</div>
+          <a class='chois_shop fancy_2' href='#chois_shop_modal'>Выбрать магазин</a>
+          <form>
+            <div class='seller'>
+              <input type='text' value='Севен (SEVEN) проспект Тракторостроител'>
+              <a class='seller_button fancy_2' href='#chois_shop_modal'></a>
+            </div>
+            <div class='price'>
+              <input type='text' value='555643'>
+              <select>
+                <option>руб.</option>
+                <option>usd.</option>
+                <option>eur.</option>
+              </select>
+            </div>
+            <input class='green button' type='submit' value='Сохранить'>
+            <input class='gray button' type='reset' value='Отменить'>
+          </form>
+        </div>
+        <div class='modal wide_block' id='edit_goods_modal'>
+          <div class='modal_title'>Редактировать товар</div>
+          <div class='modal_error_message'>Сообщение об ошибке!</div>
+          <form>
+            <input type='text' value='Яйцо куриное птичий двор'>
+            <input class='bar_kod' type='text' value='432332323992'>
+            <div class='input_image'>
+              <div class='img_button'>
+                Добавить фото
+                <input type='file'>
+              </div>
+              <div class='images'>
+                <div class='item'>
+                  <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
+                  <div class='close'>x</div>
+                </div>
+                <div class='item'>
+                  <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
+                  <div class='close'>x</div>
+                </div>
+              </div>
+            </div>
+            <textarea placeholder='Описание'></textarea>
+            <input class='green button' type='submit' value='Сохранить'>
+            <input class='gray button' type='reset' value='Отменить'>
+          </form>
+        </div>
+        <div class='modal wide_block' id='chois_shop_modal'>
+          <div class='modal_title'>Выбор магазина</div>
+          <div class='modal_error_message'>Сообщение об ошибке!</div>
+          <form>
+            <div class='search'>
+              <input placeholder='Введите название продавца' role='select-search' type='text'>
+              <ul class='autocomp_list' id='sellers-search' role='autocomplete-list'>
+                <li>Севен</li>
+                <li>Длинное название магазина тоговой точки или того и другого</li>
+                <li>Севенсов</li>
+              </ul>
+              <div class='search_button'></div>
+            </div>
+            <input placeholder='Введите название улицы' type='text'>
+            <input class='green button' type='submit' value='Выбрать'>
+            <input class='gray button' type='reset' value='Назад'>
+          </form>
+          <div class='variants_sellers_wrap'>
+            <h3>Возможные варианты</h3>
+            <div class='variants_sellers'>
+              <ul>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Какое то длинное название точки Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+                <li>
+                  <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <shopping-list-select-modal lists='lists'></shopping-list-select-modal>
+        <div class='modal wide_block dop_links'>
+          <div class='modal_title'>Отправка списка</div>
+          <div class='modal_error_message'></div>
+          <div class='modal_content'>Для того, чтобы оправить список неообходимо авторизироваться.</div>
+          <form action='/site/login' id='login-form' method='post'>
+            <input id='LoginForm_username' name='LoginForm[username]' placeholder='Адрес электронной почты' type='text'>
+            <input id='LoginForm_password' name='LoginForm[password]' placeholder='Введите пароль' type='password'>
+            <input class='button' type='submit' value='Войти'>
+            <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
+            <a class='remember_pass fancy' href='#password_recovery'>Забыли пароль?</a>
+          </form>
+          <div class='modal_footer_google'>
+            <a data-name='Google' href='' id='socialSelect' rel='nofollow'>Войти через Google+</a>
+          </div>
+          <div class='modal_footer_twitter'>
+            <a data-name='Twitter' href='' id='socialSelect' rel='nofollow'>Войти через Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class='clear'></div>
+    </div>
+    <div class='modal attention' id='alert_modal'>
+      <div class='modal_content'>Для того, чтобы отправить список необходимо авторизироваться.</div>
+      <a class='small_button_green fancy' href='#login-modal'>Войти</a>
+    </div>
+    <div id='slide_panel'>
+      <div id='slide_panel_wrap'>
+        <div class='disclosed' id='slide_panel_toggle'></div>
+        <a href='/logout' id='logout'></a>
+        <div class='member_account_list'>
+          <ul>
+            <li class='mail'>
+              <a class='settings' href='/profile/edit'>
+                <span>sergey@bokus.ru</span>
+              </a>
+            </li>
+            <li>
+              <a class="elected_goods" href="/favorites">Избранные товары</a>
+            </li>
+            <li>
+              <a class="tally_list" href="/my/shopping_lists">Списки покупок</a>
+              <div class='count_products'>{{lists.length}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='my_shopping_lists'>
+        <form accept-charset="UTF-8" action="/my/shopping_lists" class="simple_form new_v1_shopping_list" id="new_v1_shopping_list" method="post" novalidate="novalidate">
+          <div style="margin:0;padding:0;display:inline">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+            <input name="authenticity_token" type="hidden" value="z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=" />
+          </div>
+          <input class="hidden" id="v1_shopping_list_user_id" name="v1_shopping_list[user_id]" type="hidden" value="18934" />
+          <input class="string required" id="v1_shopping_list_name" name="v1_shopping_list[name]" placeholder="Название списка" required="required" type="text" />
+          <input name="commit" type="submit" value="+" />
+        </form>
+      </div>
+      <sham-spinner></sham-spinner>
+      <shoppinglists></shoppinglists>
+    </div>
+    <div class='clear'></div>
+  </body>
+</html>

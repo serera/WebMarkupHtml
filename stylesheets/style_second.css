@@ -2042,3 +2042,12 @@ body.sellers article.catalog{
 .header_profil .links a.elected_goods:hover {
     background: url("min_favorit_star.png") no-repeat scroll 0 -31px rgba(0, 0, 0, 0);
 }
+.add_more_block{
+    margin-bottom:28px;
+}
+.add_more_block a.button{
+    margin-top: 18px;
+    display: block;
+    width: 100px;
+    text-align: center;
+}

@@ -560,7 +560,8 @@ html.panel-closed .header_profil {
     width: 170px;
     text-align: right;
     position: absolute;
-    left: 0; }
+    left: 0;
+    top: 5px; }
   .new_product_form .product_form_unit_measure_id {
     position: relative;
     padding-left: 185px;
@@ -612,7 +613,8 @@ html.panel-closed .header_profil {
   .new_product_form .control-group {
     overflow: hidden;
     padding: 2px;
-    padding-left: 210px; }
+    padding-left: 210px;
+    position: relative; }
   .new_product_form .controls {
     float: left;
     position: relative;

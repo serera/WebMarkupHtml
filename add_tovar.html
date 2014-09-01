@@ -182,12 +182,22 @@
                   <label class="string optional control-label" for="product_form_name">Наименование</label>
                   <div class="controls">
                     <input class="string optional" id="product_form_name" name="product_form[name]" type="text" />
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="control-group string optional product_form_barcode">
                   <label class="string optional control-label" for="product_form_barcode">Штрих-код</label>
                   <div class="controls">
                     <input class="string optional" id="product_form_barcode" maxlength="13" name="product_form[barcode]" size="13" type="text" />
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="control-group string optional product_form_massa">
@@ -197,7 +207,6 @@
                       <input class="string optional" id="product_form_massa" name="product_form[massa]" type="text" value="300"/>
                       <div class="description">* Количество в упаковке</div>
                     </div>
-                    
                     <div class="product_form_unit_measure_id active">
                       <label class="control-label">Ед. изм.</label>
                       <div class="radio_controls">
@@ -261,7 +270,11 @@
                           <input type="radio" class="radio" id="product_form_unit_measure_id_95" name="product_form[unit_measure_id]"  value="95">
                           <label for="product_form_unit_measure_id_95">Пак - волшебный дракон</label>
                         </div>
-                        
+                      </div>
+                    </div>
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
                       </div>
                     </div>
                   </div>
@@ -271,6 +284,11 @@
                   <div class="controls">
                     <textarea class="text optional" id="product_form_description" name="product_form[description]">
                     </textarea>
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class='control-group string optional product_form_photo'>
@@ -298,6 +316,11 @@
                       <a href="">
                         Х удалить
                       </a>
+                    </div>
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -330,6 +353,11 @@
                         </div>
                       </div>
                     </div>
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="control-group string optional product_form_seller">
@@ -348,6 +376,11 @@
                         <li><a href="">Трактир "Горцующий пони"</a></li>
                       </ul>
                     </div>
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="control-group product_form_add">
@@ -365,6 +398,12 @@
                     </div>
                     <input class="small_button_green to_list" name="to_list" type="submit" value="В список" />
                     <input class="small_button_green fav_star" name="to_fav" type="submit" value="" />
+
+                    <div class="sys_msg">
+                      <div class="error_msg">
+                      *Введите наимнование товара
+                      </div>
+                    </div>
                   </div>
                 </div>
               </form>

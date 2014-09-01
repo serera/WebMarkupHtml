@@ -211,7 +211,7 @@
                         <label>
                           Название продавца
                         </label>
-                        <input class="string optional" id="seller_profile_name" name="seller_profile[name]" placeholder="Название" type="text" />
+                        <input class="string optional" id="seller_profile_name" name="seller_profile[name]" type="text" />
                         <ul class='autocomp_list' id='#search-seller-name' role='autocomplete-list'></ul>
                         <div class="description">
                           *например: Магазин
@@ -219,14 +219,14 @@
                       </div>
 
                       <div class='seller-types'>
-                        <span><input type="checkbox" id="offline_seller"><label for="offline_seller">Оффлайн-магазин</label></span>
+                        <span><input type="checkbox" id="offline_seller"><label for="offline_seller">Офлайн-магазин</label></span>
                         <span><input type="checkbox" id="online_seller"><label for="online_seller">Интернет-магазин</label></span>
                       </div>
                       <div class="seller_site">
                         <label>
                           Сайт продавца
                         </label>
-                        <input class="string optional" id="seller_profile_site" name="seller_profile[site]" placeholder="Адрес сайта" type="text" />
+                        <input class="string optional" id="seller_profile_site" name="seller_profile[site]" type="text" />
                         <div class="description">
                           *например: www.magazin.ru
                         </div>
@@ -241,6 +241,7 @@
                           </div>
                           <div class="map_wrp">
                             <a href="" class="showmap">Показать карту</a>
+                            <a href="" class="hidemap">Скрыть карту</a>
                             <div id="map"></div>
                             <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
                             <script type="text/javascript">

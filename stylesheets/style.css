@@ -690,6 +690,26 @@ margin-top: -4px;*/
     text-align: center;
     width: 150px;
 }
+.app_review .oranage_bg .description .white {
+    width: 150px;
+    height: 32px;
+    display: inline-block;
+    background-image: url(appstore.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.app_review .oranage_bg .description .white:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -75px;
+    left: 100px;
+    background: url("arrow_3x.png") no-repeat left top;
+    color:transparent;
+    width: 150px;
+    height: 60px;
+}
 .app_review .oranage_bg .description .text {
     /*content: "Скачайте бесплатное приложение";*/
     display: block;
@@ -1662,7 +1682,7 @@ aside.lists article.catalog .view_table .row_reload {
 .button.red:active {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.button.black {
+.button.black, .button.white {
     box-shadow: 0 3px 1px #433e3f;
     background-color: #1f191a;
 }

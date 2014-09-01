@@ -3801,7 +3801,7 @@ BODY.average SECTION.top .top_search {
     max-width: 1280px;
 }
 SECTION.middle .smart_breadcrumbs_wrap {
-    margin-bottom: 35px;
+    /*margin-bottom: 35px;*/
 }
 BODY.average SECTION.middle .smart_breadcrumbs {
     max-width: 1280px;
@@ -4222,6 +4222,7 @@ BODY.average aside.right #more_prices:hover, BODY.average #more_products:hover {
     font: bold 0.875em/1.125em'PT Sans', sans-serif;
     margin: 0 0 15px;
     text-transform: uppercase;
+    padding-top: 18px
 }
 .average aside.right .description_goods > div ul {
     margin: 0;

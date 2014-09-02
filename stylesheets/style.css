@@ -1474,6 +1474,25 @@ aside.lists .list_actions .gray_button.rename_list {
 #table_goods_tab h3 {
     margin-bottom: 30px;
 }
+.tovar_add_price{
+    display: none;
+    position: relative;
+}
+.tovar_add_price.active{
+    display: block;
+}
+.tovar_add_price .button{
+    text-transform: none;
+}
+.tovar_add_pricelabel{
+    text-transform: uppercase;
+}
+
+.tovar_add_price a.input_edit{
+    text-transform: uppercase;
+    font-size:12px;
+    text-decoration: none;
+}
 #edit_goods_button {
     position: absolute;
     top: 0;
@@ -2839,13 +2858,42 @@ aside.right article.catalog .catalog_items .in_list input[type="submit"], BODY.a
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .small_button_grey {
-    background-color: #EBEBEB;
+    background-color: #f3f3f3;
     color: #868686;
     border: none;
     border-radius: 3px;
+    box-shadow: 0px 2px 0 0px #f3f3f3;
 }
 .small_button_grey:active {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.small_button_grey:hover {
+    background: #DDDDDD;
+}
+
+.edit_action.button{
+    float: right;
+    display: block;
+    clear: none;
+    background: url(edit.png) 3px center no-repeat #f3f3f3;
+    padding-left: 35px;
+    text-transform: none;
+}
+.add_price_action.button{
+    float: right;
+    display: block;
+    clear: both;
+    background: url(wallet.png) 3px center no-repeat #f3f3f3;
+    padding-left: 35px;
+    text-transform: none;
+}
+a.edit_prod{
+    display: block;
+    color:transparent;
+    background: url(edit.png) center center no-repeat;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
 }
 BODY.average .similar_products .favorits {
     display: inline-block;
@@ -3813,7 +3861,8 @@ BODY.average SECTION.middle .content {
     /*width: 100%;*/
     width: 96%;
 }
-BODY.average .content.item_page h1, BODY .content h1 {
+BODY.average .content.item_page h1,
+BODY .content h1 {
     color: #444447;
     font: 1.875em'PT Sans';
     padding: 0;
@@ -3823,6 +3872,9 @@ BODY.average .content.item_page h1, BODY .content h1 {
 }
 BODY .content h1 {
     margin: 15px 0 25px;
+}
+BODY.search .content h1{
+    display: none;
 }
 BODY.average aside.left, BODY.average aside.right {
     position: relative;
@@ -4255,13 +4307,13 @@ BODY.average aside.right #more_prices:hover, BODY.average #more_products:hover {
     margin: 0 0 5px;
     padding: 0;
 }
-.average aside.right .toggle_button {
+.toggle_button {
     position: relative;
     display: inline-block;
     margin: 30px 0;
     cursor: pointer;
 }
-.average aside.right .toggle_button:before {
+.toggle_button:before {
     content: "";
     display: block;
     position: absolute;
@@ -4272,23 +4324,25 @@ BODY.average aside.right #more_prices:hover, BODY.average #more_products:hover {
     height: 12px;
     background: url(text_toggle.png) 0 -22px no-repeat;
 }
-.average aside.right .toggle_button span {
+.toggle_button span {
     color: #363636;
     font: 0.750em'PT Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: 1px dotted #363636;
     display: inline-block;
 }
-.average aside.right .toggle_button span:hover {
+.toggle_button span:hover {
     border-bottom: 1px solid transparent;
 }
-.average aside.right .toggle_button.collapsed:before {
+.toggle_button.collapsed:before {
     background: url(text_toggle.png) 0 0 no-repeat;
 }
-.average aside.right .toggle_button .show, .average aside.right .toggle_button.collapsed .hide {
+.toggle_button .show,
+.toggle_button.collapsed .hide {
     display: none;
 }
-.average aside.right .toggle_button.collapsed .show, .average aside.right .toggle_button .hide {
+.toggle_button.collapsed .show, 
+.toggle_button .hide {
     display: block;
 }
 .text-center {

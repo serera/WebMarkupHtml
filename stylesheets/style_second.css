@@ -1805,6 +1805,27 @@ body.sellers article.catalog{
     width: 165px;
     text-align: right;
 }
+.tovar_add_price.seller_settings form>div>label{
+    text-transform: uppercase;
+}
+.tovar_add_price .product_form_unit_measure_id label.control-label {
+    text-transform: uppercase;
+    top: 5px;
+    position: absolute;
+    left: 120px;
+    
+}
+.tovar_add_price .product_form_unit_measure_id .radio_item{
+    float: left;
+    padding: 0 5px;
+}
+.tovar_add_price .product_form_unit_measure_id .radio_item .description{
+    padding:0;
+}
+.tovar_add_price .product_form_unit_measure_id .more_currencies .toggle_button{
+    margin-top: 10px;
+    margin-left: 30px;
+}
 .seller_settings form .img_block>div {
     display: inline-block;
     vertical-align: top;
@@ -1818,6 +1839,20 @@ body.sellers article.catalog{
     padding: 5px 10px;
     margin-right: 10px;
     width: 95%;
+}
+.seller_settings.tovar_add_price form input.string{
+    width:60%;
+}
+.seller_settings.tovar_add_price form .price_wrapper{
+    float: left;
+}
+.seller_settings.tovar_add_price form .product_form_unit_measure_id{
+    padding-left: 200px;
+    position: relative;
+}
+.seller_settings.tovar_add_price form .price_wrapper input.string{
+    width: 80px;
+    text-align: right;
 }
 .seller_type label.checkbox {
     text-transform: uppercase;
@@ -1922,6 +1957,9 @@ body.sellers article.catalog{
 }
 .seller_settings .stac_edit_form.active {
     display: block;
+}
+.seller_settings .stac_edit_form .toggle_button{
+    margin-left: 30px;
 }
 .seller_settings .selling_dist >input, .seller_settings .stac_type input {
     position: absolute;
@@ -2059,3 +2097,27 @@ body.sellers article.catalog{
     width: 100px;
     text-align: center;
 }
+.sys_msg{
+    clear: both
+}
+.sys_msg .error_msg{
+    color: #ef4c27
+}
+.reviews .review_row{
+    position: relative;
+    padding-left: 90px;
+}
+.reviews .review_avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+}
+.reviews .review_avatar img{
+    width:100%;
+    height: auto;
+}
+.reviews .review_avatar{
+    }

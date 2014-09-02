@@ -1,8 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"77e51e0770","applicationID":"4431633","transactionName":"dQxbQ0ZZX1sARxtGUloPUEVHGUBfCkI=","queueTime":0,"applicationTime":1178,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-411.min.js"}</script>
-    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+
+<head>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {});
+    NREUM.info = {
+        "beacon": "beacon-5.newrelic.com",
+        "errorBeacon": "bam.nr-data.net",
+        "licenseKey": "77e51e0770",
+        "applicationID": "4431633",
+        "transactionName": "dQxbQ0ZZX1sARxtGUloPUEVHGUBfCkI=",
+        "queueTime": 0,
+        "applicationTime": 1178,
+        "ttGuid": "",
+        "agentToken": null,
+        "agent": "js-agent.newrelic.com/nr-411.min.js"
+    }
+    </script>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {}), __nr_require = function(t, n, e) {
+        function r(e) {
+            if (!n[e]) {
+                var o = n[e] = {
+                    exports: {}
+                };
+                t[e][0].call(o.exports, function(n) {
+                    var o = t[e][1][n];
+                    return r(o ? o : n)
+                }, o, o.exports)
+            }
+            return n[e].exports
+        }
+        if ("function" == typeof __nr_require) return __nr_require;
+        for (var o = 0; o < e.length; o++) r(e[o]);
+        return r
+    }({
+        D5DuLP: [
+            function(t, n) {
+                function e(t, n) {
+                    var e = r[t];
+                    return e ? e.apply(this, n) : (o[t] || (o[t] = []), void o[t].push(n))
+                }
+                var r = {},
+                    o = {};
+                n.exports = e, e.queues = o, e.handlers = r
+            }, {}
+        ],
+        handle: [
+            function(t, n) {
+                n.exports = t("D5DuLP")
+            }, {}
+        ],
+        G9z0Bl: [
+            function(t, n) {
+                function e() {
+                    var t = l.info = NREUM.info;
+                    if (t && t.agent && t.licenseKey && t.applicationID && p && p.body) {
+                        l.proto = "https" === f.split(":")[0] || t.sslForHttp ? "https://" : "http://", i("mark", ["onload", a()]);
+                        var n = p.createElement("script");
+                        n.src = l.proto + t.agent, p.body.appendChild(n)
+                    }
+                }
+
+                function r() {
+                    "complete" === p.readyState && o()
+                }
+
+                function o() {
+                    i("mark", ["domContent", a()])
+                }
+
+                function a() {
+                    return (new Date).getTime()
+                }
+                var i = t("handle"),
+                    u = window,
+                    p = u.document,
+                    s = "addEventListener",
+                    c = "attachEvent",
+                    f = ("" + location).split("?")[0],
+                    l = n.exports = {
+                        offset: a(),
+                        origin: f,
+                        features: []
+                    };
+                p[s] ? (p[s]("DOMContentLoaded", o, !1), u[s]("load", e, !1)) : (p[c]("onreadystatechange", r), u[c]("onload", e)), i("mark", ["firstbyte", a()])
+            }, {
+                handle: "D5DuLP"
+            }
+        ],
+        loader: [
+            function(t, n) {
+                n.exports = t("G9z0Bl")
+            }, {}
+        ]
+    }, {}, ["G9z0Bl"]);
+    </script>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
     <title>Страница магазина | Честная цена</title>
     <meta content="Списки покупок с ценами на товары, мобильное приложение для покупок | Честная цена" name="description" />
@@ -20,8 +113,284 @@
     </script>
     <script src="//api-maps.yandex.ru/2.1-dev/?lang=ru-RU&amp;load=package.full"></script>
     <script>
-    window.mapCenter = [56.1333333,47.2333333],
-    window.salePointsMarkers = [{"pos":[56.112111,47.188996],"desc":{"name":"Магнит","addr":"бульвар Анатолия Миттова, д. 18, корп. 1"}},{"pos":[56.147791,47.188583],"desc":{"name":"Магнит","addr":"проспект Максима Горького, д. 15"}},{"pos":[56.107483,47.287999],"desc":{"name":"Магнит","addr":"улица Ленинского Комсомола, д. 44а"}},{"pos":[56.123553,47.258247],"desc":{"name":"Магнит","addr":"улица Энгельса, д. 7"}},{"pos":[56.126373,47.263394],"desc":{"name":"Магнит","addr":"улица Юрия Гагарина, д. 19"}},{"pos":[56.118651,47.180606],"desc":{"name":"Магнит","addr":"улица Мате Залка, д. 13"}},{"pos":[56.116914,47.182717],"desc":{"name":"Магнит","addr":"улица Энтузиастов, д. 31"}},{"pos":[56.109632,47.268102],"desc":{"name":"Магнит","addr":"проспект Мира, д. 15"}},{"pos":[56.126514,47.25522],"desc":{"name":"Магнит","addr":"улица Энгельса, д. 3, корп. 1"}},{"pos":[56.11185,47.243605],"desc":{"name":"Магнит","addr":"улица Федора Гладкова, д. 20"}},{"pos":[56.128465,47.270401],"desc":{"name":"Магнит","addr":"улица 50 лет Октября, д. 1, корп. 32"}},{"pos":[56.127733,47.277273],"desc":{"name":"Магнит","addr":"улица 50 лет Октября, д. 16"}},{"pos":[56.125937,47.282843],"desc":{"name":"Магнит","addr":"проспект Мира, д. 24, корп. 26"}},{"pos":[56.124838,47.207447],"desc":{"name":"Магнит","addr":"Гражданская улица, д. 77"}},{"pos":[56.114691,47.189652],"desc":{"name":"Магнит","addr":"Гражданская улица, д. 117"}},{"pos":[56.121285,47.190766],"desc":{"name":"Магнит","addr":"улица Эльменя, д. 7"}},{"pos":[56.108578,47.183894],"desc":{"name":"Магнит","addr":"Фруктовая улица, д. 12"}},{"pos":[56.139712,47.200261],"desc":{"name":"Магнит","addr":"улица Пирогова, д. 30"}},{"pos":[56.121586,47.193775],"desc":{"name":"Магнит","addr":"улица Композитора Максимова, д. 13, корп. 8"}},{"pos":[56.147285,47.226213],"desc":{"name":"Магнит","addr":"улица Константина Иванова, д. 91"}},{"pos":[56.141397,47.270347],"desc":{"name":"Магнит","addr":"улица Ивана Франко, д. 10"}},{"pos":[56.141493,47.213376],"desc":{"name":"Магнит","addr":"улица Урукова, д. 7"}},{"pos":[56.148198,47.195203],"desc":{"name":"Магнит","addr":"проспект Максима Горького, д. 7А"}},{"pos":[56.148423,47.176303],"desc":{"name":"Магнит","addr":"проспект Максима Горького, д. 49"}},{"pos":[56.094384,47.267113],"desc":{"name":"Магнит","addr":"проспект 9-й Пятилетки, д. 2, корп. 3"}},{"pos":[56.096132,47.277049],"desc":{"name":"Магнит","addr":"проспект 9-й Пятилетки, д. 16, корп. 1"}},{"pos":[56.092993,47.285736],"desc":{"name":"Магнит","addr":"Эгерский бульвар, д. 47"}},{"pos":[56.10048,47.289338],"desc":{"name":"Магнит","addr":"улица 324-й Стрелковой Дивизии, д. 28"}},{"pos":[56.144492,47.195042],"desc":{"name":"Магнит","addr":"улица Тимофея Кривова, д. 4"}},{"pos":[56.143835,47.177003],"desc":{"name":"Магнит","addr":"улица Эльгера, д. 11"}},{"pos":[56.144477,47.167652],"desc":{"name":"Магнит","addr":"Университетская улица, д. 20, корп. 1"}},{"pos":[56.138313,47.161364],"desc":{"name":"Магнит","addr":"бульвар Юности, д. 4"}},{"pos":[56.102302,47.30973],"desc":{"name":"Магнит","addr":"проспект Тракторостроителей, д. 36, корп. 1"}},{"pos":[56.105044,47.316081],"desc":{"name":"Магнит","addr":"проспект Тракторостроителей, д. 63, корп. 21"}},{"pos":[56.106545,47.322288],"desc":{"name":"Магнит","addr":"проспект Тракторостроителей, д. 73"}},{"pos":[56.094756,47.274201],"desc":{"name":"Магнит","addr":"улица Хузангая, д. 14"}},{"pos":[56.100515,47.283777],"desc":{"name":"Магнит","addr":"Эгерский бульвар, д. 26"}},{"pos":[56.10792,47.295294],"desc":{"name":"Магнит","addr":"улица Ленинского Комсомола, д. 50"}},{"pos":[56.105666,47.30213],"desc":{"name":"Магнит","addr":"улица Кадыкова, д. 11"}},{"pos":[56.069399,47.284496],"desc":{"name":"Магнит","addr":"улица Айзмана, д. 1"}},{"pos":[56.068771,47.213197],"desc":{"name":"Магнит","addr":"Совхозная улица, д. 18"}},{"pos":[56.142962,47.190442],"desc":{"name":"Магнит","addr":"улица Мичмана Павлова, д. 12"}},{"pos":[56.140665,47.175422],"desc":{"name":"Магнит","addr":"улица Мичмана Павлова, д. 34"}},{"pos":[56.135133,47.16246],"desc":{"name":"Магнит","addr":"улица Мичмана Павлова, д. 39"}},{"pos":[56.107614,47.280732],"desc":{"name":"Магнит","addr":"улица Ленинского Комсомола, д. 21а"}},{"pos":[56.149662,47.166781],"desc":{"name":"Магнит","addr":"улица Никиты Сверчкова, 8"}}];
+    window.mapCenter = [56.1333333, 47.2333333],
+    window.salePointsMarkers = [{
+        "pos": [56.112111, 47.188996],
+        "desc": {
+            "name": "Магнит",
+            "addr": "бульвар Анатолия Миттова, д. 18, корп. 1"
+        }
+    }, {
+        "pos": [56.147791, 47.188583],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Максима Горького, д. 15"
+        }
+    }, {
+        "pos": [56.107483, 47.287999],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Ленинского Комсомола, д. 44а"
+        }
+    }, {
+        "pos": [56.123553, 47.258247],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Энгельса, д. 7"
+        }
+    }, {
+        "pos": [56.126373, 47.263394],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Юрия Гагарина, д. 19"
+        }
+    }, {
+        "pos": [56.118651, 47.180606],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Мате Залка, д. 13"
+        }
+    }, {
+        "pos": [56.116914, 47.182717],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Энтузиастов, д. 31"
+        }
+    }, {
+        "pos": [56.109632, 47.268102],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Мира, д. 15"
+        }
+    }, {
+        "pos": [56.126514, 47.25522],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Энгельса, д. 3, корп. 1"
+        }
+    }, {
+        "pos": [56.11185, 47.243605],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Федора Гладкова, д. 20"
+        }
+    }, {
+        "pos": [56.128465, 47.270401],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица 50 лет Октября, д. 1, корп. 32"
+        }
+    }, {
+        "pos": [56.127733, 47.277273],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица 50 лет Октября, д. 16"
+        }
+    }, {
+        "pos": [56.125937, 47.282843],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Мира, д. 24, корп. 26"
+        }
+    }, {
+        "pos": [56.124838, 47.207447],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Гражданская улица, д. 77"
+        }
+    }, {
+        "pos": [56.114691, 47.189652],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Гражданская улица, д. 117"
+        }
+    }, {
+        "pos": [56.121285, 47.190766],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Эльменя, д. 7"
+        }
+    }, {
+        "pos": [56.108578, 47.183894],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Фруктовая улица, д. 12"
+        }
+    }, {
+        "pos": [56.139712, 47.200261],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Пирогова, д. 30"
+        }
+    }, {
+        "pos": [56.121586, 47.193775],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Композитора Максимова, д. 13, корп. 8"
+        }
+    }, {
+        "pos": [56.147285, 47.226213],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Константина Иванова, д. 91"
+        }
+    }, {
+        "pos": [56.141397, 47.270347],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Ивана Франко, д. 10"
+        }
+    }, {
+        "pos": [56.141493, 47.213376],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Урукова, д. 7"
+        }
+    }, {
+        "pos": [56.148198, 47.195203],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Максима Горького, д. 7А"
+        }
+    }, {
+        "pos": [56.148423, 47.176303],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Максима Горького, д. 49"
+        }
+    }, {
+        "pos": [56.094384, 47.267113],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект 9-й Пятилетки, д. 2, корп. 3"
+        }
+    }, {
+        "pos": [56.096132, 47.277049],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект 9-й Пятилетки, д. 16, корп. 1"
+        }
+    }, {
+        "pos": [56.092993, 47.285736],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Эгерский бульвар, д. 47"
+        }
+    }, {
+        "pos": [56.10048, 47.289338],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица 324-й Стрелковой Дивизии, д. 28"
+        }
+    }, {
+        "pos": [56.144492, 47.195042],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Тимофея Кривова, д. 4"
+        }
+    }, {
+        "pos": [56.143835, 47.177003],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Эльгера, д. 11"
+        }
+    }, {
+        "pos": [56.144477, 47.167652],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Университетская улица, д. 20, корп. 1"
+        }
+    }, {
+        "pos": [56.138313, 47.161364],
+        "desc": {
+            "name": "Магнит",
+            "addr": "бульвар Юности, д. 4"
+        }
+    }, {
+        "pos": [56.102302, 47.30973],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Тракторостроителей, д. 36, корп. 1"
+        }
+    }, {
+        "pos": [56.105044, 47.316081],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Тракторостроителей, д. 63, корп. 21"
+        }
+    }, {
+        "pos": [56.106545, 47.322288],
+        "desc": {
+            "name": "Магнит",
+            "addr": "проспект Тракторостроителей, д. 73"
+        }
+    }, {
+        "pos": [56.094756, 47.274201],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Хузангая, д. 14"
+        }
+    }, {
+        "pos": [56.100515, 47.283777],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Эгерский бульвар, д. 26"
+        }
+    }, {
+        "pos": [56.10792, 47.295294],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Ленинского Комсомола, д. 50"
+        }
+    }, {
+        "pos": [56.105666, 47.30213],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Кадыкова, д. 11"
+        }
+    }, {
+        "pos": [56.069399, 47.284496],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Айзмана, д. 1"
+        }
+    }, {
+        "pos": [56.068771, 47.213197],
+        "desc": {
+            "name": "Магнит",
+            "addr": "Совхозная улица, д. 18"
+        }
+    }, {
+        "pos": [56.142962, 47.190442],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Мичмана Павлова, д. 12"
+        }
+    }, {
+        "pos": [56.140665, 47.175422],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Мичмана Павлова, д. 34"
+        }
+    }, {
+        "pos": [56.135133, 47.16246],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Мичмана Павлова, д. 39"
+        }
+    }, {
+        "pos": [56.107614, 47.280732],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Ленинского Комсомола, д. 21а"
+        }
+    }, {
+        "pos": [56.149662, 47.166781],
+        "desc": {
+            "name": "Магнит",
+            "addr": "улица Никиты Сверчкова, 8"
+        }
+    }];
     </script>
     <script src="http://fair-price.biz/assets/ymaps-a92683080f06d6624b9313464bc0f935.js"></script>
     <script>
@@ -30,1215 +399,1397 @@
     <script src="http://fair-price.biz/assets/application-e042b16b0133ad81766d2cf5d547dd91.js"></script>
     <script src="http://fair-price.biz/assets/angular-i18n/angular-locale_ru-03d9358296aa73578e8b83ef23f1dc09.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Neucha&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <meta content="authenticity_token" name="csrf-param" />
-        <meta content="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" name="csrf-token" />
-      </head>
-      <body class='sellers show average' ng-app='fairprice' ng-controller='RootController'>
-        <div class='disclosed' id='global_wrapper'>
-          <div id='wrapper'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" name="csrf-token" />
+</head>
+
+<body class='sellers show average' ng-app='fairprice' ng-controller='RootController'>
+    <div class='disclosed' id='global_wrapper'>
+        <div id='wrapper'>
             <div class='miniheader'>
-              <header class='elastic_header'>
-                <a class="root-link" href="/">fair-price.biz</a>
-                <div class='place'>
-                  <a class='fancy' href='#select-city-modal' rel='nofollow'>Чебоксары</a>
-                </div>
-              </header>
+                <header class='elastic_header'>
+                    <a class="root-link" href="/">fair-price.biz</a>
+                    <div class='place'>
+                        <a class='fancy' href='#select-city-modal' rel='nofollow'>Чебоксары</a>
+                    </div>
+                </header>
             </div>
             <header class='elastic_header'>
-              <div class='hdr'>
-                <nav class='mainmenu'>
-                  <div class='seller-name'>
-                    <a href="/sellers/1035">Магнит</a>
-                  </div>
-                  <a href="/sellers/1035/products">Товары продавца</a>
-                </nav>
-                <div class='clearfix'></div>
-              </div>
+                <div class='hdr'>
+                    <nav class='mainmenu'>
+                        <div class='seller-name'>
+                            <a href="/sellers/1035">Магнит</a>
+                        </div>
+                        <a href="/sellers/1035/products">Товары продавца</a>
+                    </nav>
+                    <div class='clearfix'></div>
+                </div>
             </header>
             <section class='section top'>
-              <div class='top_search'>
-                <div class='search_form'>
-                  <form accept-charset="UTF-8" action="/products/search" class="products-search-form" method="get" role="products-search-form"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-                  <label for='q'>Товары продавца</label>
-                  <input id="seller_id" name="seller_id" type="hidden" value="1035" />
-                  <input autocomplete="off" data-select="#products-search-select" data-url="http://api.fair-price.biz/v1/products/autocomplete" id="search-products-title" name="q" placeholder="Введите наименование товара или штрих-код" role="select-search" type="text" />
-                <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
-                <button class='search_button' type='submit'></button>
-              </form>
-            </div>
-          </div>
-        </section>
-        <section class='section middle'>
-          <div class='smart_breadcrumbs_wrap'>
-            <div class='smart_breadcrumbs'>
-              <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/sellers">Продавцы</a></li>
-                <li><a href="/sellers/1035">Магнит</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class='content item_page'>
-            <h1>Магнит</h1>
-            <div class='seller_details_page'>
-              <div class='seller_details_adress'>
-                <table class='view_table'>
-                  <thead>
-                    <tr>
-                      <th width='10%'></th>
-                      <th class='text-left' width='60%'>Адрес магазина</th>
-                      <th width='30%'>Кол-во товаров</th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class='scrollable-table'>
-                  <table class='view_table'>
-                    <tbody>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="0" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4053">бульвар Анатолия Миттова, д. 18, корп. 1</a></td>
-                        <td width='30%'>340</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="1" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4062">проспект Максима Горького, д. 15</a></td>
-                        <td width='30%'>2824</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="2" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4065">улица Ленинского Комсомола, д. 44а</a></td>
-                        <td width='30%'>3166</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="3" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4081">улица Энгельса, д. 7</a></td>
-                        <td width='30%'>7359</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="4" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4085">улица Юрия Гагарина, д. 19</a></td>
-                        <td width='30%'>2173</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="5" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4086">улица Мате Залка, д. 13</a></td>
-                        <td width='30%'>165</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="6" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4087">улица Энтузиастов, д. 31</a></td>
-                        <td width='30%'>992</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a></td>
-                        <td width='30%'>2842</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="8" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4089">улица Энгельса, д. 3, корп. 1</a></td>
-                        <td width='30%'>145</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="9" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4090">улица Федора Гладкова, д. 20</a></td>
-                        <td width='30%'>169</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="10" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4091">улица 50 лет Октября, д. 1, корп. 32</a></td>
-                        <td width='30%'>171</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="11" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4092">улица 50 лет Октября, д. 16</a></td>
-                        <td width='30%'>1555</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="12" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4093">проспект Мира, д. 24, корп. 26</a></td>
-                        <td width='30%'>1654</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="13" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4094">Гражданская улица, д. 77</a></td>
-                        <td width='30%'>239</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="14" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4095">Гражданская улица, д. 117</a></td>
-                        <td width='30%'>125</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="15" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4096">улица Эльменя, д. 7</a></td>
-                        <td width='30%'>196</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="16" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4097">Фруктовая улица, д. 12</a></td>
-                        <td width='30%'>144</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="17" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4098">улица Пирогова, д. 30</a></td>
-                        <td width='30%'>154</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="18" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4099">улица Композитора Максимова, д. 13, корп. 8</a></td>
-                        <td width='30%'>172</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="19" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4103">улица Константина Иванова, д. 91</a></td>
-                        <td width='30%'>173</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="20" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4104">улица Ивана Франко, д. 10</a></td>
-                        <td width='30%'>128</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="21" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4105">улица Урукова, д. 7</a></td>
-                        <td width='30%'>200</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="22" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4106">проспект Максима Горького, д. 7А</a></td>
-                        <td width='30%'>56</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="23" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4107">проспект Максима Горького, д. 49</a></td>
-                        <td width='30%'>193</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="24" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4108">проспект 9-й Пятилетки, д. 2, корп. 3</a></td>
-                        <td width='30%'>160</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="25" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4109">проспект 9-й Пятилетки, д. 16, корп. 1</a></td>
-                        <td width='30%'>2379</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="26" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4110">Эгерский бульвар, д. 47</a></td>
-                        <td width='30%'>49</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="27" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4111">улица 324-й Стрелковой Дивизии, д. 28</a></td>
-                        <td width='30%'>129</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="28" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4112">улица Тимофея Кривова, д. 4</a></td>
-                        <td width='30%'>140</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="29" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4113">улица Эльгера, д. 11</a></td>
-                        <td width='30%'>258</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="30" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4114">Университетская улица, д. 20, корп. 1</a></td>
-                        <td width='30%'>2471</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="31" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4115">бульвар Юности, д. 4</a></td>
-                        <td width='30%'>125</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="32" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4117">проспект Тракторостроителей, д. 36, корп. 1</a></td>
-                        <td width='30%'>1697</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="33" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4118">проспект Тракторостроителей, д. 63, корп. 21</a></td>
-                        <td width='30%'>176</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="34" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4119">проспект Тракторостроителей, д. 73</a></td>
-                        <td width='30%'>431</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="35" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4120">улица Хузангая, д. 14</a></td>
-                        <td width='30%'>179</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="36" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4121">Эгерский бульвар, д. 26</a></td>
-                        <td width='30%'>169</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="37" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4122">улица Ленинского Комсомола, д. 50</a></td>
-                        <td width='30%'>175</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="38" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4123">улица Кадыкова, д. 11</a></td>
-                        <td width='30%'>216</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="39" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4124">улица Айзмана, д. 1</a></td>
-                        <td width='30%'>110</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="40" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4125">Совхозная улица, д. 18</a></td>
-                        <td width='30%'>0</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="41" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4126">улица Мичмана Павлова, д. 12</a></td>
-                        <td width='30%'>147</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="42" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4127">улица Мичмана Павлова, д. 34</a></td>
-                        <td width='30%'>2425</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="43" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4128">улица Мичмана Павлова, д. 39</a></td>
-                        <td width='30%'>131</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="44" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4133">улица Ленинского Комсомола, д. 21а</a></td>
-                        <td width='30%'>75</td>
-                      </tr>
-                      <tr>
-                        <td width='10%'><a class="to_map" data-marker="45" href="#">на карте</a></td>
-                        <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4602">улица Никиты Сверчкова, 8</a></td>
-                        <td width='30%'>1</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class='top_search'>
+                    <div class='search_form'>
+                        <form accept-charset="UTF-8" action="/products/search" class="products-search-form" method="get" role="products-search-form">
+                            <div style="margin:0;padding:0;display:inline">
+                                <input name="utf8" type="hidden" value="&#x2713;" />
+                            </div>
+                            <label for='q'>Товары продавца</label>
+                            <input id="seller_id" name="seller_id" type="hidden" value="1035" />
+                            <input autocomplete="off" data-select="#products-search-select" data-url="http://api.fair-price.biz/v1/products/autocomplete" id="search-products-title" name="q" placeholder="Введите наименование товара или штрих-код" role="select-search" type="text" />
+                            <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
+                            <button class='search_button' type='submit'></button>
+                        </form>
+                    </div>
                 </div>
-              </div>
-              <div id='seller_details_map'></div>
-            </div>
-            <h2>Популярные товары</h2>
-            <aside class='right entire_width' id='resizable'>
-              <article class='catalog'>
-                <table class='view_table'>
-                  <thead>
-                    <tr>
-                      <td class='head_foto'>Фото</td>
-                      <td class='head_name'>
-                        <span>Наименование</span>
-                      </td>
-                      <td class='head_best_price'>
-                        <span>Лучшая цена</span>
-                      </td>
-                      <td class='head_seller'>
-                        <span>Точка продаж</span>
-                      </td>
-                      <td class='head_settlement'>
-                        <span>Расчетная цена</span>
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="F7e304fee32e2845749df431550de37c" src="http://fair-price.biz/system/images/tovar/small/f7e304fee32e2845749df431550de37c.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/voda-dlya-detey/4602541002640-voda-agusha-dlya-det-32719">Вода Агуша для детей с 0 месяцев 0.33 л</a>
-                        </div>
-                        <div class='item_poll' data-id='32719' data-readonly='false' data-value='5.0'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
+            </section>
+            <section class='section middle'>
+                <div class='smart_breadcrumbs_wrap'>
+                    <div class='smart_breadcrumbs'>
+                        <ul>
+                            <li><a href="/">Главная</a>
+                            </li>
+                            <li><a href="/sellers">Продавцы</a>
+                            </li>
+                            <li><a href="/sellers/1035">Магнит</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='content item_page'>
+                    <h1>Магнит</h1>
+                    <div class='seller_details_page'>
+                        <div class='seller_details_adress'>
+                            <table class='view_table'>
+                                <thead>
+                                    <tr>
+                                        <th width='10%'></th>
+                                        <th class='text-left' width='60%'>Адрес магазина</th>
+                                        <th width='30%'>Кол-во товаров</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class='scrollable-table'>
+                                <table class='view_table'>
+                                    <tbody>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="0" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4053">бульвар Анатолия Миттова, д. 18, корп. 1</a>
+                                            </td>
+                                            <td width='30%'>340</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="1" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4062">проспект Максима Горького, д. 15</a>
+                                            </td>
+                                            <td width='30%'>2824</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="2" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4065">улица Ленинского Комсомола, д. 44а</a>
+                                            </td>
+                                            <td width='30%'>3166</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="3" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4081">улица Энгельса, д. 7</a>
+                                            </td>
+                                            <td width='30%'>7359</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="4" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4085">улица Юрия Гагарина, д. 19</a>
+                                            </td>
+                                            <td width='30%'>2173</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="5" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4086">улица Мате Залка, д. 13</a>
+                                            </td>
+                                            <td width='30%'>165</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="6" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4087">улица Энтузиастов, д. 31</a>
+                                            </td>
+                                            <td width='30%'>992</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a>
+                                            </td>
+                                            <td width='30%'>2842</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="8" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4089">улица Энгельса, д. 3, корп. 1</a>
+                                            </td>
+                                            <td width='30%'>145</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="9" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4090">улица Федора Гладкова, д. 20</a>
+                                            </td>
+                                            <td width='30%'>169</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="10" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4091">улица 50 лет Октября, д. 1, корп. 32</a>
+                                            </td>
+                                            <td width='30%'>171</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="11" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4092">улица 50 лет Октября, д. 16</a>
+                                            </td>
+                                            <td width='30%'>1555</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="12" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4093">проспект Мира, д. 24, корп. 26</a>
+                                            </td>
+                                            <td width='30%'>1654</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="13" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4094">Гражданская улица, д. 77</a>
+                                            </td>
+                                            <td width='30%'>239</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="14" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4095">Гражданская улица, д. 117</a>
+                                            </td>
+                                            <td width='30%'>125</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="15" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4096">улица Эльменя, д. 7</a>
+                                            </td>
+                                            <td width='30%'>196</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="16" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4097">Фруктовая улица, д. 12</a>
+                                            </td>
+                                            <td width='30%'>144</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="17" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4098">улица Пирогова, д. 30</a>
+                                            </td>
+                                            <td width='30%'>154</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="18" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4099">улица Композитора Максимова, д. 13, корп. 8</a>
+                                            </td>
+                                            <td width='30%'>172</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="19" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4103">улица Константина Иванова, д. 91</a>
+                                            </td>
+                                            <td width='30%'>173</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="20" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4104">улица Ивана Франко, д. 10</a>
+                                            </td>
+                                            <td width='30%'>128</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="21" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4105">улица Урукова, д. 7</a>
+                                            </td>
+                                            <td width='30%'>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="22" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4106">проспект Максима Горького, д. 7А</a>
+                                            </td>
+                                            <td width='30%'>56</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="23" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4107">проспект Максима Горького, д. 49</a>
+                                            </td>
+                                            <td width='30%'>193</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="24" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4108">проспект 9-й Пятилетки, д. 2, корп. 3</a>
+                                            </td>
+                                            <td width='30%'>160</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="25" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4109">проспект 9-й Пятилетки, д. 16, корп. 1</a>
+                                            </td>
+                                            <td width='30%'>2379</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="26" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4110">Эгерский бульвар, д. 47</a>
+                                            </td>
+                                            <td width='30%'>49</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="27" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4111">улица 324-й Стрелковой Дивизии, д. 28</a>
+                                            </td>
+                                            <td width='30%'>129</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="28" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4112">улица Тимофея Кривова, д. 4</a>
+                                            </td>
+                                            <td width='30%'>140</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="29" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4113">улица Эльгера, д. 11</a>
+                                            </td>
+                                            <td width='30%'>258</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="30" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4114">Университетская улица, д. 20, корп. 1</a>
+                                            </td>
+                                            <td width='30%'>2471</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="31" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4115">бульвар Юности, д. 4</a>
+                                            </td>
+                                            <td width='30%'>125</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="32" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4117">проспект Тракторостроителей, д. 36, корп. 1</a>
+                                            </td>
+                                            <td width='30%'>1697</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="33" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4118">проспект Тракторостроителей, д. 63, корп. 21</a>
+                                            </td>
+                                            <td width='30%'>176</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="34" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4119">проспект Тракторостроителей, д. 73</a>
+                                            </td>
+                                            <td width='30%'>431</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="35" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4120">улица Хузангая, д. 14</a>
+                                            </td>
+                                            <td width='30%'>179</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="36" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4121">Эгерский бульвар, д. 26</a>
+                                            </td>
+                                            <td width='30%'>169</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="37" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4122">улица Ленинского Комсомола, д. 50</a>
+                                            </td>
+                                            <td width='30%'>175</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="38" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4123">улица Кадыкова, д. 11</a>
+                                            </td>
+                                            <td width='30%'>216</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="39" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4124">улица Айзмана, д. 1</a>
+                                            </td>
+                                            <td width='30%'>110</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="40" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4125">Совхозная улица, д. 18</a>
+                                            </td>
+                                            <td width='30%'>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="41" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4126">улица Мичмана Павлова, д. 12</a>
+                                            </td>
+                                            <td width='30%'>147</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="42" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4127">улица Мичмана Павлова, д. 34</a>
+                                            </td>
+                                            <td width='30%'>2425</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="43" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4128">улица Мичмана Павлова, д. 39</a>
+                                            </td>
+                                            <td width='30%'>131</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="44" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4133">улица Ленинского Комсомола, д. 21а</a>
+                                            </td>
+                                            <td width='30%'>75</td>
+                                        </tr>
+                                        <tr>
+                                            <td width='10%'><a class="to_map" data-marker="45" href="#">на карте</a>
+                                            </td>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4602">улица Никиты Сверчкова, 8</a>
+                                            </td>
+                                            <td width='30%'>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
                         </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>16.50</span><em>р.</em></div>
+                        <div id='seller_details_map'></div>
+                    </div>
+                    <h2>Популярные товары</h2>
+                    <aside class='right entire_width' id='resizable'>
+                        <article class='catalog'>
+                            <table class='view_table'>
+                                <thead>
+                                    <tr>
+                                        <td class='head_foto'>Фото</td>
+                                        <td class='head_name'>
+                                            <span>Наименование</span>
+                                        </td>
+                                        <td class='head_best_price'>
+                                            <span>Лучшая цена</span>
+                                        </td>
+                                        <td class='head_seller'>
+                                            <span>Точка продаж</span>
+                                        </td>
+                                        <td class='head_settlement'>
+                                            <span>Расчетная цена</span>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="F7e304fee32e2845749df431550de37c" src="http://fair-price.biz/system/images/tovar/small/f7e304fee32e2845749df431550de37c.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/voda-dlya-detey/4602541002640-voda-agusha-dlya-det-32719">Вода Агуша для детей с 0 месяцев 0.33 л</a>
+                                            </div>
+                                            <div class='item_poll' data-id='32719' data-readonly='false' data-value='5.0'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>16.50</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">18.07.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">улица Энгельса, д. 7</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>58.48 р./л</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(32719)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(32719)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="93ec98b6b867e519e98f7e1da470a3f7" src="http://fair-price.biz/system/images/tovar/small/93ec98b6b867e519e98f7e1da470a3f7.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/nektaryi-dlya-detey/4601201015297-nektar-morkovno-apel-61756">НЕКТАР МОРКОВНО-АПЕЛЬСИНОВЫЙ С АЦЕРОЛОЙ ОБОГАЩЕННЫЙ ДЛЯ ДЕТСКОГО ПИТАНИЯ С МЯКОТЬЮ МОРКОВЬ+БАНАН, ФРУКТОВЫЙ САД, 0, 33 Л 33.0 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='61756' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>21.20</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">17.05.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">Университетская улица, д. 20, корп. 1</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>0.70 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(61756)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(61756)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="275a8d8feb52582d2a8dd1dbb6500ebd" src="http://fair-price.biz/system/images/tovar/small/275a8d8feb52582d2a8dd1dbb6500ebd.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/sol/4612742720045-morskaya-yodirovanna-78410">Морская йодированная соль «4Life» мелкая (помол 0-1) 0.5 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='78410' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>52.90</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">12.04.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>113.80 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(78410)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(78410)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="66e272e26694cd47a16953d93bfc9776" src="http://fair-price.biz/system/images/tovar/small/66e272e26694cd47a16953d93bfc9776.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/detskie-smesi/4690228014192-smes-agusha-original-95654">Смесь Агуша Original-1 молочная для детей от 0 до 6 месяцев  0.35 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='95654' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>144.90</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">18.05.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">Университетская улица, д. 20, корп. 1</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>502.86 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(95654)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(95654)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="34874956fa3e32d4dfa8c54a47fd3b10" src="http://fair-price.biz/system/images/tovar/small/34874956fa3e32d4dfa8c54a47fd3b10.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/voda-dlya-detey/4600338001616-voda-frutonyanya-neg-32717">Вода Фрутоняня негазированная детская с 0 месяцев питьевая  пэт 1.5 л</a>
+                                            </div>
+                                            <div class='item_poll' data-id='32717' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>20.30</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">7.08.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">улица Энгельса, д. 7</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>18.60 р./л</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(32717)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(32717)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="5c0d6d518fc0ee6254ab03e56add3cad" src="http://fair-price.biz/system/images/tovar/small/5c0d6d518fc0ee6254ab03e56add3cad.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/kislomolochnyie-napitki-drugie/4607161622360-kefirnyiy-produkt-bi-90703">Кефирный продукт Bio Баланс 0%  0.93 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='90703' data-readonly='false' data-value='5.0'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>36.99</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">7.04.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">проспект Тракторостроителей, д. 76</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>46.24 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(90703)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(90703)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="Cf094fcfe54cea3b64b0146e630e7e38" src="http://fair-price.biz/system/images/tovar/small/cf094fcfe54cea3b64b0146e630e7e38.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/detskie-smesi/4602541004842-smes-agusha-gold--mo-95892">Смесь Агуша Gold-1 молочная для детей от 0 до 6 месяцев ж/б 0.4 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='95892' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>207.99</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">10.06.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">проспект Тракторостроителей, д. 76</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>815 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(95892)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(95892)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="5e116e5eb281c7cd36e9793e05bc50b3" src="http://fair-price.biz/system/images/tovar/small/5e116e5eb281c7cd36e9793e05bc50b3.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/voda-dlya-detey/4600338001623-voda-frutonyanya-pit-32720">Вода Фрутоняня питьевая негазированная детская с 0 месяцев пэт 0.33 л</a>
+                                            </div>
+                                            <div class='item_poll' data-id='32720' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>13.19</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">10.06.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">проспект Тракторостроителей, д. 76</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>47.58 р./л</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(32720)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(32720)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="B77df28a62a4132d8ae617d0242a3164" src="http://fair-price.biz/system/images/tovar/small/b77df28a62a4132d8ae617d0242a3164.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/pivo-bezalkogolnoe/4600682012009-pivo-svetloe-baltika-54180">Пиво светлое Балтика №0 безалкогольное ж/б 0.5 л</a>
+                                            </div>
+                                            <div class='item_poll' data-id='54180' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>32.99</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">2.08.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">проспект Тракторостроителей, д. 76</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>90.90 р./л</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(54180)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(54180)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="C903b1d14cf453622e237c8dfcca7c10" src="http://fair-price.biz/system/images/tovar/small/c903b1d14cf453622e237c8dfcca7c10.jpeg" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/voda-dlya-detey/4602541000219-voda-agusha-dlya-det-94321">Вода Агуша для детей негазированная с 0 месяцев 5.0 л</a>
+                                            </div>
+                                            <div class='item_poll' data-id='94321' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>25.50</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">29.08.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">улица Энгельса, д. 7</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>13.22 р./л</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(94321)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(94321)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="Noimage" src="http://fair-price.biz/noimage.gif" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/sloyki-bulochki/2013999000836-plyushka-s-izyumom--138504">Плюшка с изюмом 0,1 кг 0.1 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='138504' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>14.50</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">29.07.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">улица Энгельса, д. 7</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>145 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(138504)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(138504)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class='item_row'>
+                                        <td>
+                                            <div class='item_img'>
+                                                <img alt="Noimage" src="http://fair-price.biz/noimage.gif" style="max-width: 80px; max-height: 80px" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='item_text'>
+                                                <a href="http://fair-price.biz/sloyki-bulochki/2013999000911-sdoba-vyiborgskaya-k-138516">Сдоба Выборгская классическая 0,1 кг 0.1 кг</a>
+                                            </div>
+                                            <div class='item_poll' data-id='138516' data-readonly='false'>
+                                                <div class='vote-wrap'>
+                                                    <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
+                                                        <div class='vote-block'>
+                                                            <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
+                                                            <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='vote-result'></div>
+                                                    <div class='vote-success'></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='price'>
+                                                <div class="price">
+                                                    <span>11.50</span>
+                                                    <em>р.</em>
+                                                </div>
+                                            </div>
+                                            <div class="date">29.07.2013</div>
+                                        </td>
+                                        <td>
+                                            <div class='seller'>
+                                                <span class="name">улица Энгельса, д. 7</span>
+                                            </div>
+                                        </td>
+                                        <td class='toggle'>
+                                            <div class='settlement show_hide'>
+                                                <span>115 р./кг</span>
+                                                <div class='alert_message fade' ng-class='{in: tooltipState(138516)}'>Товар добавлен в список</div>
+                                                <div class='add_right_panel' ng-click='addProductToShoppingList(138516)'></div>
+                                                <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </aside>
+                    <div class='bottom_pagination'>
+                        <div class='page_number' id='yw0'>
+                            <a class="current" href="/sellers/1035">1</a>
+                            <a class="page" href="/sellers/1035?page=2" rel="next">2</a>
+                            <a class="page" href="/sellers/1035?page=3">3</a>
+                            <a class="page" href="/sellers/1035?page=4">4</a>
+                            <a class="page" href="/sellers/1035?page=5">5</a>
+                            <span class='page gap'>
+                                &hellip;
+                            </span>
+                            <a class="next" href="/sellers/1035?page=2" rel="next">></a>
                         </div>
-                        <div class="date">18.07.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">улица Энгельса, д. 7</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>58.48 р./л</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(32719)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(32719)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="93ec98b6b867e519e98f7e1da470a3f7" src="http://fair-price.biz/system/images/tovar/small/93ec98b6b867e519e98f7e1da470a3f7.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/nektaryi-dlya-detey/4601201015297-nektar-morkovno-apel-61756">НЕКТАР МОРКОВНО-АПЕЛЬСИНОВЫЙ С АЦЕРОЛОЙ ОБОГАЩЕННЫЙ ДЛЯ ДЕТСКОГО ПИТАНИЯ С МЯКОТЬЮ МОРКОВЬ+БАНАН, ФРУКТОВЫЙ САД, 0, 33 Л 33.0 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='61756' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>21.20</span><em>р.</em></div>
-                        </div>
-                        <div class="date">17.05.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">Университетская улица, д. 20, корп. 1</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>0.70 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(61756)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(61756)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="275a8d8feb52582d2a8dd1dbb6500ebd" src="http://fair-price.biz/system/images/tovar/small/275a8d8feb52582d2a8dd1dbb6500ebd.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/sol/4612742720045-morskaya-yodirovanna-78410">Морская йодированная соль «4Life» мелкая (помол 0-1) 0.5 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='78410' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>52.90</span><em>р.</em></div>
-                        </div>
-                        <div class="date">12.04.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>113.80 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(78410)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(78410)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="66e272e26694cd47a16953d93bfc9776" src="http://fair-price.biz/system/images/tovar/small/66e272e26694cd47a16953d93bfc9776.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/detskie-smesi/4690228014192-smes-agusha-original-95654">Смесь Агуша Original-1 молочная для детей от 0 до 6 месяцев  0.35 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='95654' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>144.90</span><em>р.</em></div>
-                        </div>
-                        <div class="date">18.05.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">Университетская улица, д. 20, корп. 1</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>502.86 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(95654)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(95654)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="34874956fa3e32d4dfa8c54a47fd3b10" src="http://fair-price.biz/system/images/tovar/small/34874956fa3e32d4dfa8c54a47fd3b10.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/voda-dlya-detey/4600338001616-voda-frutonyanya-neg-32717">Вода Фрутоняня негазированная детская с 0 месяцев питьевая  пэт 1.5 л</a>
-                        </div>
-                        <div class='item_poll' data-id='32717' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>20.30</span><em>р.</em></div>
-                        </div>
-                        <div class="date"> 7.08.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">улица Энгельса, д. 7</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>18.60 р./л</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(32717)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(32717)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="5c0d6d518fc0ee6254ab03e56add3cad" src="http://fair-price.biz/system/images/tovar/small/5c0d6d518fc0ee6254ab03e56add3cad.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/kislomolochnyie-napitki-drugie/4607161622360-kefirnyiy-produkt-bi-90703">Кефирный продукт Bio Баланс 0%  0.93 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='90703' data-readonly='false' data-value='5.0'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>36.99</span><em>р.</em></div>
-                        </div>
-                        <div class="date"> 7.04.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">проспект Тракторостроителей, д. 76</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>46.24 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(90703)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(90703)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="Cf094fcfe54cea3b64b0146e630e7e38" src="http://fair-price.biz/system/images/tovar/small/cf094fcfe54cea3b64b0146e630e7e38.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/detskie-smesi/4602541004842-smes-agusha-gold--mo-95892">Смесь Агуша Gold-1 молочная для детей от 0 до 6 месяцев ж/б 0.4 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='95892' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>207.99</span><em>р.</em></div>
-                        </div>
-                        <div class="date">10.06.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">проспект Тракторостроителей, д. 76</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>815 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(95892)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(95892)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="5e116e5eb281c7cd36e9793e05bc50b3" src="http://fair-price.biz/system/images/tovar/small/5e116e5eb281c7cd36e9793e05bc50b3.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/voda-dlya-detey/4600338001623-voda-frutonyanya-pit-32720">Вода Фрутоняня питьевая негазированная детская с 0 месяцев пэт 0.33 л</a>
-                        </div>
-                        <div class='item_poll' data-id='32720' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>13.19</span><em>р.</em></div>
-                        </div>
-                        <div class="date">10.06.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">проспект Тракторостроителей, д. 76</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>47.58 р./л</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(32720)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(32720)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="B77df28a62a4132d8ae617d0242a3164" src="http://fair-price.biz/system/images/tovar/small/b77df28a62a4132d8ae617d0242a3164.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/pivo-bezalkogolnoe/4600682012009-pivo-svetloe-baltika-54180">Пиво светлое Балтика №0 безалкогольное ж/б 0.5 л</a>
-                        </div>
-                        <div class='item_poll' data-id='54180' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>32.99</span><em>р.</em></div>
-                        </div>
-                        <div class="date"> 2.08.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">проспект Тракторостроителей, д. 76</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>90.90 р./л</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(54180)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(54180)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="C903b1d14cf453622e237c8dfcca7c10" src="http://fair-price.biz/system/images/tovar/small/c903b1d14cf453622e237c8dfcca7c10.jpeg" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/voda-dlya-detey/4602541000219-voda-agusha-dlya-det-94321">Вода Агуша для детей негазированная с 0 месяцев 5.0 л</a>
-                        </div>
-                        <div class='item_poll' data-id='94321' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>25.50</span><em>р.</em></div>
-                        </div>
-                        <div class="date">29.08.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">улица Энгельса, д. 7</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>13.22 р./л</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(94321)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(94321)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="Noimage" src="http://fair-price.biz/noimage.gif" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/sloyki-bulochki/2013999000836-plyushka-s-izyumom--138504">Плюшка с изюмом 0,1 кг 0.1 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='138504' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>14.50</span><em>р.</em></div>
-                        </div>
-                        <div class="date">29.07.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">улица Энгельса, д. 7</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>145 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(138504)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(138504)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class='item_row'>
-                      <td>
-                        <div class='item_img'><img alt="Noimage" src="http://fair-price.biz/noimage.gif" style="max-width: 80px; max-height: 80px" /></div>
-                      </td>
-                      <td>
-                        <div class='item_text'>
-                          <a href="http://fair-price.biz/sloyki-bulochki/2013999000911-sdoba-vyiborgskaya-k-138516">Сдоба Выборгская классическая 0,1 кг 0.1 кг</a>
-                        </div>
-                        <div class='item_poll' data-id='138516' data-readonly='false'>
-                          <div class='vote-wrap'>
-                            <div class='vote-hover' style='padding: 0px 4px; height: 18px; width: 90px;'>
-                              <div class='vote-block'>
-                                <div class='vote-stars' style='height: 18px; width: 90px; background-image: asset-url(poll_sprite.png); background-position: 0% 0%; background-repeat: initial initial;'></div>
-                                <div class='vote-active' style='height: 18px; width: 0px; background-image: asset-url(poll_sprite.png); background-position: 0% 100%; background-repeat: initial initial;'></div>
-                              </div>
-                            </div>
-                            <div class='vote-result'></div>
-                            <div class='vote-success'></div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class='price'>
-                          <div class="price"><span>11.50</span><em>р.</em></div>
-                        </div>
-                        <div class="date">29.07.2013</div>
-                      </td>
-                      <td>
-                        <div class='seller'>
-                          <span class="name">улица Энгельса, д. 7</span>
-                        </div>
-                      </td>
-                      <td class='toggle'>
-                        <div class='settlement show_hide'>
-                          <span>115 р./кг</span>
-                          <div class='alert_message fade' ng-class='{in: tooltipState(138516)}'>Товар добавлен в список</div>
-                          <div class='add_right_panel' ng-click='addProductToShoppingList(138516)'></div>
-                          <a class="fancy favorits no-favorits" href="#favorites-login-modal" rel="nofollow"></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-            </aside>
-            <div class='bottom_pagination'>
-              <div class='page_number' id='yw0'>
-                <a class="current" href="/sellers/1035">1</a>
-                <a class="page" href="/sellers/1035?page=2" rel="next">2</a>
-                <a class="page" href="/sellers/1035?page=3">3</a>
-                <a class="page" href="/sellers/1035?page=4">4</a>
-                <a class="page" href="/sellers/1035?page=5">5</a>
-                <span class='page gap'>
-                &hellip;
-                </span>
-                <a class="next" href="/sellers/1035?page=2" rel="next">></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div id='empty_wrap'></div>
-      </div>
-      <div id='footer_wrapper'>
-        <footer class='elastic_footer'>
-          <div class='footer_contacts'>
-            <div class='footer_head'>
-              Контакты
-            </div>
-            <span>
-            <a class="email_link" href="mailto:support@chestnayacena.ru">
+                    </div>
+                </div>
+            </section>
+            <div id='empty_wrap'></div>
+        </div>
+        <div id='footer_wrapper'>
+            <footer class='elastic_footer'>
+                <div class='footer_contacts'>
+                    <div class='footer_head'>
+                        Контакты
+                    </div>
+                    <span>
+                        <a class="email_link" href="mailto:support@chestnayacena.ru">
               support@chestnayacena.ru
             </a>
-            </span>
-            <div class='soc_buttons'>
-              <div class='footer_head'>Мы в соцсетях</div>
-              <a class='vk' href='https://vk.com/chcena' rel='nofollow' target='_blank'>
-              </a>
-              <a class='fb' href='https://www.facebook.com/chcena21' rel='nofollow' target='_blank'>
-              </a>
-              <a class='tw' href='https://twitter.com/chcena21' rel='nofollow' target='_blank'>
-              </a>
-            </div>
-          </div>
-          <div class='footer_nav'>
-            <div class='footer_head'>
-              Покупателям
-            </div>
-            <ul>
-              <li>
-                <a href="">
+                    </span>
+                    <div class='soc_buttons'>
+                        <div class='footer_head'>Мы в соцсетях</div>
+                        <a class='vk' href='https://vk.com/chcena' rel='nofollow' target='_blank'>
+                        </a>
+                        <a class='fb' href='https://www.facebook.com/chcena21' rel='nofollow' target='_blank'>
+                        </a>
+                        <a class='tw' href='https://twitter.com/chcena21' rel='nofollow' target='_blank'>
+                        </a>
+                    </div>
+                </div>
+                <div class='footer_nav'>
+                    <div class='footer_head'>
+                        Покупателям
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
                   Возможности для покупателей
                 </a>
-              </li>
-              <li>
-                <a href="">
+                        </li>
+                        <li>
+                            <a href="">
                   Пользовательское соглашение
                 </a>
-              </li>
-              <li>
-                <a href="">
+                        </li>
+                        <li>
+                            <a href="">
                   Обратная связь
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div class='footer_nav'>
-            <div class='footer_head'>
-              Продавцам
-            </div>
-            <ul>
-              <li>
-                <a href="">
+                        </li>
+                    </ul>
+                </div>
+                <div class='footer_nav'>
+                    <div class='footer_head'>
+                        Продавцам
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
                   Возможности для продавцов
                 </a>
-              </li>
-              <li>
-                <a href="/reg_prod.html">
+                        </li>
+                        <li>
+                            <a href="/reg_prod.html">
                   Регистрация продавца
                 </a>
-              </li>
-              <li>
-                <a href="">
+                        </li>
+                        <li>
+                            <a href="">
                   Размещение прайс-листов
                 </a>
-              </li>
-              <li>
-                <a href="">
+                        </li>
+                        <li>
+                            <a href="">
                   Вход в личный кабинет
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div class='social_buttons'>
-            <div class='footer_head'>
-              Мобильные приложения
+                        </li>
+                    </ul>
+                </div>
+                <div class='social_buttons'>
+                    <div class='footer_head'>
+                        Мобильные приложения
+                    </div>
+                    <div class="mobapps">
+                        <a class='apple' href='https://itunes.apple.com/ru/app/cestnaa-cena/id815574703' rel='nofollow' target='_blank'>
+                            <img alt="Appstore" src="http://m.fair-price.biz/mobile/images/appstore.png" />
+                        </a>
+                        <a href='https://play.google.com/store/apps/details?id=ru.chestnayacena.fairprice.android' rel='nofollow' target='_blank'>
+                            <img alt="Google play" src="http://fair-price.biz/assets/google_play-a1188b6d21c4d840f654b9a7507c021f.png" />
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-40729978-1', 'fair-price.biz');
+            ga('send', 'pageview');
+            </script>
+            <!-- Yandex.Metrika counter -->
+            <script>
+            (function(d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter21203659 = new Ya.Metrika({
+                            id: 21203659,
+                            webvisor: true,
+                            clickmap: true,
+                            accurateTrackBounce: true
+                        });
+                    } catch (e) {}
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function() {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript>
+                <div>
+                    <img alt='' src='//mc.yandex.ru/watch/21203659' style='position:absolute; left:-9999px;'>
+                </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
+            <div class='modal login' id='login-modal' style='min-height: 300px; min-width: 200px;'>
+                <div class='modal_title'>Войти в сервис</div>
+                <div class='modal_error_message'></div>
+                <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate">
+                    <div style="margin:0;padding:0;display:inline">
+                        <input name="utf8" type="hidden" value="&#x2713;" />
+                        <input name="authenticity_token" type="hidden" value="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" />
+                    </div>
+                    <input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
+                    <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
+                    <input class="button" name="commit" type="submit" value="Войти" />
+                    <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
+                </form>
+                <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+                <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
             </div>
-            <div class="mobapps">
-              <a class='apple' href='https://itunes.apple.com/ru/app/cestnaa-cena/id815574703' rel='nofollow' target='_blank'>
-                <img alt="Appstore" src="http://m.fair-price.biz/mobile/images/appstore.png" />
-              </a>
-              <a href='https://play.google.com/store/apps/details?id=ru.chestnayacena.fairprice.android' rel='nofollow' target='_blank'>
-                <img alt="Google play" src="http://fair-price.biz/assets/google_play-a1188b6d21c4d840f654b9a7507c021f.png" />
-              </a>
+            <div class='modal login' id='registration-modal' style='min-height: 300px; min-width: 200px;'>
+                <div class='modal_title'>Регистрация в сервисе</div>
+                <div class='modal_error_message'></div>
+                <form action='/ajax/users' class='form-modal' method='post'>
+                    <input class='string email' name='register_form[email]' placeholder='Адрес электронной почты' type='text'>
+                    <input autocomplete='off' class='password' name='register_form[password]' placeholder='Пароль' type='password'>
+                    <input class='button' type='submit' value='Регистрация'>
+                    <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
+                </form>
+                <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+                <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
             </div>
-          </div>
-        </footer>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-40729978-1', 'fair-price.biz');
-        ga('send', 'pageview');
-        </script>
-        <!-- Yandex.Metrika counter -->
-        <script>
-        (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-        try {
-        w.yaCounter21203659 = new Ya.Metrika({id:21203659,
-        webvisor:true,
-        clickmap:true,
-        accurateTrackBounce:true});
-        } catch(e) { }
-        });
-        
-        var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-        
-        if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-        </script>
-        <noscript>
-        <div>
-          <img alt='' src='//mc.yandex.ru/watch/21203659' style='position:absolute; left:-9999px;'>
+            <div class='modal login' id='reset-password-modal' style='min-height: 315px; min-width: 200px;'>
+                <div class='modal_title'>Восстановление пароля</div>
+                <div class='modal_error_message'></div>
+                <form action='http://api.fair-price.biz/v1/registration/reset_password.json' class='form-modal' method='post'>
+                    <input class='string email' name='email' placeholder='Адрес электронной почты' type='text'>
+                    <br>
+                    <input class='button' type='submit' value='Восстановить'>
+                </form>
+            </div>
+            <div class='modal wide_block dop_links' id='favorites-login-modal'>
+                <div class='modal_title'>Добавление товара в избранные</div>
+                <div class='modal_content'>Для того, чтобы добавить товар в Избранные неообходимо авторизироваться.</div>
+                <div class='modal_error_message'></div>
+                <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate">
+                    <div style="margin:0;padding:0;display:inline">
+                        <input name="utf8" type="hidden" value="&#x2713;" />
+                        <input name="authenticity_token" type="hidden" value="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" />
+                    </div>
+                    <input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
+                    <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
+                    <input class="button" name="commit" type="submit" value="Войти" />
+                    <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
+                    <a class='remember_pass fancy' href='#reset-password-modal'>Забыли пароль?</a>
+                </form>
+                <div class='modal_footer_google'>
+                    <a data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
+                </div>
+                <div class='modal_footer_twitter'>
+                    <a data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
+                </div>
+            </div>
+            <div class='modal' id='select-city-modal'>
+                <div class='modal_title'>Выбор города</div>
+                <div class='modal_error_message'></div>
+                <form action='' id='profile-user-city-form' method='get'>
+                    <div class='blockInput'>
+                        <input id='search-city-id-modal' name='forced_city_id' type='hidden'>
+                        <input autocomplete='off' data-select='#search-city-items-modal' data-url='http://api.fair-price.biz/v1/cities' id='search-city-title-modal' placeholder='Введите название города' role='select-search' type='text'>
+                        <input class='button' type='submit' value='Выбрать'>
+                    </div>
+                    <ul class='autocomp_list' data-id='#search-city-id-modal' data-title='#search-city-title-modal' id='search-city-items-modal' role='autocomplete-list'></ul>
+                </form>
+            </div>
+            <div class='modal wide_block' id='mailing_list_user'>
+                <div class='modal_title'>Отправка списка пользователю</div>
+                <div class='modal_error_message'>Сообщение об ошибке!</div>
+                <form action='#'>
+                    <input placeholder='Введите е-mail пользователя' type='text'>
+                    <p>
+                        Пользователь должен быть зарегистрирован на сайте Честная цена.
+                        <a class='fancy' href='#sending_invitations'>Отправить приглашение</a>
+                    </p>
+                    <input placeholder='От кого' type='text'>
+                    <input class='phone' placeholder='Телефон' type='text'>
+                    <textarea placeholder='Сообщение'></textarea>
+                    <input class='button' type='submit' value='Отправить'>
+                </form>
+            </div>
+            <div class='modal wide_block' id='sending_invitations'>
+                <div class='modal_title'>Отправка приглашения другу</div>
+                <form action='#'>
+                    <input placeholder='Введите е-mail друга' type='text'>
+                    <input class='button' type='submit' value='Отправить'>
+                </form>
+                <p>
+                    Приглашение будет отослано другу на
+                    <br>электронную почту.
+                </p>
+            </div>
+            <div class='modal wide_block' id='create_new_list'>
+                <div class='modal_title'>Создание нового списка</div>
+                <form action='#'>
+                    <input placeholder='Введите название списка' type='text'>
+                    <input class='button' type='submit' value='Создать'>
+                </form>
+            </div>
+            <div class='modal wide_block' id='accept_incoming_list'>
+                <div class='modal_title'>Принять входящий список?</div>
+                <p>Вы получили список от пользователя:</p>
+                <a href='#'>zhukoffmaksim@gmail.com</a>
+                <form>
+                    <input class='green button' type='submit' value='Принять'>
+                    <input class='gray button' type='reset' value='Отменить'>
+                </form>
+            </div>
+            <div class='modal wide_block dop_links' id='adding_new_list'>
+                <div class='modal_title'>Добавление нового списка</div>
+                <p>Для того, чтобы добавить добавить список неообходимо авторизироваться.</p>
+                <form action='#'>
+                    <input placeholder='Адрес электронной почты' type='text'>
+                    <input placeholder='Введите пароль' type='password'>
+                    <input class='button' type='submit' value='Войти'>
+                    <a class='reg' href='#'>Регистрация</a>
+                    <a class='remember_pass' href='#'>Забыли пароль</a>
+                </form>
+                <div class='modal_footer_facebook'>
+                    <a href='#'>Войти через Facebook</a>
+                </div>
+                <div class='modal_footer_twitter'>
+                    <a href='#'>Войти через Twitter</a>
+                </div>
+            </div>
+            <div class='modal wide_block' id='add_price_modal'>
+                <div class='modal_title'>Добавление цены</div>
+                <div class='modal_error_message'>Сообщение об ошибке!</div>
+                <a class='chois_shop fancy_2' href='#chois_shop_modal'>Выбрать магазин</a>
+                <form>
+                    <div class='seller'>
+                        <input type='text' value='Севен (SEVEN) проспект Тракторостроител'>
+                        <a class='seller_button fancy_2' href='#chois_shop_modal'></a>
+                    </div>
+                    <div class='price'>
+                        <input type='text' value='555643'>
+                        <select>
+                            <option>руб.</option>
+                            <option>usd.</option>
+                            <option>eur.</option>
+                        </select>
+                    </div>
+                    <input class='green button' type='submit' value='Сохранить'>
+                    <input class='gray button' type='reset' value='Отменить'>
+                </form>
+            </div>
+            <div class='modal wide_block' id='edit_goods_modal'>
+                <div class='modal_title'>Редактировать товар</div>
+                <div class='modal_error_message'>Сообщение об ошибке!</div>
+                <form>
+                    <input type='text' value='Яйцо куриное птичий двор'>
+                    <input class='bar_kod' type='text' value='432332323992'>
+                    <div class='input_image'>
+                        <div class='img_button'>
+                            Добавить фото
+                            <input type='file'>
+                        </div>
+                        <div class='images'>
+                            <div class='item'>
+                                <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
+                                <div class='close'>x</div>
+                            </div>
+                            <div class='item'>
+                                <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
+                                <div class='close'>x</div>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder='Описание'></textarea>
+                    <input class='green button' type='submit' value='Сохранить'>
+                    <input class='gray button' type='reset' value='Отменить'>
+                </form>
+            </div>
+            <div class='modal wide_block' id='chois_shop_modal'>
+                <div class='modal_title'>Выбор магазина</div>
+                <div class='modal_error_message'>Сообщение об ошибке!</div>
+                <form>
+                    <div class='search'>
+                        <input placeholder='Введите название продавца' role='select-search' type='text'>
+                        <ul class='autocomp_list' id='sellers-search' role='autocomplete-list'>
+                            <li>Севен</li>
+                            <li>Длинное название магазина тоговой точки или того и другого</li>
+                            <li>Севенсов</li>
+                        </ul>
+                        <div class='search_button'></div>
+                    </div>
+                    <input placeholder='Введите название улицы' type='text'>
+                    <input class='green button' type='submit' value='Выбрать'>
+                    <input class='gray button' type='reset' value='Назад'>
+                </form>
+                <div class='variants_sellers_wrap'>
+                    <h3>Возможные варианты</h3>
+                    <div class='variants_sellers'>
+                        <ul>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Какое то длинное название точки Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                            <li>
+                                <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <shopping-list-select-modal lists='lists'></shopping-list-select-modal>
+            <div class='modal wide_block dop_links'>
+                <div class='modal_title'>Отправка списка</div>
+                <div class='modal_error_message'></div>
+                <div class='modal_content'>Для того, чтобы оправить список неообходимо авторизироваться.</div>
+                <form action='/site/login' id='login-form' method='post'>
+                    <input id='LoginForm_username' name='LoginForm[username]' placeholder='Адрес электронной почты' type='text'>
+                    <input id='LoginForm_password' name='LoginForm[password]' placeholder='Введите пароль' type='password'>
+                    <input class='button' type='submit' value='Войти'>
+                    <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
+                    <a class='remember_pass fancy' href='#password_recovery'>Забыли пароль?</a>
+                </form>
+                <div class='modal_footer_google'>
+                    <a data-name='Google' href='' id='socialSelect' rel='nofollow'>Войти через Google+</a>
+                </div>
+                <div class='modal_footer_twitter'>
+                    <a data-name='Twitter' href='' id='socialSelect' rel='nofollow'>Войти через Twitter</a>
+                </div>
+            </div>
         </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-        <div class='modal login' id='login-modal' style='min-height: 300px; min-width: 200px;'>
-          <div class='modal_title'>Войти в сервис</div>
-          <div class='modal_error_message'></div>
-          <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" /></div><input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
-          <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
-          <input class="button" name="commit" type="submit" value="Войти" />
-          <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
-        </form>
-        <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
-        <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
-      </div>
-      <div class='modal login' id='registration-modal' style='min-height: 300px; min-width: 200px;'>
-        <div class='modal_title'>Регистрация в сервисе</div>
-        <div class='modal_error_message'></div>
-        <form action='/ajax/users' class='form-modal' method='post'>
-          <input class='string email' name='register_form[email]' placeholder='Адрес электронной почты' type='text'>
-          <input autocomplete='off' class='password' name='register_form[password]' placeholder='Пароль' type='password'>
-          <input class='button' type='submit' value='Регистрация'>
-          <a class='forgot fancy' href='#reset-password-modal'>Забыли пароль?</a>
-        </form>
-        <a class='google_login' data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
-        <a class='tw_login' data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
-      </div>
-      <div class='modal login' id='reset-password-modal' style='min-height: 315px; min-width: 200px;'>
-        <div class='modal_title'>Восстановление пароля</div>
-        <div class='modal_error_message'></div>
-        <form action='http://api.fair-price.biz/v1/registration/reset_password.json' class='form-modal' method='post'>
-          <input class='string email' name='email' placeholder='Адрес электронной почты' type='text'>
-          <br>
-          <input class='button' type='submit' value='Восстановить'>
-        </form>
-      </div>
-      <div class='modal wide_block dop_links' id='favorites-login-modal'>
-        <div class='modal_title'>Добавление товара в избранные</div>
-        <div class='modal_content'>Для того, чтобы добавить товар в Избранные неообходимо авторизироваться.</div>
-        <div class='modal_error_message'></div>
-        <form accept-charset="UTF-8" action="/login" class="simple_form form-modal" id="new_session_form" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3uwp8cnXwXCVxHnKNB0TnBccn8uZrpE5znJg0yg8DnM=" /></div><input class="string email required" id="session_form_email" name="session_form[email]" placeholder="Адрес электронной почты" type="email" />
-        <input class="password required" id="session_form_password" name="session_form[password]" placeholder="Пароль" type="password" />
-        <input class="button" name="commit" type="submit" value="Войти" />
-        <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
-        <a class='remember_pass fancy' href='#reset-password-modal'>Забыли пароль?</a>
-      </form>
-      <div class='modal_footer_google'>
-        <a data-name='Google' href='/auth/google_oauth2' id='socialSelect'>Войти через Google+</a>
-      </div>
-      <div class='modal_footer_twitter'>
-        <a data-name='Twitter' href='/auth/twitter' id='socialSelect'>Войти через Twitter</a>
-      </div>
+        <div class='clear'></div>
     </div>
-    <div class='modal' id='select-city-modal'>
-      <div class='modal_title'>Выбор города</div>
-      <div class='modal_error_message'></div>
-      <form action='' id='profile-user-city-form' method='get'>
-        <div class='blockInput'>
-          <input id='search-city-id-modal' name='forced_city_id' type='hidden'>
-          <input autocomplete='off' data-select='#search-city-items-modal' data-url='http://api.fair-price.biz/v1/cities' id='search-city-title-modal' placeholder='Введите название города' role='select-search' type='text'>
-          <input class='button' type='submit' value='Выбрать'>
+    <div class='modal attention' id='alert_modal'>
+        <div class='modal_content'>Для того, чтобы отправить список необходимо авторизироваться.</div>
+        <a class='small_button_green fancy' href='#login-modal'>Войти</a>
+    </div>
+    <div id='slide_panel'>
+        <div id='slide_panel_wrap'>
+            <div class='disclosed' id='slide_panel_toggle'></div>
+            <div class='user_block'>
+                <a class='fancy registration small_button_green' href='#registration-modal'>Регистрация</a>
+                <div class='log_in'>
+                    <a class='fancy' href='#login-modal'>Вход</a>
+                </div>
+            </div>
         </div>
-      <ul class='autocomp_list' data-id='#search-city-id-modal' data-title='#search-city-title-modal' id='search-city-items-modal' role='autocomplete-list'></ul>
-    </form>
-  </div>
-  <div class='modal wide_block' id='mailing_list_user'>
-    <div class='modal_title'>Отправка списка пользователю</div>
-    <div class='modal_error_message'>Сообщение об ошибке!</div>
-    <form action='#'>
-      <input placeholder='Введите е-mail пользователя' type='text'>
-      <p>
-      Пользователь должен быть зарегистрирован  на сайте Честная цена.
-      <a class='fancy' href='#sending_invitations'>Отправить приглашение</a>
-      </p>
-      <input placeholder='От кого' type='text'>
-      <input class='phone' placeholder='Телефон' type='text'>
-      <textarea placeholder='Сообщение'></textarea>
-      <input class='button' type='submit' value='Отправить'>
-    </form>
-  </div>
-  <div class='modal wide_block' id='sending_invitations'>
-    <div class='modal_title'>Отправка приглашения другу</div>
-    <form action='#'>
-      <input placeholder='Введите е-mail друга' type='text'>
-      <input class='button' type='submit' value='Отправить'>
-    </form>
-    <p>
-    Приглашение будет отослано другу на
-    <br>
-    электронную почту.
-    </p>
-  </div>
-  <div class='modal wide_block' id='create_new_list'>
-    <div class='modal_title'>Создание нового списка</div>
-    <form action='#'>
-      <input placeholder='Введите название списка' type='text'>
-      <input class='button' type='submit' value='Создать'>
-    </form>
-  </div>
-  <div class='modal wide_block' id='accept_incoming_list'>
-    <div class='modal_title'>Принять входящий список?</div>
-    <p>Вы получили список от пользователя:</p>
-    <a href='#'>zhukoffmaksim@gmail.com</a>
-    <form>
-      <input class='green button' type='submit' value='Принять'>
-      <input class='gray button' type='reset' value='Отменить'>
-    </form>
-  </div>
-  <div class='modal wide_block dop_links' id='adding_new_list'>
-    <div class='modal_title'>Добавление нового списка</div>
-    <p>Для того, чтобы добавить добавить список неообходимо авторизироваться.</p>
-    <form action='#'>
-      <input placeholder='Адрес электронной почты' type='text'>
-      <input placeholder='Введите пароль' type='password'>
-      <input class='button' type='submit' value='Войти'>
-      <a class='reg' href='#'>Регистрация</a>
-      <a class='remember_pass' href='#'>Забыли пароль</a>
-    </form>
-    <div class='modal_footer_facebook'>
-      <a href='#'>Войти через Facebook</a>
     </div>
-    <div class='modal_footer_twitter'>
-      <a href='#'>Войти через Twitter</a>
-    </div>
-  </div>
-  <div class='modal wide_block' id='add_price_modal'>
-    <div class='modal_title'>Добавление цены</div>
-    <div class='modal_error_message'>Сообщение об ошибке!</div>
-    <a class='chois_shop fancy_2' href='#chois_shop_modal'>Выбрать магазин</a>
-    <form>
-      <div class='seller'>
-        <input type='text' value='Севен (SEVEN) проспект Тракторостроител'>
-        <a class='seller_button fancy_2' href='#chois_shop_modal'></a>
-      </div>
-      <div class='price'>
-        <input type='text' value='555643'>
-        <select>
-          <option>руб.</option>
-          <option>usd.</option>
-          <option>eur.</option>
-        </select>
-      </div>
-      <input class='green button' type='submit' value='Сохранить'>
-      <input class='gray button' type='reset' value='Отменить'>
-    </form>
-  </div>
-  <div class='modal wide_block' id='edit_goods_modal'>
-    <div class='modal_title'>Редактировать товар</div>
-    <div class='modal_error_message'>Сообщение об ошибке!</div>
-    <form>
-      <input type='text' value='Яйцо куриное птичий двор'>
-      <input class='bar_kod' type='text' value='432332323992'>
-      <div class='input_image'>
-        <div class='img_button'>
-          Добавить фото
-          <input type='file'>
-        </div>
-        <div class='images'>
-          <div class='item'>
-            <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
-            <div class='close'>x</div>
-          </div>
-          <div class='item'>
-            <img src='http://fair-price.biz/assets/img_modal-7bfc657cbe04670ccecc4b2a53063055.png'>
-            <div class='close'>x</div>
-          </div>
-        </div>
-      </div>
-      <textarea placeholder='Описание'></textarea>
-      <input class='green button' type='submit' value='Сохранить'>
-      <input class='gray button' type='reset' value='Отменить'>
-    </form>
-  </div>
-  <div class='modal wide_block' id='chois_shop_modal'>
-    <div class='modal_title'>Выбор магазина</div>
-    <div class='modal_error_message'>Сообщение об ошибке!</div>
-    <form>
-      <div class='search'>
-        <input placeholder='Введите название продавца' role='select-search' type='text'>
-        <ul class='autocomp_list' id='sellers-search' role='autocomplete-list'>
-          <li>Севен</li>
-          <li>Длинное название магазина тоговой точки  или того и другого</li>
-          <li>Севенсов</li>
-        </ul>
-        <div class='search_button'></div>
-      </div>
-      <input placeholder='Введите название улицы' type='text'>
-      <input class='green button' type='submit' value='Выбрать'>
-      <input class='gray button' type='reset' value='Назад'>
-    </form>
-    <div class='variants_sellers_wrap'>
-      <h3>Возможные варианты</h3>
-      <div class='variants_sellers'>
-        <ul>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Какое то длинное название точки Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-          <li>
-            <a href='#'>Севен (SEVEN) проспект Тракторостроителей, 1, 34</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <shopping-list-select-modal lists='lists'></shopping-list-select-modal>
-  <div class='modal wide_block dop_links'>
-    <div class='modal_title'>Отправка списка</div>
-    <div class='modal_error_message'></div>
-    <div class='modal_content'>Для того, чтобы оправить список неообходимо авторизироваться.</div>
-    <form action='/site/login' id='login-form' method='post'>
-      <input id='LoginForm_username' name='LoginForm[username]' placeholder='Адрес электронной почты' type='text'>
-      <input id='LoginForm_password' name='LoginForm[password]' placeholder='Введите пароль' type='password'>
-      <input class='button' type='submit' value='Войти'>
-      <a class='reg fancy registration' href='#registration-modal'>Регистрация</a>
-      <a class='remember_pass fancy' href='#password_recovery'>Забыли пароль?</a>
-    </form>
-    <div class='modal_footer_google'>
-      <a data-name='Google' href='' id='socialSelect' rel='nofollow'>Войти через Google+</a>
-    </div>
-    <div class='modal_footer_twitter'>
-      <a data-name='Twitter' href='' id='socialSelect' rel='nofollow'>Войти через Twitter</a>
-    </div>
-  </div>
-</div>
-<div class='clear'></div>
-</div>
-<div class='modal attention' id='alert_modal'>
-<div class='modal_content'>Для того, чтобы отправить список необходимо авторизироваться.</div>
-<a class='small_button_green fancy' href='#login-modal'>Войти</a>
-</div>
-<div id='slide_panel'>
-<div id='slide_panel_wrap'>
-  <div class='disclosed' id='slide_panel_toggle'></div>
-  <div class='user_block'>
-    <a class='fancy registration small_button_green' href='#registration-modal'>Регистрация</a>
-    <div class='log_in'>
-      <a class='fancy' href='#login-modal'>Вход</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class='clear'></div>
+    <div class='clear'></div>
 </body>
+
 </html>

@@ -104,7 +104,7 @@
     <title>8001810903576 Купить Макаронный изделия Мальтальятти перо риф. №74 оптом - узнать цены | Честная цена</title>
     <meta content="Цены на Макаронный изделия Мальтальятти перо риф. №74 8001810903576. Купить Макаронный изделия Мальтальятти перо риф. №74 оптом" name="description" />
     <meta content="8001810903576" name="keywords" />
-    <link href="http://fair-price.biz/assets/application-3d17a5186ff8790e808b4dd7eea4665e.css" media="all" rel="stylesheet" />
+    <link href="css/application.css" media="all" rel="stylesheet" />
     <script>
     var current_city_id = "1";
     var auth_token = "z35FLBS4P2yk325May8vgXCfS/unXSm7wOzCT2vepoY=";
@@ -336,6 +336,7 @@
                                 <a class="fancy favorits no-favorits " data-action="http://api.fair-price.biz/v1/favorites" data-product-id="96780" href="http://fair-price.biz/makaronnyie-izdeliya/8001810903576-makaronnyiy-izdeliya-96780" role="favorites-add"></a>
                             </div>
                         </div>
+                        <a href="" class="edit_action button small_button_grey">Редактировать товар</a>
                         <h2 class='bar_code' title='Код товара: @product.barcode'>8001810903576</h2>
                         <div class='description_goods'>
                             <b>Описание</b>
@@ -369,15 +370,138 @@
                             </div>
                         </div>
                         <div id='table_goods_tab'>
+                            <a href="" class="add_price_action button small_button_grey">Добавить цену</a>
                             <h3>Цены</h3>
+                            <div class='seller_settings tovar_add_price active'>
+                                <div class='inputs_block'>
+                                    <form accept-charset="UTF-8" class="simple_form form-horizontal kabinet" id="profile-seller-form" method="post" novalidate="novalidate">
+                                        <div class="price">
+                                            <label>Цена</label>
+                                            <div class="price_wrapper">
+                                                <input class="string optional" id="product_form_price" name="product_form[price]" type="text" value="300">
+                                            </div>
+                                            <div class="product_form_unit_measure_id active">
+                                                <label class="control-label">Валюта</label>
+                                                <div class="radio_controls">
+                                                    <div class="radio_item">
+                                                        <input type="radio" class="radio" id="product_form_unit_measure_id_102" name="product_form[unit_measure_id]" value="102">
+                                                        <label for="product_form_unit_measure_id_102">(RUB)</label>
+                                                        <div class="description">Российский рубль</div>
+                                                    </div>
+                                                    <div class="radio_item more_currencies">
+                                                        <div class="toggle_button" data-toggle="collapse" href="#descCollapse">
+                                                            <span class="show">Больше валют</span>
+                                                            <span class="hide">Свернуть</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sys_msg">
+                                                <div class="error_msg">
+                                                    *Введите цену
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="name">
+                                            <label>
+                                                Продавец
+                                            </label>
+                                            <input class="string optional" id="seller_profile_name" name="seller_profile[name]" type="text" />
+                                            <a href="" class="input_edit">Изменить</a>
+
+                                            <ul class='autocomp_list' id='#search-seller-name' role='autocomplete-list'></ul>
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                        <div class='seller-types'>
+                                            <span>
+                                                <input type="checkbox" id="offline_seller">
+                                                <label for="offline_seller">Офлайн-магазин</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" id="online_seller">
+                                                <label for="online_seller">Интернет-магазин</label>
+                                            </span>
+                                        </div>
+                                        <div class="seller_site">
+                                            <label>
+                                                Сайт продавца
+                                            </label>
+                                            <input class="string optional" id="seller_profile_site" name="seller_profile[site]" type="text" />
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                        <div class="seller_type">
+                                            <label>
+                                                Город
+                                            </label>
+                                            <div class="stac_edit_form active">
+                                                <div class="seller_stac_name">
+                                                    <input autocomplete="off" class="string" name="seller_stac[adress_city]" placeholder="Чебоксары" type="text" />
+                                                    <a href="" class="input_edit">Изменить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="seller_type">
+                                            <label>
+                                                Улица
+                                            </label>
+                                            <div class="stac_edit_form active">
+                                                <div class="seller_stac_name">
+                                                    <input autocomplete="off" class="string" name="seller_stac[adress_street]" placeholder="Тракторостроителей" type="text" />
+                                                    <a href="" class="input_edit">Изменить</a>
+                                                </div>
+                                                <div class="map_wrp"></div>
+                                            </div>
+                                        </div>
+                                        <div class="map_find">
+                                            <div class="toggle_button" data-toggle="collapse" href="#map">
+                                                <span class="show">Найти на карте</span>
+                                                <span class="hide">Скрыть карту</span>
+                                            </div>
+                                            <div class="map_wrp">
+                                                <div id="map"></div>
+                                                <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                                                <script type="text/javascript">
+                                                var myMap;
+                                                 // Дождёмся загрузки API и готовности DOM.
+                                                ymaps.ready(init);
+
+                                                function init() {
+                                                    // Создание экземпляра карты и его привязка к контейнеру с
+                                                    // заданным id ("map").
+                                                    myMap = new ymaps.Map('map', {
+                                                        // При инициализации карты обязательно нужно указать
+                                                        // её центр и коэффициент масштабирования.
+                                                        center: [56.1439, 47.248887], // Москва
+                                                        zoom: 15
+                                                    });
+                                                }
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <input class="small_button_grey button" name="commit" type="submit" value="Отменить" />
+                                            <input class="small_button_grey button" name="commit" type="submit" value="Добавить" />
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
                             <table class='table compare_prices'>
                                 <thead>
                                     <tr>
-                                        <th class='text-left' width='70%'>
+                                        <th class='text-left' width='60%'>
                                             <span>Продавец</span>
                                         </th>
-                                        <th width='30%'>
+                                        <th width='20%'>
                                             <span>Лучшая цена</span>
+                                        </th>
+                                        <th width='20%'>
+                                            <span>Изменить</span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -386,14 +510,14 @@
                                 <table class='table compare_prices'>
                                     <tbody>
                                         <tr class='item_row'>
-                                            <td width='70%'>
+                                            <td width='60%'>
                                                 <div class='seller'>
                                                     <span class="name"><a href="/sellers/1038">Карусель</a>
                                                     </span>
                                                     <span class="address">Чебоксары, улица Карла Маркса, д. 52</span>
                                                 </div>
                                             </td>
-                                            <td width='30%'>
+                                            <td width='20%'>
                                                 <div class='pricing_options'>
                                                     <span>
                                                         <div class="price">
@@ -404,9 +528,12 @@
                                                     <div class="date">29.08.2013</div>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <a href="" class="edit_prod"></a>
+                                            </td>
                                         </tr>
                                         <tr class='item_row'>
-                                            <td width='70%'>
+                                            <td width='60%'>
                                                 <div class='seller'>
                                                     <span class="name"><a href="/sellers/577">Шубинский</a>
                                                     </span>
@@ -414,7 +541,7 @@
                                                     </span>
                                                 </div>
                                             </td>
-                                            <td width='30%'>
+                                            <td width='20%'>
                                                 <div class='pricing_options'>
                                                     <span>
                                                         <div class="price">
@@ -425,16 +552,19 @@
                                                     <div class="date">23.05.2013</div>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <a href="" class="edit_prod"></a>
+                                            </td>
                                         </tr>
                                         <tr class='item_row'>
-                                            <td width='70%'>
+                                            <td width='60%'>
                                                 <div class='seller'>
                                                     <span class="name"><a href="/sellers/1064">Мираторг</a>
                                                     </span>
                                                     <span class="address">Чебоксары, улица Карла Маркса, д. 47</span>
                                                 </div>
                                             </td>
-                                            <td width='30%'>
+                                            <td width='20%'>
                                                 <div class='pricing_options'>
                                                     <span>
                                                         <div class="price">
@@ -445,13 +575,39 @@
                                                     <div class="date">22.05.2013</div>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <a href="" class="edit_prod"></a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="text-center">
                                 <div class="toggle_button" data-toggle="collapse" href="#descCollapse">
-                                    <span class="show">Развернуть</span>
+                                    <span class="show">Больше цен</span>
+                                    <span class="hide">Свернуть</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='reviews'>
+                            <h3>Отзывы</h3>
+                            <div class='reviews'>
+                                <div class="review_row">
+                                    <div class="review_avatar">
+                                        <img src="css/v1lat.png">
+                                    </div>
+                                    <div class="review_content">
+                                        ВСЁ КОРАБЛЬ,ВСЁ В АРТСТАЙЛА МИНУС АРТСТАЙЛ,КУРОНИТИ УБИРАЕТ АРТСТАЙЛА, ГОБЛИН УЛЬТУЕТ,ЗАБРАТЬ НАДО ХОТЬ КОГО-ТО,СТЕНКУ СТАВИТ,ОЙОЙОЙ КАКАЯ ХОРОШАЯ СТЕНА У ТОЛСТОЙ СКАТИНЫ, ПЫТАЕТСЯ ЧТО-ТО СДЕЛАТЬ НЕУБИВАЕТ НИКОГО,ФОБОС УЛЬТУЕТ НИКОГО НЕ ЗАБИРАЕТ ЗДЕСЬ КРИПЫ ЛОСТА ПЫТАЮТСЯ ЧТО-ТО СДЕЛАТЬ ИХ ТУТ ЖЕ УБИВАЕТ КУНКА!НА ТОРРЕНТ ОПЯТЬ ВСЕ,ВСЕ ЧЕТВЕРО ПОПАДАЮТ НА ТОРРЕНТ,ДЕНДИ УХОДИТ ПРОСТО С ТП,ЗАБИРАЮТ ЛОСТА, ЗАБИРАЮТ ФОБОСА,ЗАБИРАЮТ ГОБЛАКА,МОЖНО ЛИВАТЬ,ЭТО __ НЕ ИГРА, ЭТО ПРОСТО ПОШЛИ ОНИ __
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="text-center">
+                                <div class="toggle_button" data-toggle="collapse" href="#reviews">
+                                    <span class="show">Больше отзывов</span>
                                     <span class="hide">Свернуть</span>
                                 </div>
                             </div>

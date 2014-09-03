@@ -98,19 +98,93 @@ header {
 .products.search .mainmenu, .seller_products.index .mainmenu, .seller_products.sale_point_products .mainmenu, .sellers.show .mainmenu {
     border-left: 0;
 }
-.seller.products.search .header_profil, .seller_products.index .header_profil, .seller_products.sale_point_products .header_profil, .sellers.show .header_profil {
+.seller.products.search .header_profil, .seller_products.index .header_profil, .seller_products.sale_point_products .header_profil{
     top: 36px;
     margin-top: 5px;
+}
+.sellers.show .header_profil {
+    height: 36px;
+}
+.sellers.show .header_profil .avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+.sellers.show .header_profil .avatar a{
+    top: 10px;
 }
 .seller.products.search #slide_panel_toggle, .seller_products.index #slide_panel_toggle, .seller_products.sale_point_products #slide_panel_toggle, .sellers.show #slide_panel_toggle {
     top: 57px;
 }
-.products.search .seller-name, .seller_products.index .seller-name, .seller_products.sale_point_products .seller-name, .sellers.show .seller-name {
+.products.search .seller-name, .seller_products.index .seller-name, .seller_products.sale_point_products .seller-name, .sellers.show .seller-name,
+.sellers.show .seller-adress {
     float: left;
     overflow: hidden;
     border-right: 1px solid #eee;
 }
-.products.search .seller-name a, .seller_products.index .seller-name a, .seller_products.sale_point_products .seller-name a, .sellers.show .seller-name a {
+.sellers.show .seller-logo{
+    float: left;
+    margin:0 25px 25px 0;
+    height: 80px;
+}
+.sellers.show .seller-adress{
+    
+}
+.sellers.show .seller-logo img{
+    height:100%;
+    width:auto;
+}
+.sellers.show  .mainmenu >*{
+    padding: 0 25px 0 20px;
+    height: 40px;
+    float: left;
+    border-right: 1px solid #eee;
+}
+.sellers.show  .mainmenu .seller-name{
+    padding-left:0;
+}
+.sellers.show  .mainmenu a{
+    text-decoration: none;
+    border-bottom: none;
+    margin: 15px 0;
+}
+.sellers.show  #wrapper>.section.top{
+    height: 5px;
+}
+.sellers.show .mainmenu .section.top{
+    clear: left;
+    border-right: none;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    background: none;
+    padding-left: 0
+}
+.sellers.show  #wrapper .top_search{
+    width:100%;
+}
+.sellers.show .mainmenu .section.top .products-search-form input[type="text"]{
+    border: 1px solid #dddddd;
+}
+.sellers.show .seller_details_page >*{
+    float: left;
+    clear: left;
+    margin: 20px 0;
+}
+.sellers.show .seller_details_page .add_button{
+    text-transform: none;
+    display: block;
+}
+BODY.sellers.show  HEADER.elastic_header{
+    margin:25px 0 0 20px;
+}
+.seller-name h1{
+    margin: 0;
+}
+.products.search .seller-name a, .seller_products.index .seller-name a, .seller_products.sale_point_products .seller-name a, .sellers.show .seller-name a,
+.sellers.show .seller-logo image {
     margin-right: 25px;
 }
 .salepoint-select-toggle {
@@ -5644,10 +5718,11 @@ BODY.average .user_settings .inputs_block .select ul {
 }
 .seller_details_page .seller_details_adress {
     float: left;
-    height: 400px;
+    max-height: 400px;
     width: 54%;
     overflow-y: auto;
     padding: 0px;
+    position: relative;
 }
 .seller_details_page .seller_details_adress .jspVerticalBar {
     right: 3px;
@@ -5655,14 +5730,22 @@ BODY.average .user_settings .inputs_block .select ul {
 .scrollable-table {
     display: block;
     width: 100%;
-    height: 363px;
-    overflow: auto;
+    /*height: 363px;
+    overflow: auto;*/
+    padding-top: 56px;
 }
 .seller_details_page .seller_details_adress .view_table {
     margin: 0;
 }
+.seller_details_page .seller_details_adress .fixed_table_header .view_table{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    width: 100%;
+}
 .seller_details_adress th {
     padding: 9px 5px;
+    height: 37px;
 }
 .seller_details_adress td {
     border-bottom: 1px solid #ededed;
@@ -5711,6 +5794,7 @@ BODY.average .user_settings .inputs_block .select ul {
 }
 .seller_details_page #seller_details_map {
     float: right;
+    clear: none;
     width: 44%;
     height: 398px;
     border: 1px solid #ddd;

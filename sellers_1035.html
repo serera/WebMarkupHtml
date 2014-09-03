@@ -407,6 +407,18 @@
 <body class='sellers show average' ng-app='fairprice' ng-controller='RootController'>
     <div class='disclosed' id='global_wrapper'>
         <div id='wrapper'>
+            <div class="header_profil">
+                <div class="avatar">
+                    <div class="img default" id="upload_user_avatar">
+                        <img alt="Default avatar" src="http://fair-price.biz/assets/default_avatar-256e32ec39f503028e48b997db1f4b07.png">
+                    </div>
+                    <a href="/profile/edit">sergey@bokus.ru</a>
+                </div>
+                <div class="links">
+                    <a class="tally_list" href="/my/shopping_lists">Списки покупок</a>
+                    <a class="elected_goods" href="/favorites">Избранные товары</a>
+                </div>
+            </div>
             <div class='miniheader'>
                 <header class='elastic_header'>
                     <a class="root-link" href="/">fair-price.biz</a>
@@ -415,33 +427,42 @@
                     </div>
                 </header>
             </div>
+            <section class='section top'>
+                
+            </section>
             <header class='elastic_header'>
                 <div class='hdr'>
+                    <div class='seller-logo'>
+                        <img src="css/facebook_link.png">
+                    </div>
                     <nav class='mainmenu'>
                         <div class='seller-name'>
-                            <a href="/sellers/1035">Магнит</a>
+                          <h1>Магнит</h1>
                         </div>
-                        <a href="/sellers/1035/products">Товары продавца</a>
+                        <div class='seller-adress'>Чебоксары<br> улица Крала Маркса, д.52
+                        </div>
+                        <div><a href="/sellers/1035/products">Товары</a></div>
+                        <div><a href="/sellers/1035">Акции</a></div>
+                        <section class='section top'>
+                  
+                          <div class='top_search'>
+                            <div class='search_form'>
+                                <form accept-charset="UTF-8" action="/products/search" class="products-search-form" method="get" role="products-search-form">
+                                    <input id="seller_id" name="seller_id" type="hidden" value="1035" />
+                                    <input autocomplete="off" data-select="#products-search-select" data-url="http://api.fair-price.biz/v1/products/autocomplete" id="search-products-title" name="q" placeholder="Введите наименование товара или штрих-код" role="select-search" type="text" />
+                                    <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
+                                    <button class='search_button' type='submit'></button>
+                                </form>
+                            </div>
+                          </div>
+  
+                        </section>
+                      
                     </nav>
                     <div class='clearfix'></div>
                 </div>
             </header>
-            <section class='section top'>
-                <div class='top_search'>
-                    <div class='search_form'>
-                        <form accept-charset="UTF-8" action="/products/search" class="products-search-form" method="get" role="products-search-form">
-                            <div style="margin:0;padding:0;display:inline">
-                                <input name="utf8" type="hidden" value="&#x2713;" />
-                            </div>
-                            <label for='q'>Товары продавца</label>
-                            <input id="seller_id" name="seller_id" type="hidden" value="1035" />
-                            <input autocomplete="off" data-select="#products-search-select" data-url="http://api.fair-price.biz/v1/products/autocomplete" id="search-products-title" name="q" placeholder="Введите наименование товара или штрих-код" role="select-search" type="text" />
-                            <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
-                            <button class='search_button' type='submit'></button>
-                        </form>
-                    </div>
-                </div>
-            </section>
+
             <section class='section middle'>
                 <div class='smart_breadcrumbs_wrap'>
                     <div class='smart_breadcrumbs'>
@@ -456,18 +477,20 @@
                     </div>
                 </div>
                 <div class='content item_page'>
-                    <h1>Магнит</h1>
                     <div class='seller_details_page'>
-                        <div class='seller_details_adress'>
-                            <table class='view_table'>
-                                <thead>
-                                    <tr>
-                                        <th width='10%'></th>
-                                        <th class='text-left' width='60%'>Адрес магазина</th>
-                                        <th width='30%'>Кол-во товаров</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                        <div class='seller_details_adress'  id="scroll_fixed_table_header">
+                            <div class='fixed_table_header'>
+                              <table class='view_table' id="set_top_here">
+                                  <thead>
+                                      <tr>
+                                          <th width='10%'></th>
+                                          <th class='text-left' width='60%'>Адрес магазина</th>
+                                          <th width='15%'>Режим работы</th>
+                                          <th width='15%'>Товары</th>
+                                      </tr>
+                                  </thead>
+                              </table>
+                            </div>
                             <div class='scrollable-table'>
                                 <table class='view_table'>
                                     <tbody>
@@ -476,328 +499,145 @@
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4053">бульвар Анатолия Миттова, д. 18, корп. 1</a>
                                             </td>
-                                            <td width='30%'>340</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>340</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="1" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4062">проспект Максима Горького, д. 15</a>
                                             </td>
-                                            <td width='30%'>2824</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2824</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="2" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4065">улица Ленинского Комсомола, д. 44а</a>
                                             </td>
-                                            <td width='30%'>3166</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>3166</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="3" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4081">улица Энгельса, д. 7</a>
                                             </td>
-                                            <td width='30%'>7359</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>7359</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="4" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4085">улица Юрия Гагарина, д. 19</a>
                                             </td>
-                                            <td width='30%'>2173</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2173</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="5" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4086">улица Мате Залка, д. 13</a>
                                             </td>
-                                            <td width='30%'>165</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>165</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="6" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4087">улица Энтузиастов, д. 31</a>
                                             </td>
-                                            <td width='30%'>992</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>992</td>
                                         </tr>
                                         <tr>
                                             <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a>
                                             </td>
                                             <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a>
                                             </td>
-                                            <td width='30%'>2842</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2842</td>
                                         </tr>
                                         <tr>
-                                            <td width='10%'><a class="to_map" data-marker="8" href="#">на карте</a>
+                                            <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a>
                                             </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4089">улица Энгельса, д. 3, корп. 1</a>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a>
                                             </td>
-                                            <td width='30%'>145</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2842</td>
                                         </tr>
                                         <tr>
-                                            <td width='10%'><a class="to_map" data-marker="9" href="#">на карте</a>
+                                            <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a>
                                             </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4090">улица Федора Гладкова, д. 20</a>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a>
                                             </td>
-                                            <td width='30%'>169</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2842</td>
                                         </tr>
                                         <tr>
-                                            <td width='10%'><a class="to_map" data-marker="10" href="#">на карте</a>
+                                            <td width='10%'><a class="to_map" data-marker="7" href="#">на карте</a>
                                             </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4091">улица 50 лет Октября, д. 1, корп. 32</a>
+                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4088">проспект Мира, д. 15</a>
                                             </td>
-                                            <td width='30%'>171</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="11" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4092">улица 50 лет Октября, д. 16</a>
-                                            </td>
-                                            <td width='30%'>1555</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="12" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4093">проспект Мира, д. 24, корп. 26</a>
-                                            </td>
-                                            <td width='30%'>1654</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="13" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4094">Гражданская улица, д. 77</a>
-                                            </td>
-                                            <td width='30%'>239</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="14" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4095">Гражданская улица, д. 117</a>
-                                            </td>
-                                            <td width='30%'>125</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="15" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4096">улица Эльменя, д. 7</a>
-                                            </td>
-                                            <td width='30%'>196</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="16" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4097">Фруктовая улица, д. 12</a>
-                                            </td>
-                                            <td width='30%'>144</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="17" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4098">улица Пирогова, д. 30</a>
-                                            </td>
-                                            <td width='30%'>154</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="18" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4099">улица Композитора Максимова, д. 13, корп. 8</a>
-                                            </td>
-                                            <td width='30%'>172</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="19" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4103">улица Константина Иванова, д. 91</a>
-                                            </td>
-                                            <td width='30%'>173</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="20" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4104">улица Ивана Франко, д. 10</a>
-                                            </td>
-                                            <td width='30%'>128</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="21" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4105">улица Урукова, д. 7</a>
-                                            </td>
-                                            <td width='30%'>200</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="22" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4106">проспект Максима Горького, д. 7А</a>
-                                            </td>
-                                            <td width='30%'>56</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="23" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4107">проспект Максима Горького, д. 49</a>
-                                            </td>
-                                            <td width='30%'>193</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="24" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4108">проспект 9-й Пятилетки, д. 2, корп. 3</a>
-                                            </td>
-                                            <td width='30%'>160</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="25" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4109">проспект 9-й Пятилетки, д. 16, корп. 1</a>
-                                            </td>
-                                            <td width='30%'>2379</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="26" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4110">Эгерский бульвар, д. 47</a>
-                                            </td>
-                                            <td width='30%'>49</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="27" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4111">улица 324-й Стрелковой Дивизии, д. 28</a>
-                                            </td>
-                                            <td width='30%'>129</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="28" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4112">улица Тимофея Кривова, д. 4</a>
-                                            </td>
-                                            <td width='30%'>140</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="29" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4113">улица Эльгера, д. 11</a>
-                                            </td>
-                                            <td width='30%'>258</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="30" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4114">Университетская улица, д. 20, корп. 1</a>
-                                            </td>
-                                            <td width='30%'>2471</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="31" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4115">бульвар Юности, д. 4</a>
-                                            </td>
-                                            <td width='30%'>125</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="32" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4117">проспект Тракторостроителей, д. 36, корп. 1</a>
-                                            </td>
-                                            <td width='30%'>1697</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="33" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4118">проспект Тракторостроителей, д. 63, корп. 21</a>
-                                            </td>
-                                            <td width='30%'>176</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="34" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4119">проспект Тракторостроителей, д. 73</a>
-                                            </td>
-                                            <td width='30%'>431</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="35" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4120">улица Хузангая, д. 14</a>
-                                            </td>
-                                            <td width='30%'>179</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="36" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4121">Эгерский бульвар, д. 26</a>
-                                            </td>
-                                            <td width='30%'>169</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="37" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4122">улица Ленинского Комсомола, д. 50</a>
-                                            </td>
-                                            <td width='30%'>175</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="38" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4123">улица Кадыкова, д. 11</a>
-                                            </td>
-                                            <td width='30%'>216</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="39" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4124">улица Айзмана, д. 1</a>
-                                            </td>
-                                            <td width='30%'>110</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="40" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4125">Совхозная улица, д. 18</a>
-                                            </td>
-                                            <td width='30%'>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="41" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4126">улица Мичмана Павлова, д. 12</a>
-                                            </td>
-                                            <td width='30%'>147</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="42" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4127">улица Мичмана Павлова, д. 34</a>
-                                            </td>
-                                            <td width='30%'>2425</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="43" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4128">улица Мичмана Павлова, д. 39</a>
-                                            </td>
-                                            <td width='30%'>131</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="44" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4133">улица Ленинского Комсомола, д. 21а</a>
-                                            </td>
-                                            <td width='30%'>75</td>
-                                        </tr>
-                                        <tr>
-                                            <td width='10%'><a class="to_map" data-marker="45" href="#">на карте</a>
-                                            </td>
-                                            <td class='text-left' width='60%'><a href="http://fair-price.biz/sellers/1035/sale_points/4602">улица Никиты Сверчкова, 8</a>
-                                            </td>
-                                            <td width='30%'>1</td>
+                                            <td width='15%'>8 - 20</td>
+                                            <td width='15%'>2842</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                              <script type="text/javascript">
+                                asdx = document.getElementById("scroll_fixed_table_header");
+                                zxc = document.getElementById("set_top_here");
+                                asdx.onscroll = function (){
+                                  zxc.style.top = asdx.scrollTop + 'px';
+                                }
+                              </script>
                         </div>
                         <div id='seller_details_map'></div>
+                       <div class="add_seller">
+                          <a class="add_button button" href="">Добавить адрес</a>
+                        </div>
+
+                        <div class="seller_contacts">
+                          <h3>Контакты</h3>
+                            
+                          <div>
+                            <p>Телефон: (8352) 45-43-23</p>
+                            <p>E-mail: mail@mail.mail</p>
+                            <p>Сайт: www.123.123</p>
+                          </div>
+                          <a class="add_button button" href="">Написать продавцу</a>
+                        </div>
+                        <div id="reviews">
+                            <h3>Отзывы</h3>
+                            <div class="reviews">
+                                <div class="review_row">
+                                    <div class="review_avatar">
+                                        <img src="css/v1lat.png">
+                                    </div>
+                                    <div class="review_content">
+                                        ВСЁ КОРАБЛЬ,ВСЁ В АРТСТАЙЛА МИНУС АРТСТАЙЛ,КУРОНИТИ УБИРАЕТ АРТСТАЙЛА, ГОБЛИН УЛЬТУЕТ,ЗАБРАТЬ НАДО ХОТЬ КОГО-ТО,СТЕНКУ СТАВИТ,ОЙОЙОЙ КАКАЯ ХОРОШАЯ СТЕНА У ТОЛСТОЙ СКАТИНЫ, ПЫТАЕТСЯ ЧТО-ТО СДЕЛАТЬ НЕУБИВАЕТ НИКОГО,ФОБОС УЛЬТУЕТ НИКОГО НЕ ЗАБИРАЕТ ЗДЕСЬ КРИПЫ ЛОСТА ПЫТАЮТСЯ ЧТО-ТО СДЕЛАТЬ ИХ ТУТ ЖЕ УБИВАЕТ КУНКА!
+                                    </div>
+                                </div>
+                                <div class="review_row">
+                                    <div class="review_avatar">
+                                        <img src="css/v1lat.png">
+                                    </div>
+                                    <div class="review_content">
+                                        НА ТОРРЕНТ ОПЯТЬ ВСЕ,ВСЕ ЧЕТВЕРО ПОПАДАЮТ НА ТОРРЕНТ,ДЕНДИ УХОДИТ ПРОСТО С ТП,ЗАБИРАЮТ ЛОСТА, ЗАБИРАЮТ ФОБОСА,ЗАБИРАЮТ ГОБЛАКА,МОЖНО ЛИВАТЬ,ЭТО __ НЕ ИГРА, ЭТО ПРОСТО ПОШЛИ ОНИ __
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="text-center">
+                                <div class="toggle_button" data-toggle="collapse" href="#reviews">
+                                    <span class="show">Больше отзывов</span>
+                                    <span class="hide">Свернуть</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h2>Популярные товары</h2>
                     <aside class='right entire_width' id='resizable'>

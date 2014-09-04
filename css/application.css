@@ -285,10 +285,12 @@ button.close {
   float: left !important; }
 
 .hide {
-  display: none !important; }
+  display: none;
+  /* !important;*/ }
 
 .show {
-  display: block !important; }
+  display: block;
+  /* !important;*/ }
 
 .invisible {
   visibility: hidden; }
@@ -620,10 +622,6 @@ html.panel-closed .header_profil {
     position: relative;
     margin-bottom: 30px;
     width: 100%; }
-    .new_product_form .controls .sys_msg {
-      clear: both; }
-      .new_product_form .controls .sys_msg .error_msg {
-        color: #ef4c27; }
   .new_product_form .help-inline {
     display: block;
     font-size: 14px;

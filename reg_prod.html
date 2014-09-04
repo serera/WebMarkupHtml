@@ -443,9 +443,13 @@
                                                         <div class="seller_stac_name">
                                                             <input autocomplete="off" class="string" id="seller-stac-adres" name="seller_stac[adress]" placeholder="Введите адрес магазина" type="text" />
                                                         </div>
+
                                                         <div class="map_wrp">
-                                                            <a href="" class="showmap">Показать карту</a>
-                                                            <div id="map"></div>
+                                                            <div class="toggle_button" data-toggle="collapse" href="#map">
+                                                                <span class="show">Показать карту</span>
+                                                                <span class="hide">Скрыть карту</span>
+                                                            </div>
+                                                            <div id="map" class="map"></div>
                                                             <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
                                                             <script type="text/javascript">
                                                             var myMap;

@@ -1805,9 +1805,6 @@ body.sellers article.catalog{
     width: 165px;
     text-align: right;
 }
-.tovar_add_price.seller_settings form>div>label{
-    text-transform: uppercase;
-}
 .tovar_add_price .product_form_unit_measure_id label.control-label {
     text-transform: uppercase;
     top: 5px;
@@ -1823,7 +1820,7 @@ body.sellers article.catalog{
     padding:0;
 }
 .tovar_add_price .product_form_unit_measure_id .more_currencies .toggle_button{
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 30px;
 }
 .seller_settings form .img_block>div {
@@ -1839,6 +1836,7 @@ body.sellers article.catalog{
     padding: 5px 10px;
     margin-right: 10px;
     width: 95%;
+    max-width: 400px;
 }
 .seller_settings.tovar_add_price form input.string{
     width:60%;
@@ -1860,6 +1858,8 @@ body.sellers article.catalog{
 }
 .seller_settings .description {
     color: #868686;
+}
+.seller_settings .seller_type .description {
     padding-left: 25px;
 }
 .seller_settings .select_wrap {
@@ -1985,7 +1985,7 @@ body.sellers article.catalog{
 .seller_settings .map_wrp a.hidemap{
     margin-left: 40%;
 }
-.seller_settings .map_wrp>div {
+.seller_settings .map_wrp .map {
     width: 100%;
     max-width: 700px;
     height: 500px;
@@ -2153,4 +2153,7 @@ h3.red_title{
 .send_msg_to_seller_form input.name{
     padding-left: 30px;
     background: url(user_sett_sprite.png) 5px 10px no-repeat;
+}
+.map_find #map{
+    min-height: 400px;
 }

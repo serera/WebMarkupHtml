@@ -2106,6 +2106,8 @@ body.sellers article.catalog{
 .reviews .review_row{
     position: relative;
     padding-left: 90px;
+    min-height: 81px;
+    margin-bottom: 25px;
 }
 .reviews .review_avatar{
     width: 80px;
@@ -2119,5 +2121,35 @@ body.sellers article.catalog{
     width:100%;
     height: auto;
 }
-.reviews .review_avatar{
-    }
+.review_data{
+    overflow: hidden;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 10px;
+}
+.review_data .author_name_date{
+    color:#747474;
+}
+.make_review{
+    max-width: 400px;
+}
+.send_msg_to_seller{
+    width:400px;
+}
+h3.red_title{
+    font-size:1.1em;
+    color: #ef4c27;
+}
+.send_msg_to_seller_form{
+    width:100%;
+}
+.send_msg_to_seller_form>*{
+    display:block;
+    width:100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding:9px;
+}
+.send_msg_to_seller_form input.name{
+    padding-left: 30px;
+    background: url(user_sett_sprite.png) 5px 10px no-repeat;
+}

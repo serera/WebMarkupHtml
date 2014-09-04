@@ -173,9 +173,29 @@ header {
     clear: left;
     margin: 20px 0;
 }
+.seller_details_page #reviews>h3{
+    float:left;
+    margin-bottom: 25px;
+    margin-right:20px;
+}
+.seller_details_page #reviews .item_poll,
+.seller_details_page #reviews .author_name_date{
+    float: left;
+    padding: 14px 10px 0 0;
+    clear: none;
+}
+.seller_details_page #reviews .make_review .item_poll{
+    padding-top: 0;
+
+}
+.seller_details_page #reviews .reviews{
+    clear:both;
+}
 .sellers.show .seller_details_page .add_button{
     text-transform: none;
     display: block;
+    width: 140px;
+    text-align: center;
 }
 BODY.sellers.show  HEADER.elastic_header{
     margin:25px 0 0 20px;

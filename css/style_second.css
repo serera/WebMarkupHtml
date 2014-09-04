@@ -2094,7 +2094,7 @@ body.sellers article.catalog{
 .add_more_block a.button{
     margin-top: 18px;
     display: block;
-    width: 100px;
+    width: 120px;
     text-align: center;
 }
 .sys_msg{
@@ -2128,6 +2128,7 @@ body.sellers article.catalog{
 }
 .review_data .author_name_date{
     color:#747474;
+    font-size: 14px;
 }
 .make_review{
     max-width: 400px;

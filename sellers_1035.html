@@ -446,6 +446,8 @@
                         <div class='seller-adress'>Чебоксары
                             <br>улица Крала Маркса, д.52
                         </div>
+                        <div><a href="/sellers/1035/products">Магазины</a>
+                        </div>
                         <div><a href="/sellers/1035/products">Товары</a>
                         </div>
                         <div><a href="/sellers/1035">Акции</a>
@@ -460,6 +462,11 @@
                                         <ul class='autocomp_list' data-title='#search-products-title' id='products-search-select' role='autocomplete-list'></ul>
                                         <button class='search_button' type='submit'></button>
                                     </form>
+                                    <div class="sys_msg">
+                                      <div class="error_msg">
+                                          *Введите наимнование товара
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -618,7 +625,17 @@
                                 <h3 class="red_title">Написать продавцу</h3>
                                 <form class="simple_form send_msg_to_seller_form">
                                     <input class="string optional name" name="send_msg_to_seller_form[name]" placeholder="Имя" type="text">
+                                    <div class="sys_msg">
+                                        <div class="error_msg">
+                                            *Введите наимнование товара
+                                        </div>
+                                    </div>
                                     <textarea class="text optional msg" name="send_msg_to_seller_form[msg]" placeholder="Сообщение"></textarea>
+                                    <div class="sys_msg">
+                                        <div class="error_msg">
+                                            *Введите наимнование товара
+                                        </div>
+                                    </div>
                                     <input class="add_button button" name="commit" type="submit" value="Отправить">
                                 </form>
                             </div>
@@ -634,11 +651,11 @@
                                         <img src="css/v1lat.png">
                                     </div>
                                     <div class="review_data">
-                                      <div class="review_content">
-                                          ВСЁ КОРАБЛЬ,ВСЁ В АРТСТАЙЛА МИНУС АРТСТАЙЛ,КУРОНИТИ УБИРАЕТ АРТСТАЙЛА, ГОБЛИН УЛЬТУЕТ,ЗАБРАТЬ НАДО ХОТЬ КОГО-ТО,СТЕНКУ СТАВИТ,ОЙОЙОЙ КАКАЯ ХОРОШАЯ СТЕНА У ТОЛСТОЙ СКАТИНЫ, ПЫТАЕТСЯ ЧТО-ТО СДЕЛАТЬ НЕУБИВАЕТ НИКОГО,ФОБОС УЛЬТУЕТ НИКОГО НЕ ЗАБИРАЕТ ЗДЕСЬ КРИПЫ ЛОСТА ПЫТАЮТСЯ ЧТО-ТО СДЕЛАТЬ ИХ ТУТ ЖЕ УБИВАЕТ КУНКА!
-                                      </div>
-                                      <div class="item_poll" data-id="137393" data-readonly="true"></div>
-                                      <div class="author_name_date">Виталий Волочай | 27.08.2013</div>
+                                        <div class="review_content">
+                                            ВСЁ КОРАБЛЬ,ВСЁ В АРТСТАЙЛА МИНУС АРТСТАЙЛ,КУРОНИТИ УБИРАЕТ АРТСТАЙЛА, ГОБЛИН УЛЬТУЕТ,ЗАБРАТЬ НАДО ХОТЬ КОГО-ТО,СТЕНКУ СТАВИТ,ОЙОЙОЙ КАКАЯ ХОРОШАЯ СТЕНА У ТОЛСТОЙ СКАТИНЫ, ПЫТАЕТСЯ ЧТО-ТО СДЕЛАТЬ НЕУБИВАЕТ НИКОГО,ФОБОС УЛЬТУЕТ НИКОГО НЕ ЗАБИРАЕТ ЗДЕСЬ КРИПЫ ЛОСТА ПЫТАЮТСЯ ЧТО-ТО СДЕЛАТЬ ИХ ТУТ ЖЕ УБИВАЕТ КУНКА!
+                                        </div>
+                                        <div class="item_poll" data-id="137393" data-readonly="true"></div>
+                                        <div class="author_name_date">Виталий Волочай | 27.08.2013</div>
                                     </div>
                                 </div>
                                 <div class="review_row">
@@ -646,11 +663,11 @@
                                         <img src="css/v1lat.png">
                                     </div>
                                     <div class="review_data">
-                                      <div class="review_content">
-                                          НА ТОРРЕНТ ОПЯТЬ ВСЕ,ВСЕ ЧЕТВЕРО ПОПАДАЮТ НА ТОРРЕНТ,ДЕНДИ УХОДИТ ПРОСТО С ТП,ЗАБИРАЮТ ЛОСТА, ЗАБИРАЮТ ФОБОСА,ЗАБИРАЮТ ГОБЛАКА,МОЖНО ЛИВАТЬ,ЭТО __ НЕ ИГРА, ЭТО ПРОСТО ПОШЛИ ОНИ __
-                                      </div>
-                                      <div class="item_poll" data-id="137393" data-readonly="true"></div>
-                                      <div class="author_name_date">Виталий Волочай | 27.08.2013</div>
+                                        <div class="review_content">
+                                            НА ТОРРЕНТ ОПЯТЬ ВСЕ,ВСЕ ЧЕТВЕРО ПОПАДАЮТ НА ТОРРЕНТ,ДЕНДИ УХОДИТ ПРОСТО С ТП,ЗАБИРАЮТ ЛОСТА, ЗАБИРАЮТ ФОБОСА,ЗАБИРАЮТ ГОБЛАКА,МОЖНО ЛИВАТЬ,ЭТО __ НЕ ИГРА, ЭТО ПРОСТО ПОШЛИ ОНИ __
+                                        </div>
+                                        <div class="item_poll" data-id="137393" data-readonly="true"></div>
+                                        <div class="author_name_date">Виталий Волочай | 27.08.2013</div>
                                     </div>
                                 </div>
                             </div>
@@ -686,12 +703,26 @@
                             <div class="make_review">
                                 <h3 class="red_title">Оставить отзыв о продавце</h3>
                                 <div class="clearfix">
-                                  <div class="pull-left">Оценка: </div>
-                                  <div class="item_poll" data-id="137393" data-readonly="false"></div>
+                                    <div class="pull-left">Оценка:</div>
+                                    <div class="item_poll" data-id="137393" data-readonly="false"></div>
+                                    <div class="sys_msg">
+                                        <div class="error_msg">*Введите наимнование товара</div>
+                                    </div>
+
                                 </div>
                                 <form class="simple_form send_msg_to_seller_form">
                                     <input class="string optional name" name="send_msg_to_seller_form[name]" placeholder="Имя" type="text">
+                                    <div class="sys_msg">
+                                        <div class="error_msg">
+                                            *Введите наимнование товара
+                                        </div>
+                                    </div>
                                     <textarea class="text optional msg" name="send_msg_to_seller_form[msg]" placeholder="Сообщение"></textarea>
+                                    <div class="sys_msg">
+                                        <div class="error_msg">
+                                            *Введите наимнование товара
+                                        </div>
+                                    </div>
                                     <input class="add_button button" name="commit" type="submit" value="Отправить">
                                 </form>
                             </div>

@@ -1820,8 +1820,7 @@ body.sellers article.catalog{
     padding:0;
 }
 .tovar_add_price .product_form_unit_measure_id .more_currencies .toggle_button{
-    margin-top: 0px;
-    margin-left: 30px;
+    margin: 0px 0px 10px 30px;
 }
 .seller_settings form .img_block>div {
     display: inline-block;
@@ -2098,9 +2097,16 @@ body.sellers article.catalog{
     text-align: center;
 }
 .sys_msg{
-    clear: both
+    clear: both;
+    margin-bottom: 15px;
 }
 .sys_msg .error_msg{
+    color: #ef4c27
+}
+.sys_msg .reg_pls{
+    font-weight: bold;
+}
+.sys_msg .reg_pls a{
     color: #ef4c27
 }
 .reviews .review_row{
@@ -2143,7 +2149,7 @@ h3.red_title{
 .send_msg_to_seller_form{
     width:100%;
 }
-.send_msg_to_seller_form>*{
+.send_msg_to_seller_form .optional{
     display:block;
     width:100%;
     margin-bottom: 10px;

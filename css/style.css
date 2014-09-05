@@ -1568,6 +1568,7 @@ aside.lists .list_actions .gray_button.rename_list {
 }
 #table_goods_tab {
     position: relative;
+    margin-bottom: 25px;
 }
 #table_goods_tab h3 {
     margin-bottom: 30px;
@@ -4011,7 +4012,31 @@ BODY.average aside.left .item_img {
     margin: 0 0 15px;
     text-align: center;
 }
+.products.show aside.left .img_list .item_img{
+    width:30%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    float:left;
+    padding: 5px 2px;
+}
+.products.show aside.left .img_list .item_img:nth-child(3n+1){
+    clear:left;
+}
+.products.show .image_default{
+    padding: 150px 10px 20px;
+    background: url(http://fair-price.biz/assets/default_avatar-256e32ec39f503028e48b997db1f4b07.png) center 10px no-repeat;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 15px;
+
+}
+.products.show .image_default .img_upload{
+    position: relative;
+    max-width: 165px;
+    margin: 0 auto;
+}
 BODY.average aside.left .item_poll {
+    text-align: center;
     margin-bottom: 25px;
 }
 BODY.average .items_left_info .item_info {
@@ -4238,6 +4263,12 @@ BODY.average thead span.desc:after, BODY.average thead a.desc:after {
     font: bold 1.250em'PT Sans';
     color: #444;
 }
+.pricing_options .best_price{
+    color: #01d2bc;
+}
+.pricing_options .worst_price{
+    color: #ef4c27;
+}
 .average .compare_prices .item_row .pricing_options em {
     display: inline-block;
     text-transform: uppercase;
@@ -4353,9 +4384,6 @@ BODY.average thead span.desc:after, BODY.average thead a.desc:after {
 }
 .average aside.right .compare_prices .item_row .social_net .twitter {
     background: url(social_sprite.png) 0 -48px no-repeat;
-}
-BODY.average aside.right #more_prices:hover, BODY.average #more_products:hover {
-    background: #02cab5 url(more_prices.png) 8px center no-repeat;
 }
 .average aside.right .description_goods {
     font: 1em/1.250em'PT Sans';

@@ -564,47 +564,8 @@ html.panel-closed .header_profil {
     position: absolute;
     left: 0;
     top: 5px; }
-  .new_product_form .product_form_unit_measure_id {
-    position: relative;
-    padding-left: 185px;
-    display: none; }
-    .new_product_form .product_form_unit_measure_id.active {
-      display: block; }
-    .new_product_form .product_form_unit_measure_id .radio_controls .radio_item {
-      width: 90px;
-      float: left;
-      position: relative;
-      padding-left: 20px; }
-      .new_product_form .product_form_unit_measure_id .radio_controls .radio_item label {
-        position: static;
-        width: 100px;
-        line-height: 1.5em;
-        font-size: 13px;
-        text-align: left;
-        color: #898989;
-        display: block;
-        cursor: pointer;
-        margin-bottom: 10px; }
-      .new_product_form .product_form_unit_measure_id .radio_controls .radio_item input.radio {
-        position: absolute;
-        left: 0;
-        top: 4px; }
-      .new_product_form .product_form_unit_measure_id .radio_controls .radio_item .description {
-        margin-left: -20px; }
-      .new_product_form .product_form_unit_measure_id .radio_controls .radio_item.more_currencies {
-        background-image: url(expand.png);
-        background-position: left center;
-        background-repeat: no-repeat;
-        padding: 10px 0 5px 30px; }
-    .new_product_form .product_form_unit_measure_id > label {
-      width: auto;
-      text-align: left;
-      left: 110px; }
-  .new_product_form #more_currencies {
-    text-transform: uppercase;
-    text-decoration: none;
-    border-bottom: 1px dashed #333333;
-    color: #333333; }
+  .new_product_form .more_currencies .toggle_button {
+    margin: 15px 0; }
   .new_product_form .description {
     font-size: 12px;
     color: #898989; }
@@ -681,6 +642,43 @@ html.panel-closed .header_profil {
   .new_product_form .product_form_add .controls > * {
     float: left;
     margin-right: 3px; }
+
+.product_form_unit_measure_id {
+  position: relative;
+  padding-left: 185px;
+  display: none; }
+  .product_form_unit_measure_id.active {
+    display: block; }
+  .product_form_unit_measure_id .radio_controls .radio_item {
+    width: 100px;
+    float: left;
+    position: relative;
+    padding-left: 20px; }
+    .product_form_unit_measure_id .radio_controls .radio_item.more_currencies {
+      width: 130px; }
+    .product_form_unit_measure_id .radio_controls .radio_item label {
+      position: static;
+      width: 100px;
+      line-height: 1.5em;
+      font-size: 13px;
+      text-align: left;
+      color: #898989;
+      display: block;
+      cursor: pointer; }
+    .product_form_unit_measure_id .radio_controls .radio_item input.radio {
+      position: absolute;
+      left: 0;
+      top: 4px; }
+  .product_form_unit_measure_id .radio_controls > .radio_item > .description {
+    margin-left: -20px;
+    margin-top: 10px; }
+  .product_form_unit_measure_id > label {
+    width: auto;
+    text-align: left;
+    left: 110px; }
+  .product_form_unit_measure_id .description {
+    font-size: 12px;
+    color: #898989; }
 
 .vakata-context {
   margin: 0; }

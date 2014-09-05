@@ -463,9 +463,9 @@
                                         <button class='search_button' type='submit'></button>
                                     </form>
                                     <div class="sys_msg">
-                                      <div class="error_msg">
-                                          *Введите наимнование товара
-                                      </div>
+                                        <div class="error_msg">
+                                            *Введите наимнование товара
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -671,7 +671,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="reviews" id="more_reviews">
+                            <div class="text-center">
+                                <div class="toggle_button" data-toggle="collapse" href="#more_reviews">
+                                    <span class="show">Больше отзывов</span>
+                                    <span class="hide">Свернуть</span>
+                                </div>
+                            </div>
+                            <div id="more_reviews">
                                 <div class="review_row">
                                     <div class="review_avatar">
                                         <img src="css/v1lat.png">
@@ -697,17 +703,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="text-center">
-                                <div class="toggle_button" data-toggle="collapse" href="#more_reviews">
-                                    <span class="show">Больше отзывов</span>
-                                    <span class="hide">Свернуть</span>
-                                </div>
-                            </div>
-
-
-
                             <div class="make_review">
                                 <h3 class="red_title">Оставить отзыв о продавце</h3>
                                 <div class="clearfix">
@@ -716,7 +711,6 @@
                                     <div class="sys_msg">
                                         <div class="error_msg">*Введите наимнование товара</div>
                                     </div>
-
                                 </div>
                                 <form class="simple_form send_msg_to_seller_form">
                                     <input class="string optional name" name="send_msg_to_seller_form[name]" placeholder="Имя" type="text">
@@ -734,9 +728,6 @@
                                     <input class="add_button button" name="commit" type="submit" value="Отправить">
                                 </form>
                             </div>
-
-
-
                         </div>
                     </div>
                     <h2>Популярные товары</h2>

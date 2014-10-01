@@ -429,73 +429,73 @@
                                     </div>
                                 </div>
 
-                                        <div class='seller-types'>
-                                            <span>
-                                                <input type="checkbox" id="offline_seller">
-                                                <label for="offline_seller">Офлайн-магазин</label>
-                                            </span>
-                                            <span>
-                                                <input type="checkbox" id="online_seller">
-                                                <label for="online_seller">Интернет-магазин</label>
-                                            </span>
+                                <div class='seller-types'>
+                                    <span>
+                                        <input type="checkbox" id="offline_seller">
+                                        <label for="offline_seller">Офлайн-магазин</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="online_seller">
+                                        <label for="online_seller">Интернет-магазин</label>
+                                    </span>
+                                </div>
+                                <div class="seller_site">
+                                    <label>
+                                        Сайт продавца
+                                    </label>
+                                    <input class="string optional" id="seller_profile_site" name="seller_profile[site]" type="text" />
+                                    <div class="description">
+                                    </div>
+                                </div>
+                                <div class="seller_type">
+                                    <label>
+                                        Город
+                                    </label>
+                                    <div class="stac_edit_form active">
+                                        <div class="seller_stac_name">
+                                            <input autocomplete="off" class="string" name="seller_stac[adress_city]" placeholder="Чебоксары" type="text" />
+                                            <a href="" class="input_edit">Изменить</a>
                                         </div>
-                                        <div class="seller_site">
-                                            <label>
-                                                Сайт продавца
-                                            </label>
-                                            <input class="string optional" id="seller_profile_site" name="seller_profile[site]" type="text" />
-                                            <div class="description">
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="seller_type">
+                                    <label>
+                                        Улица
+                                    </label>
+                                    <div class="stac_edit_form active">
+                                        <div class="seller_stac_name">
+                                            <input autocomplete="off" class="string" name="seller_stac[adress_street]" placeholder="Тракторостроителей" type="text" />
+                                            <a href="" class="input_edit">Изменить</a>
                                         </div>
-                                        <div class="seller_type">
-                                            <label>
-                                                Город
-                                            </label>
-                                            <div class="stac_edit_form active">
-                                                <div class="seller_stac_name">
-                                                    <input autocomplete="off" class="string" name="seller_stac[adress_city]" placeholder="Чебоксары" type="text" />
-                                                    <a href="" class="input_edit">Изменить</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="seller_type">
-                                            <label>
-                                                Улица
-                                            </label>
-                                            <div class="stac_edit_form active">
-                                                <div class="seller_stac_name">
-                                                    <input autocomplete="off" class="string" name="seller_stac[adress_street]" placeholder="Тракторостроителей" type="text" />
-                                                    <a href="" class="input_edit">Изменить</a>
-                                                </div>
-                                                <div class="map_wrp"></div>
-                                            </div>
-                                        </div>
-                                        <div class="map_find">
-                                            <div class="toggle_button" data-toggle="collapse" href="#map">
-                                                <span class="show">Найти на карте</span>
-                                                <span class="hide">Скрыть карту</span>
-                                            </div>
-                                            <div class="map_wrp">
-                                                <div id="map"></div>
-                                                <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-                                                <script type="text/javascript">
-                                                var myMap;
-                                                 // Дождёмся загрузки API и готовности DOM.
-                                                ymaps.ready(init);
+                                        <div class="map_wrp"></div>
+                                    </div>
+                                </div>
+                                <div class="map_find">
+                                    <div class="toggle_button" data-toggle="collapse" href="#map">
+                                        <span class="show">Найти на карте</span>
+                                        <span class="hide">Скрыть карту</span>
+                                    </div>
+                                    <div class="map_wrp">
+                                        <div id="map"></div>
+                                        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                                        <script type="text/javascript">
+                                        var myMap;
+                                         // Дождёмся загрузки API и готовности DOM.
+                                        ymaps.ready(init);
 
-                                                function init() {
-                                                    // Создание экземпляра карты и его привязка к контейнеру с
-                                                    // заданным id ("map").
-                                                    myMap = new ymaps.Map('map', {
-                                                        // При инициализации карты обязательно нужно указать
-                                                        // её центр и коэффициент масштабирования.
-                                                        center: [56.1439, 47.248887], // Москва
-                                                        zoom: 15
-                                                    });
-                                                }
-                                                </script>
-                                            </div>
-                                        </div>
+                                        function init() {
+                                            // Создание экземпляра карты и его привязка к контейнеру с
+                                            // заданным id ("map").
+                                            myMap = new ymaps.Map('map', {
+                                                // При инициализации карты обязательно нужно указать
+                                                // её центр и коэффициент масштабирования.
+                                                center: [56.1439, 47.248887], // Москва
+                                                zoom: 15
+                                            });
+                                        }
+                                        </script>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="control-group product_form_add">

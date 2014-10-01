@@ -426,6 +426,30 @@
                                         *Введите наимнование товара
                                     </div>
                                 </div>
+                                <div class="map_wrp">
+                                    <div class="toggle_button" data-toggle="collapse" href="#map">
+                                        <span class="show">Показать карту</span>
+                                        <span class="hide">Скрыть карту</span>
+                                    </div>
+                                    <div id="map" class="map"></div>
+                                    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                                    <script type="text/javascript">
+                                    var myMap;
+                                     // Дождёмся загрузки API и готовности DOM.
+                                    ymaps.ready(init);
+
+                                    function init() {
+                                        // Создание экземпляра карты и его привязка к контейнеру с
+                                        // заданным id ("map").
+                                        myMap = new ymaps.Map('map', {
+                                            // При инициализации карты обязательно нужно указать
+                                            // её центр и коэффициент масштабирования.
+                                            center: [56.1439, 47.248887], // Москва
+                                            zoom: 15
+                                        });
+                                    }
+                                    </script>
+                                </div>
                             </div>
                         </div>
                         <div class="control-group product_form_add">

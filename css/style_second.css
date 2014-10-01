@@ -2200,7 +2200,7 @@ h3.red_title{
 .new_product_form .product_form_seller .controls>div{
     margin-bottom: 15px;
 }
-.new_product_form .product_form_seller .tovar_add_price a.input_edit{
+.new_product_form .product_form_seller a.input_edit{
     text-transform: uppercase;
     font-size: 12px;
     text-decoration: none;

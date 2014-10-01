@@ -1984,7 +1984,7 @@ body.sellers article.catalog{
 .seller_settings .map_wrp a.hidemap{
     margin-left: 40%;
 }
-.seller_settings .map_wrp .map {
+.map_wrp .map {
     width: 100%;
     max-width: 700px;
     height: 500px;

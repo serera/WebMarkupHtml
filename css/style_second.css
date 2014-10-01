@@ -2163,3 +2163,40 @@ h3.red_title{
 .map_find #map{
     min-height: 400px;
 }
+.seller_settings form>div {
+    position: relative;
+    padding-left: 180px;
+    margin-bottom: 15px;
+}
+.new_product_form form .seller-types span{
+    margin-right:20px;
+}
+.new_product_form form .seller-types span>input{
+    margin-right: 5px;
+}
+.new_product_form form>div>label {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 165px;
+    text-align: right;
+}
+.new_product_form .product_form_seller .controls > div{
+    position: relative;
+}
+.new_product_form .product_form_seller .controls label{
+    left: -210px;
+    text-align: right;
+}
+.new_product_form .product_form_seller .controls .seller-types label{
+    position: static;
+}
+.new_product_form .product_form_seller .controls input.string {
+    width: 60%;
+}
+.new_product_form .product_form_seller .controls .sellers-search input.string {
+    width: inherit;
+}
+.new_product_form .product_form_seller .controls>div{
+    margin-bottom: 15px;
+}

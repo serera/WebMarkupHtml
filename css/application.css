@@ -624,19 +624,24 @@ html.panel-closed .header_profil {
       border: none; }
       .new_product_form .product_form_seller ul li a {
         display: block; }
-  .new_product_form .last_viewed {
+  .new_product_form .last_viewed,
+  .new_product_form .exist_items {
     display: none;
     padding: 5px 0; }
-    .new_product_form .last_viewed ul {
+    .new_product_form .last_viewed ul,
+    .new_product_form .exist_items ul {
       padding: 0;
       margin-top: 0;
       list-style: none; }
-      .new_product_form .last_viewed ul a {
+      .new_product_form .last_viewed ul a,
+      .new_product_form .exist_items ul a {
         color: #898989;
         text-decoration: none; }
-        .new_product_form .last_viewed ul a:hover {
+        .new_product_form .last_viewed ul a:hover,
+        .new_product_form .exist_items ul a:hover {
           background: #EBEBEB; }
-    .new_product_form .last_viewed.active {
+    .new_product_form .last_viewed.active,
+    .new_product_form .exist_items.active {
       display: block;
       min-width: 300px; }
   .new_product_form .product_form_add .controls > * {

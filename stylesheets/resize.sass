@@ -1,0 +1,38 @@
+.welcome
+  #mainContent,
+  header.header,
+  #footer
+    +transition-duration(.5s)
+    +translate3d(-140px, 0, 0)
+    @media screen and (max-width: 1338px)
+      +translate3d(0, 0, 0)
+  #slide_panel
+    +transition-duration(.5s)
+    +translate3d(0, 0, 0)
+    @media screen and (max-width: 1338px)
+      +translate3d(0, 0, 0)
+
+.header_profil
+  right: 0
+  left: auto
+  padding: 0 66px 0 20px
+  opacity: 0
+  +transition(opacity .25s ease-in-out)
+
+html.panel-closed
+  .welcome
+    #mainContent,
+    header.header,
+    #footer
+      +translate3d(0, 0, 0)
+    #slide_panel
+      +translate3d(278px, 0, 0)
+  .header_profil
+    opacity: 1
+
+.mainmenu .address
+  @media screen and (max-width: 979px)
+    max-width: 330px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis

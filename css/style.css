@@ -202,7 +202,7 @@ header {
     text-align: center;
 }
 BODY.sellers.show  HEADER.elastic_header{
-    margin:0 0 0 20px;
+    margin-top: 20px;
 }
 .seller-name h1{
     margin: 0;
@@ -2006,7 +2006,7 @@ SECTION.top .top_search .search_form {
     position: relative;
     width: 76%;
     float: left;
-    margin: 6px auto 0;
+    margin: 16px auto 0;
 }
 SECTION.top .products-search-form {
     background: #FFFFFF;
